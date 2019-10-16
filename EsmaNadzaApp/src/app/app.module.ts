@@ -3,14 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {StartComponent} from './Start Page/start.component';
-import { LayoutComponent } from './Layout page/layout.component';
-import { HomeComponent } from './Home page/home.component';
+import { RouterModule } from '@angular/router';
 
-
-import { ResumeComponent } from './Resume Page/resume.component';
-import { ContactComponent } from './Contact Page/contact.component';
-import { ProjectComponent } from './Project Page/project.component';
+import { StartComponent} from './pages/start/start.component';
+import { LayoutComponent } from './pages/layout/layout.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ResumeComponent } from './pages/resume/resume.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { ProjectComponent } from './pages/project/project.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { ProjectComponent } from './Project Page/project.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
