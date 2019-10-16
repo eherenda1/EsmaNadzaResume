@@ -8,12 +8,20 @@ import { LayoutComponent } from './Layout page/layout.component';
 import { HomeComponent } from './Home page/home.component';
 
 
+import { ResumeComponent } from './Resume Page/resume.component';
+import { ContactComponent } from './Contact Page/contact.component';
+import { ProjectComponent } from './Project Page/project.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     StartComponent,
     HomeComponent,
-    LayoutComponent
+    LayoutComponent,
+    ResumeComponent,
+    ContactComponent, 
+    ProjectComponent
+
   ],
   imports: [
     BrowserModule,
