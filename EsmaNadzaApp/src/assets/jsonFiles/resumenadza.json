@@ -1,7 +1,37 @@
 {
-    "highSchool": { "name": "Treća gimnazija",
-                    "shortDescription": "kratak opis",
-                    "description":"puni opis"
+    "highSchool": { 
 
+        "name": "Treća gimnazija",
+        "shortDescription": "kratak opis",
+        "description":"puni opis"
+
+    },
+
+    "university": { 
+        
+        "name": "Elektrotehnički fakultet",
+        "shortDescription": "kratak opis",
+        "description":"puni opis"
+    },
+
+    "work": { 
+        "name": "posao",
+        "jobPosition": "uloga",
+        "shortDescription": "kratak opis",
+        "description":"puni opis"
+    },
+
+    "hardSkills": ["skill1", "skill2", "skill3"],
+
+    "softSkills": ["skill1", "skill2", "skill3"],
+
+    "languages": ["language1", "language2", "language3"],
+
+    "hobbiesInterests": { 
+        "name": "hobby",
+        "description":"puni opis",
+        "images": [""]
     }
+
+
 }
