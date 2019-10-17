@@ -16,6 +16,7 @@ import {HeaderComponent} from './pages/layout/components/header/header.component
 import {FooterComponent} from './pages/layout/components/footer/footer.component';
 
 import {UsersService} from './users.service';
+import {ProjectsService} from './projects.service';
 import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
@@ -28,9 +29,7 @@ import {HttpClientModule} from '@angular/common/http';
     ContactComponent, 
     ProjectComponent,
     HeaderComponent,
-    FooterComponent,
-    
-
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +38,7 @@ import {HttpClientModule} from '@angular/common/http';
     HttpClientModule,
     
   ],
-  providers: [UsersService],
+  providers: [UsersService,ProjectsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
