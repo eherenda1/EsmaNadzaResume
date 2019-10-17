@@ -1,4 +1,4 @@
 
 <ul *ngFor="let user of users">
-    <li [routerLink]="['layout/home']">{{user.firstname}} {{user.lastname}}</li>
+    <li [routerLink]="['layout/home', user.code]">{{user.firstname}} {{user.lastname}}</li>
   </ul>

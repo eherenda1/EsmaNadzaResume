@@ -12,6 +12,6 @@ export class StartComponent implements OnInit {
 
   }
   ngOnInit(){
-     this._usersService.getUsers().subscribe(data => this.users = data);
+     this._usersService.getUsers().subscribe((r)=> this.users = r);
   }
 }
