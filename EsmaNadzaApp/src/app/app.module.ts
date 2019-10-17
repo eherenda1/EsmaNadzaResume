@@ -12,6 +12,7 @@ import { ResumeComponent } from './pages/resume/resume.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectComponent } from './pages/project/project.component';
 
+
 import {HeaderComponent} from './pages/layout/components/header/header.component';
 import {FooterComponent} from './pages/layout/components/footer/footer.component';
 
