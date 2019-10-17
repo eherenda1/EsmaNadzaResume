@@ -12,5 +12,24 @@
     
        "imageUrl": "https://thumbs.dreamstime.com/b/girl-glasses-jump-white-background-girl-glasses-jump-122607358.jpg"
     
+    },
+
+    { 
+    
+        "id": 2,
+ 
+       "firstname": "Nadža",
+     
+       "lastname": "Buhić",
+     
+       "username": "Nadz",
+     
+       "description": "junior developer",
+     
+        "imageUrl": "https://thumbs.dreamstime.com/b/girl-glasses-jump-white-background-girl-glasses-jump-122607358.jpg"
+     
+     
+
     }
+
 ]
