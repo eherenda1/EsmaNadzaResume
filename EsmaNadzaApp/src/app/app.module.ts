@@ -15,6 +15,9 @@ import { ProjectComponent } from './pages/project/project.component';
 import {HeaderComponent} from './pages/layout/components/header/header.component';
 import {FooterComponent} from './pages/layout/components/footer/footer.component';
 
+import {UsersService} from './users.service';
+import {HttpClientModule} from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,15 +28,18 @@ import {FooterComponent} from './pages/layout/components/footer/footer.component
     ContactComponent, 
     ProjectComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule,
+    
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
