@@ -9,10 +9,11 @@ import { Observable } from 'rxjs';
 
 export class ResumeService {
 
-  private urlResume = "/assets/jsonFiles/nadzajson/resume.nadza.json";
   constructor(private http: HttpClient) { }
 
-  getResume(): Observable<IResume>{
-    return this.http.get<IResume>(this.urlResume)
+  getResume(code: string): Observable<IResume>{
+    console.log(code);
+  
+    return this.http.get<IResume>("/assets/jsonFiles/"+code+"json/resume."+code+".json")
   }
 }

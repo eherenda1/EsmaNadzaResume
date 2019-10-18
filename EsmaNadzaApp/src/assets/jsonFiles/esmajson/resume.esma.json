@@ -1,42 +1,37 @@
-[ 
-    { 
-         "highSchool":   {      
-                                "name": "Gimnazija Dobrinja",
-                                "shortDescription": "2012-2016, Matematics and Informatics",
-                                "description": "description"
+{
+    "highSchool": { 
 
-                                 },
-    
-                                   
-    
-        "university":  {     
-                            "name": "Elektrotehnički fakultet",
-                            "shortDescription": "2016-2019, Computer Science and Informatics",
-                            "description": "description"
-    
-                             },
-    
-        "work":        {    
-                            "name": "Zira",
-                            "jobPosition": "Junior Developer",
-                            "shortDescription": "2019-Present",
-                            "description": "description"
-    
-                             },
-    
-    "hardSkills": [ "hskill1", "hskill2", "hkill3"],
-    
-    "softSkills":  ["hskill1", "hskill2", "hskill3"],
-    
-    "languages":  ["languages1", "languages2", "languages3"],
-    
-    "hobbiesInterests": [
-                            {  
-                            "name":"Volleyball",
-                            "description":"opisss",
-                            "images": [ "" ]
-    
-                                       }]
-    
-     }
-]
+        "name": "Treća gimnazija",
+        "shortDescription": "kratak opis",
+        "description":"puni opis"
+
+    },
+
+    "university": { 
+        
+        "name": "Elektrotehnički fakultet",
+        "shortDescription": "kratak opis",
+        "description":"puni opis"
+    },
+
+    "work": { 
+        "name": "posao",
+        "jobPosition": "uloga",
+        "shortDescription": "kratak opis",
+        "description":"puni opis"
+    },
+
+    "hardSkills": ["skill1", "skill2", "skill3"],
+
+    "softSkills": ["skill1", "skill2", "skill3"],
+
+    "languages": ["language1", "language2", "language3"],
+
+    "hobbiesInterests": { 
+        "name": "hobby",
+        "description":"puni opis",
+        "images": [""]
+    }
+
+
+}
