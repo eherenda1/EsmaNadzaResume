@@ -18,6 +18,7 @@ import {FooterComponent} from './pages/layout/components/footer/footer.component
 
 import {UsersService} from './users.service';
 import {HttpClientModule} from '@angular/common/http';
+import {ResumeService} from './resume.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import {HttpClientModule} from '@angular/common/http';
     HttpClientModule,
     
   ],
-  providers: [UsersService],
+  providers: [UsersService,
+             ResumeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
