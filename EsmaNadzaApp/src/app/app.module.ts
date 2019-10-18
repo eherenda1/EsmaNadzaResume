@@ -17,6 +17,7 @@ import {HeaderComponent} from './pages/layout/components/header/header.component
 import {FooterComponent} from './pages/layout/components/footer/footer.component';
 
 import {UsersService} from './users.service';
+import {ProjectsService} from './projects.service';
 import {HttpClientModule} from '@angular/common/http';
 import {ResumeService} from './resume.service';
 
@@ -30,9 +31,7 @@ import {ResumeService} from './resume.service';
     ContactComponent, 
     ProjectComponent,
     HeaderComponent,
-    FooterComponent,
-    
-
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +41,8 @@ import {ResumeService} from './resume.service';
     
   ],
   providers: [UsersService,
-             ResumeService],
+             ResumeService,
+             ProjectsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

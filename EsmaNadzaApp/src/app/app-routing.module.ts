@@ -13,10 +13,10 @@ import {FooterComponent} from './pages/layout/components/footer/footer.component
 
 const routes: Routes = [
   {path: '', component:StartComponent},
-  { path: 'layout', 
+  { path: 'layout/:code', 
     component:LayoutComponent,
     children: [
-      { path:'home/:code', component:HomeComponent},
+      { path:'home', component:HomeComponent},
       { path:'resume', component:ResumeComponent},
       { path:'projects', component:ProjectComponent},
       { path:'contact', component:ContactComponent},

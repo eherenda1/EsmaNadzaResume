@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 
 export class ResumeService {
 
-  private urlResume = "/assets/jsonFiles/nadzajson/resumenadza.json";
+  private urlResume = "/assets/jsonFiles/nadzajson/resume.nadza.json";
   constructor(private http: HttpClient) { }
 
   getResume(): Observable<IResume>{
