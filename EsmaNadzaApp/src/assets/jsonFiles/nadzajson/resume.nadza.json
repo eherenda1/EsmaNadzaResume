@@ -2,8 +2,8 @@
     "highSchool": { 
 
         "name": "Treća gimnazija",
-        "shortDescription": "kratak opis",
-        "description":"puni opis"
+        "shortDescription": "kratak opis o srednjoj školi",
+        "description":"puni opis o srednjoj školi"
 
     },
 
@@ -16,7 +16,7 @@
 
     "work": { 
         "name": "posao",
-        "jobPosition": "uloga",
+        "jobPosition": "junior developer nadzy",
         "shortDescription": "kratak opis",
         "description":"puni opis"
     },
@@ -31,7 +31,8 @@
         "name": "hobby",
         "description":"puni opis",
         "images": [""]
-    }
+    },
+    "myDescription": "Ovo je opis o Nadzi."
 
 
 }

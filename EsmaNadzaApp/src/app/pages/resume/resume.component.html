@@ -1,4 +1,6 @@
 <div *ngIf="resume">
-    <h1>{{resume.university.name}}</h1>
-    <p>Ovo je neki text.</p>
+    <h2>Highschool: {{resume.highSchool.name}}</h2>
+    <p>{{resume.highSchool.shortDescription}}</p>
+    <h2>University: {{resume.university.name}}</h2>
+    <p>{{resume.university.shortDescription}}</p>
 </div>

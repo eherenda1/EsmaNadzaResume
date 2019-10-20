@@ -18,7 +18,7 @@ export class ContactComponent implements OnInit {
   ngOnInit(){
     this.route.parent.params.subscribe((params:any) => {
       this.code = params.code;
-      console.log(params);
+   
     })
    
    

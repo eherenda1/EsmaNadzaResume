@@ -18,11 +18,7 @@ export class ResumeComponent implements OnInit {
   ngOnInit(){
     this.route.parent.params.subscribe((params:any) => {
       this.code = params.code;
-      console.log(params);
     })
-   
-   
    this._resumeService.getResume(this.code).subscribe((data)=> this.resume = data);
-   
   }
 }

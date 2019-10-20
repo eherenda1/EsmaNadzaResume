@@ -1,37 +1,37 @@
 {
     "highSchool": { 
 
-        "name": "Treća gimnazija",
-        "shortDescription": "kratak opis",
-        "description":"puni opis"
+        "name": "Gimnazija Dobrinja",
+        "shortDescription": "kratak opis o srednjoj školi",
+        "description":"puni opis o srednjoj školi"
 
     },
 
     "university": { 
         
         "name": "Elektrotehnički fakultet",
-        "shortDescription": "kratak opis",
-        "description":"puni opis"
+        "shortDescription": "kratak opis o fakultetu",
+        "description":"puni opis o fakultetu"
     },
 
     "work": { 
-        "name": "posao",
-        "jobPosition": "uloga",
-        "shortDescription": "kratak opis",
-        "description":"puni opis"
+        "name": "ZIRA",
+        "jobPosition": "junior developer ems",
+        "shortDescription": "kratak opis posla",
+        "description":"puni opis posla "
     },
 
-    "hardSkills": ["skill1", "skill2", "skill3"],
+    "hardSkills": ["skill1esma", "skill2esma", "skill3esma"],
 
-    "softSkills": ["skill1", "skill2", "skill3"],
+    "softSkills": ["Sskill1esma", "Sskill2esma", "Sskill3esma"],
 
-    "languages": ["language1", "language2", "language3"],
+    "languages": ["language1esma", "language2esma", "language3esma"],
 
     "hobbiesInterests": { 
-        "name": "hobby",
+        "name": "hobbyEsma",
         "description":"puni opis",
-        "images": [""]
-    }
+        "images": ["https://i.ytimg.com/vi/h_QyTcPD1G4/maxresdefault.jpg"]
+    },
 
-
+    "myDescription": "Ovo je opis o Esmi."
 }

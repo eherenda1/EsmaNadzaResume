@@ -1,5 +1,6 @@
 <div class="head">
-    <h1> ovo je header</h1>
+   <h1 *ngIf="user">{{user.firstname}} {{user.lastname}}</h1>
+   <h2 *ngIf="resume">{{resume.work.jobPosition}}</h2>
     <ul>
         <li [routerLink]="['home']">Home</li>
         <li [routerLink]="['resume']">Resume</li>

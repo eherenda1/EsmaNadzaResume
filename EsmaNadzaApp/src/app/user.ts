@@ -1,8 +1,7 @@
 export interface IUser{
     id: number;
+    code: string;
     firstname: string;
     lastname: string;
-    username: string;
-    description: string;
     imageUrl: string;
 }

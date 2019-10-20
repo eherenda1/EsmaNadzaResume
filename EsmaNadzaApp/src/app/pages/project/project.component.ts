@@ -18,7 +18,7 @@ export class ProjectComponent {
     
       this.route.parent.params.subscribe((params:any) => {
         this.code = params.code;
-        console.log(params);
+        
       })
      
      
