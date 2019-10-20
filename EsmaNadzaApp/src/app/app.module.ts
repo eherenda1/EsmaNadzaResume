@@ -20,6 +20,7 @@ import {UsersService} from './users.service';
 import {ProjectsService} from './projects.service';
 import {HttpClientModule} from '@angular/common/http';
 import {ResumeService} from './resume.service';
+import {ContactService} from './contact.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import {ResumeService} from './resume.service';
   ],
   providers: [UsersService,
              ResumeService,
-             ProjectsService],
+             ProjectsService,
+             ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

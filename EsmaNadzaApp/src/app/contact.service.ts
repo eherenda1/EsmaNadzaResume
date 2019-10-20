@@ -1,19 +1,18 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { IResume } from './resume';
+import { IContact } from './contact';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-
-export class ResumeService {
+export class ContactService {
 
   constructor(private http: HttpClient) { }
 
-  getResume(code: string): Observable<IResume>{
+  getContact(code: string): Observable<IContact>{
     
   
-    return this.http.get<IResume>("/assets/jsonFiles/"+code+"json/resume."+code+".json")
+    return this.http.get<IContact>("/assets/jsonFiles/"+code+"json/contact."+code+".json")
   }
 }

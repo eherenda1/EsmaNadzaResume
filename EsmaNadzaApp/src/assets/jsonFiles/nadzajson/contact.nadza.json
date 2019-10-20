@@ -1,0 +1,15 @@
+{
+    "email": "nadza_mail",
+    "phoneNumber": 77777,
+    "address": {
+        "street": "Bregovi",
+        "hausNumber": 61
+    },
+    "place": "Doglodi",
+    "municipality": "Ilidža",
+    "town": "Sarajevo",
+    "ytLink": "youtubeN",
+    "igLink": "instagramN",
+    "fbLink": "facebookN",
+    "linkedLink": "linkedinN"
+  }

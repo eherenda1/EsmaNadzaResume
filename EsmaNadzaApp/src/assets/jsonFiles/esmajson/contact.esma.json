@@ -1,0 +1,15 @@
+{
+    "email": "esma_mail",
+    "phoneNumber": 22222,
+    "address": {
+        "street": "esminaUlica",
+        "hausNumber": 3
+    },
+    "place": "Dobrinja",
+    "municipality": "općina",
+    "town": "Sarajevo",
+    "ytLink": "youtubeE",
+    "igLink": "instagramE",
+    "fbLink": "facebookE",
+    "linkedLink": "linkedinE"
+  }
