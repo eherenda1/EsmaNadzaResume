@@ -8,7 +8,7 @@ import { IResume } from 'src/app/resume';
 @Component({
   selector: 'header-layout',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+ 
 })
 export class HeaderComponent {
   public users: IUser[];

@@ -3,7 +3,7 @@ export interface IUser{
     code: string;
     firstname: string;
     lastname: string;
-    imageUrl: string;
+    imgUrl: string;
     email: string;
     phoneNumber: number;
     address: Address;
@@ -14,6 +14,7 @@ export interface IUser{
     igLink: string;
     fbLink: string;
     linkedLink: string;
+    jobPosition:string;
     
 }
 

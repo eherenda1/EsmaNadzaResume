@@ -2,14 +2,26 @@
 [
     {
         
-    "name": "Esma projekat 1",
-    "shortDescription": " Esmaaaa kratak opis",
+    "name": "C# Aplikacija",
+    "shortDescription": "",
     "description":"puni opis",
     "images": [""]
     },
     
     {
-        "name": "Esma projekat 2",
+        "name": "Web Applicaton",
+        "shortDescription": "Esmaaaa drugi kratak opis",
+        "description":"puni opis",
+        "images": [""]
+    },
+    {
+        "name": "ASP.NET",
+        "shortDescription": "Esmaaaa drugi kratak opis",
+        "description":"puni opis",
+        "images": [""]
+    },
+    {
+        "name": "Blender",
         "shortDescription": "Esmaaaa drugi kratak opis",
         "description":"puni opis",
         "images": [""]
