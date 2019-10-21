@@ -1,23 +1,37 @@
-*{ 
-    //pozadine
-    $background1: black;
-    $background2: white;
+@import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
+ //Za user stranicu
+    //pozadina
+    $background1: white;
+    $background2: black;
+    $transp: 0.6; //da bude prozirna
 
-    
-    //text 
-
-    $mainfont: 'Vollkorn', serif;
-    $namefont: 18px;
-    $titlefont: 16px;
+    //tekst
+    $namefont: 24px;
+    $titlefont: 18px;
     $paragraphfont: 12px;
-    $color1: white;
-    $color2: black;
+    $textcolor1: black;
+    $textcolor2: white; 
+    $textstyle: 'Vollkorn', serif;
 
-
-    // slike
-    $round: 100%; //border radius;
-    $shadow1: 0 0 70px white;
-    $shadow2: 0 0 70px black;
-
+    //slika
+    $border-radius: 100%;
+    $shadow1: black;
+    $shadow2: white;
+    $picture-size: 50%;
     
-}
+    //Za CV stranicu
+
+    $footerbackground: #a14765;
+    $mainbackground: rgb(234, 229, 229); 
+    $maintextcolor: rgb( 77, 77, 77);
+
+    //da glavni blok bude centriran
+
+    $mainposition: relative;
+    $maindisplay: block;
+    $left: auto;
+    $right: auto;
+
+
+
+

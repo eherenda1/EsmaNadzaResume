@@ -5,7 +5,7 @@ import { ActivatedRoute } from "@angular/router";
 @Component({
   selector: 'project-page',
   templateUrl: './project.component.html',
-  styleUrls: ['./project.component.scss']
+
 })
 export class ProjectComponent {
   public code: string;

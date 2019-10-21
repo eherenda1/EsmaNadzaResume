@@ -6,7 +6,9 @@ import { IContact } from 'src/app/contact';
 @Component({
   selector: 'contact-page',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  
+  
+  
 })
 export class ContactComponent implements OnInit {
   public code: string;

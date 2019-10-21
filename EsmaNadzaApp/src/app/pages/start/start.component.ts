@@ -4,7 +4,7 @@ import { IUser } from 'src/app/user';
 @Component({
   selector: 'start-page',
   templateUrl: './start.component.html',
-  styleUrls: ['./start.component.scss']
+ 
 })
 export class StartComponent implements OnInit {
   public users= [];

@@ -7,6 +7,7 @@
         softSkills: string[];
         languages: string[];
         hobbiesInterests: IHobbiesInterests[];
+        myDescription: string;
     }
 
     export interface IHighSchool {
