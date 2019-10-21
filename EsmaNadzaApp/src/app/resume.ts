@@ -2,11 +2,11 @@
     export interface IResume {
         highSchool: IHighSchool;
         university: IUniversity;
-        work: IWork;
+        work: IWork[];
         hardSkills: string[];
         softSkills: string[];
         languages: string[];
-        hobbiesInterests: IHobbiesInterests;
+        hobbiesInterests: IHobbiesInterests[];
     }
 
     export interface IHighSchool {

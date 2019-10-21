@@ -14,12 +14,12 @@
         "description":"puni opis o fakultetu"
     },
 
-    "work": { 
+    "work": [{ 
         "name": "ZIRA",
         "jobPosition": "junior developer ems",
         "shortDescription": "kratak opis posla",
         "description":"puni opis posla "
-    },
+    }],
 
     "hardSkills": ["skill1esma", "skill2esma", "skill3esma"],
 
@@ -27,11 +27,11 @@
 
     "languages": ["language1esma", "language2esma", "language3esma"],
 
-    "hobbiesInterests": { 
+    "hobbiesInterests": [{ 
         "name": "hobbyEsma",
         "description":"puni opis",
         "images": ["https://i.ytimg.com/vi/h_QyTcPD1G4/maxresdefault.jpg"]
-    },
+    }],
 
     "myDescription": "Ovo je opis o Esmi."
 }

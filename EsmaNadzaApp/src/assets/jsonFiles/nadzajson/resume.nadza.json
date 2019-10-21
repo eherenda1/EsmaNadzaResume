@@ -14,12 +14,12 @@
         "description":"puni opis"
     },
 
-    "work": { 
+    "work": [{ 
         "name": "posao",
         "jobPosition": "junior developer nadzy",
         "shortDescription": "kratak opis",
         "description":"puni opis"
-    },
+    }],
 
     "hardSkills": ["skill1", "skill2", "skill3"],
 
@@ -27,11 +27,11 @@
 
     "languages": ["language1", "language2", "language3"],
 
-    "hobbiesInterests": { 
+    "hobbiesInterests": [{ 
         "name": "hobby",
         "description":"puni opis",
         "images": [""]
-    },
+    }],
     "myDescription": "Ovo je opis o Nadzi."
 
 
