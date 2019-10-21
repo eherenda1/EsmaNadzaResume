@@ -10,10 +10,17 @@ export class UsersService {
 
   private urlUsers = "/assets/jsonFiles/users.json";
   private users: IUser[];
+  private user: IUser;
   constructor(private http: HttpClient) { }
 
   getUsers(): Observable<IUser[]>{
     return this.http.get<IUser[]>(this.urlUsers)
   }
+ /* getUser(code: string): Observable<IUser>{
+    return this.http.get<IUser>()
+
+   
+
+  } */
  
 }

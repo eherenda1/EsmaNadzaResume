@@ -6,13 +6,12 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class ContactService {
+export class OneuserService {
 
   constructor(private http: HttpClient) { }
 
-  getContact(code: string): Observable<IUser>{
-    
-  
+  getUser(code: string): Observable<IUser>{
     return this.http.get<IUser>("/assets/jsonFiles/"+code+"json/user."+code+".json")
   }
 }
+

@@ -1,6 +1,11 @@
 {
+    "id": 1,
+    "code":"esma",
+    "firstname": "Esma",
+    "lastname": "Herenda",
+    "imgUrl": "/assets/esmaslike/esma.jpg",
     "email": "esma_mail",
-    "phoneNumber": 22222,
+    "phoneNumber": "062/095-994",
     "address": {
         "street": "esminaUlica",
         "hausNumber": 3

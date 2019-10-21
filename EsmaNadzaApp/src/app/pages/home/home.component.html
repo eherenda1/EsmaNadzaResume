@@ -1,3 +1,5 @@
-<img src="{{user.imgUrl}}">
+<div *ngIf="user">
+    <img src="{{user.imgUrl}}">
+</div>
 <h1 *ngIf="resume">{{resume.myDescription}}</h1>
 

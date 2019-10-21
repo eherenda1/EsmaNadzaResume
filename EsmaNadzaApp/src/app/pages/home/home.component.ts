@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UsersService } from 'src/app/users.service';
+import { OneuserService } from 'src/app/oneuser.service';
 import { ResumeService } from 'src/app/resume.service';
 import { ActivatedRoute } from "@angular/router";
 import { IUser } from 'src/app/user';
@@ -15,20 +15,15 @@ export class HomeComponent implements OnInit {
   public user: IUser;
   public code: string;
   public resume: IResume;
-  constructor(private _usersService: UsersService, private _resumeService: ResumeService, private route: ActivatedRoute) {
+  constructor(private _userService: OneuserService, private _resumeService: ResumeService, private route: ActivatedRoute) {
 
   }
   ngOnInit(){
     this.route.parent.params.subscribe((params:any) => {
       this.code = params.code;
     })
-    this._usersService.getUsers().subscribe((r)=> {
-      this.users = r;
-      this.users.forEach(element => {
-        if(element.code == this.code){
-          this.user = element;
-        }
-      });
+    this._userService.getUser(this.code).subscribe((r)=> {
+      this.user = r;
     });
    this._resumeService.getResume(this.code).subscribe((data)=> this.resume = data);
   }
