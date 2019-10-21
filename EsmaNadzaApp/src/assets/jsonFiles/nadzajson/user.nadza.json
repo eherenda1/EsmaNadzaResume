@@ -1,4 +1,9 @@
 {
+    "id": 2,
+    "code":"nadza",
+    "firstname": "Nadza",
+    "lastname": "Buhic",
+    "imgUrl": "/assets/nadzaslike/Nadza2.jpg",
     "email": "nadza_mail",
     "phoneNumber": 77777,
     "address": {
@@ -11,5 +16,6 @@
     "ytLink": "youtubeN",
     "igLink": "instagramN",
     "fbLink": "facebookN",
-    "linkedLink": "linkedinN"
+    "linkedLink": "linkedinN",
+    "jobPosition": "junior developer nadzy"
   }
