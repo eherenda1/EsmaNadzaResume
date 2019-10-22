@@ -1,14 +1,16 @@
 <div class="head">
-    <div *ngIf="user">
-   <h1 >{{user.firstname}} {{user.lastname}}</h1>
+    <div class="centriraj">
+    <div *ngIf="user" class="mainInformation">
+   <h1 class="ime" >{{user.firstname}} {{user.lastname}}</h1>
    <h2 >{{user.jobPosition}}</h2>
 </div>
-<div>
+<div class="meni">
     <ul>
         <li [routerLink]="['home']">Home</li>
-        <li [routerLink]="['resume']">Resume</li>
+        <li  [routerLink]="['resume']">Resume</li>
         <li [routerLink]="['projects']">Projects</li>
         <li [routerLink]="['contact']">Contact</li>
     </ul>
+</div>
 </div>
 </div>

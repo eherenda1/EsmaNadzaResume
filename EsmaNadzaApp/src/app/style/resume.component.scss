@@ -2,34 +2,73 @@
 
     background: $mainbackground;
     font-family: $textstyle;
+    color: $maintextcolor;   
+
 }
 
+body{
+    height: auto;
+    overflow: auto;
+    display: flex 1 1 auto;
+    
+    
+}
 
 .main{
-    background: red;
+
     width: 50%;
-    height: 60%;
+    height: auto;
     position: relative;
     display: block;
     margin-left: auto;
     margin-right: auto;
     
+    
+    
 }
 
+
+
 .title{
-    background: blue;
+    background: $footerbackground;
     border-radius: $border-radius;
     width: 150px;
     height: 150px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
 }
 
+.section{
+    color: $textcolor2;
+    border-radius:$border-radius;
+    text-align: center;
+    position: relative;
+    font-size: $subtitlefont;
+    top: 50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: $footerbackground;
+
+}
+
+
+
 .text{
-    background: white;
-    float: right;
+   
+    float: left;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
 .education{
-    background: green;
-    height: 20%;
+    
     display: block;
+    height: auto;
+    overflow: auto;
+    border: 2px solid black;
+    
+    
 }
