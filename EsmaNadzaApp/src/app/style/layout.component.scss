@@ -7,7 +7,7 @@
 .header{
     flex: 1 1 100px;
     //border-bottom: 2px solid $footerbackground;
-    box-shadow: 0 0 30px $maintextcolor;
+    box-shadow: 0 -5px 10px $maintextcolor;
     z-index:2;
 
 }
@@ -19,4 +19,5 @@
     flex: 1 0 150px;
     background-color: $footerbackground;
     position: relative;
+    box-shadow: 0 -1px 5px $maintextcolor;
 }
