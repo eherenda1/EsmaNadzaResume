@@ -6,7 +6,7 @@
 
 }
 
-body{
+.page{
     height: auto;
     overflow: auto;
     display: flex 1 1 auto;
@@ -16,8 +16,8 @@ body{
 
 .main{
 
-   /* width: 50%;
-    height: auto;
+    width: 100%;
+    /*height: auto;
     position: relative;
     display: block;
     margin-left: auto;
@@ -69,6 +69,7 @@ body{
     height: auto;
     overflow: auto;
     border: 2px solid black;
+   
     
     
 }
