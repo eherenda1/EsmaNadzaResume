@@ -6,12 +6,17 @@
 }
 .header{
     flex: 1 1 100px;
+    //border-bottom: 2px solid $footerbackground;
+    box-shadow: 0 0 30px $maintextcolor;
+    z-index:2;
+
 }
 .body{
     overflow-y: auto;
     flex: 1 1 100%;
 }
 .footer{
-    flex: 1 1 200px;
+    flex: 1 0 150px;
     background-color: $footerbackground;
+    position: relative;
 }

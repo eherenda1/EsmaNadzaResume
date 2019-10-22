@@ -1,52 +1,57 @@
 .foot{
     background-color: transparent;
     display: block;
-    position: $mainposition;
+
     margin-left: $left;
     margin-right: $right;
     height: 100%;
     width: 60%;
     display: flex;
     font-size:13px;
- 
+    display: table;
+    
     .contact{
-        height: 50%;
-        width:33.33%;
-      
+        height: 100%;
+        margin-right: 20px;
+        width:200px;
+        display: table-cell;
+        vertical-align: middle;
+
          div,img{
-           display: inline-flexbox;
+           display: inline-block;
          }
         
         
             img{
                 float: left;
-                width:12%;
+                width:70px;
             }
             .label{
-              margin-top: 2%;
+              margin-top: 20px;
               font-weight: bold;
              
             }
             p{
                 display: block;
-
                 color:white;
-
             }
+        &:last-child {
+            text-align: right;
+            flex:1 1 100%;
+           
+        }
         
     }
-    button{
-        width:13.33%;
-        float: right;
-        margin-top: 5%;
-        margin-left: 18%;
-        background-color: transparent; 
-        padding:0;
-        height: 30%;
-        color:white;
-        border-color: $mainbackground;
-        box-shadow: 0px 5px 20px $activecolor;
-      
+    button{       
+
+        top:60px;
+        right:20px;
+        background-color: $activecolor; 
+        font-weight:bold;
+        padding:5px 10px;
+        border-radius: 5px;
+        color: $footerbackground;
+        
     }
  
 }

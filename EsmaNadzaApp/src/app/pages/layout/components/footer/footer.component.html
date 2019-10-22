@@ -10,8 +10,19 @@
             <img  src="./assets/sharedphotos/contactIcon.png">
             <div>
            <p class="label">Contact:</p>
-        <p *ngIf="user"> {{user.email}}</p>
+            <p *ngIf="user"> {{user.email}}</p>
         </div>
     </div>
-    <button [routerLink]="['']">View other people</button>
+    <div class="contact" >
+            <img  src="./assets/sharedphotos/contactIcon.png">
+            <div>
+           <p class="label">Contact:</p>
+            <p *ngIf="user"> {{user.email}}</p>
+        </div>
+    </div>
+    
+    <div class="contact" >
+        <button [routerLink]="['']">View other people</button>
+    </div>
+    
 </div>
