@@ -1,11 +1,11 @@
 .head{
-    background-color: rgb(234, 229, 229);
+    background-color:   $mainbackground;
     height: 10%;
     width: 100%;
 }
 .mainInformation{
     float:left;
-    color: rgb(77, 77, 77);
+    color:  $maintextcolor;
     width: 35%;
     height: 100%;
 }
@@ -29,7 +29,7 @@ ul{
 li{
     margin-top: 11% ;
     display: inline-block;
-    color: rgb(77, 77, 77);
+    color: $maintextcolor;
     text-align: center;
     padding-left: 5%;
   
