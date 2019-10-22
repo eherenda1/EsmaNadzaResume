@@ -1,16 +1,14 @@
 <div class="head">
-    <div class="centriraj">
     <div *ngIf="user" class="mainInformation">
    <h1 class="ime" >{{user.firstname}} {{user.lastname}}</h1>
    <h2 >{{user.jobPosition}}</h2>
 </div>
-<div class="meni">
+<div class="meni" >
     <ul>
-        <li [routerLink]="['home']">Home</li>
-        <li  [routerLink]="['resume']">Resume</li>
-        <li [routerLink]="['projects']">Projects</li>
-        <li [routerLink]="['contact']">Contact</li>
+        
+        <li *ngFor="let item of meni"  [routerLink]="[item.url]" (click)="select(item)" [ngClass]="{active:selected == item}">{{item.title}}</li>
+      
     </ul>
 </div>
-</div>
+
 </div>

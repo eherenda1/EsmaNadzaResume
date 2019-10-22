@@ -11,15 +11,38 @@ import { IResume } from 'src/app/resume';
  
 })
 export class HeaderComponent {
+  public meni: any[];
   public users: IUser[];
   public user: IUser;
   public resume: IResume;
   public code: string;
-  constructor(private _userService: OneuserService, private _resumeService: ResumeService, private route: ActivatedRoute) {}
+  public selected:any;
+  constructor(private _userService: OneuserService, private _resumeService: ResumeService, private route: ActivatedRoute) {
+    this.meni = [
+      {
+        title:'Home',
+        url: "home"
+      },
+      {
+        title:'Resume',
+        url: "resume" 
+      },
+      {
+        title:'Projects',
+        url: "projects"
+      },
+      {
+        title:'Contact',
+        url: "contact"
+      }
+
+    ]
+  }
+
 
 
   ngOnInit(){
-
+    console.log(this.meni);
     this.route.params.subscribe((params:any) => {
       this.code = params.code;
     })
@@ -28,5 +51,9 @@ export class HeaderComponent {
      });
      
      
+  }
+
+  select(item) {
+    this.selected = item;
   }
 }
