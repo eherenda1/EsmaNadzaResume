@@ -4,7 +4,9 @@
     font-family: $textstyle;
 }
 
-div{
+
+.main{
+    background: red;
     width: 50%;
     height: 60%;
     position: relative;
@@ -12,4 +14,22 @@ div{
     margin-left: auto;
     margin-right: auto;
     
+}
+
+.title{
+    background: blue;
+    border-radius: $border-radius;
+    width: 150px;
+    height: 150px;
+}
+
+.text{
+    background: white;
+    float: right;
+}
+
+.education{
+    background: green;
+    height: 20%;
+    display: block;
 }
