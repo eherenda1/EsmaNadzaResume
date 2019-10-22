@@ -14,6 +14,14 @@ body, html{
     /*inicijalno se dodaju padding i margine pa ih treba uvijek namjestati*/
 
 }
+.page{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    height: 100%;
+    width: 60%;
+}
 
 
 

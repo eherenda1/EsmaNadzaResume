@@ -1,3 +1,16 @@
-.router{
-    height: 80%;
+.wrapper{
+    display:flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.header{
+    flex: 1 1 100px;
+}
+.body{
+
+    flex: 1 1 100%;
+}
+.footer{
+    flex: 1 1 200px;
 }
