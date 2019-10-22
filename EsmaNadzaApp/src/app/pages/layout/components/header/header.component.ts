@@ -20,19 +20,19 @@ export class HeaderComponent {
   constructor(private _userService: OneuserService, private _resumeService: ResumeService, private route: ActivatedRoute) {
     this.meni = [
       {
-        title:'Home',
+        title:'HOME',
         url: "home"
       },
       {
-        title:'Resume',
+        title:'RESUME',
         url: "resume" 
       },
       {
-        title:'Projects',
+        title:'PROJECTS',
         url: "projects"
       },
       {
-        title:'Contact',
+        title:'CONTACT',
         url: "contact"
       }
 

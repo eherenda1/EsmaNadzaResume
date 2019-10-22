@@ -1,3 +1,5 @@
-<ul *ngFor="let project of projects">
+<div class="page">
+  <ul *ngFor="let project of projects">
     <li [routerLink]="['layout/projects']"> <h1>{{project.name}}</h1> <br/> <h2>{{project.shortDescription}}</h2></li>
   </ul>
+</div>

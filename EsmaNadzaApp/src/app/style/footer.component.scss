@@ -1,6 +1,52 @@
 .foot{
- height: 100%;
-  width: 100%;
-  background-color: $footerbackground;
- display: block;
+    background-color: transparent;
+    display: block;
+    position: $mainposition;
+    margin-left: $left;
+    margin-right: $right;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    font-size:13px;
+ 
+    .contact{
+        height: 50%;
+        width:33.33%;
+      
+         div,img{
+           display: inline-flexbox;
+         }
+        
+        
+            img{
+                float: left;
+                width:12%;
+            }
+            .label{
+              margin-top: 2%;
+              font-weight: bold;
+             
+            }
+            p{
+                display: block;
+
+                color:white;
+
+            }
+        
+    }
+    button{
+        width:13.33%;
+        float: right;
+        margin-top: 5%;
+        margin-left: 18%;
+        background-color: transparent; 
+        padding:0;
+        height: 30%;
+        color:white;
+        border-color: $mainbackground;
+        box-shadow: 0px 5px 20px $activecolor;
+      
+    }
+ 
 }
