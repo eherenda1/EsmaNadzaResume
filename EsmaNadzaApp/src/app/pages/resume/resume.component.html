@@ -1,63 +1,88 @@
 <body class="page" *ngIf="resume">
 
     <div class="main">
-    <h1 class="maintitle">RESUME</h1>
+        <h1 class="maintitle">RESUME</h1>
+        <button>Export to pdf</button>
+
+
 
         <div class="cont">
-            <div class="title"><h1 class="section">Education</h1></div>
-            <div  class="text">
-               
+            <div class="title">
+                <h1 class="section">Education</h1>
+            </div>
+            <div class="text">
+
                 <h2>{{resume.university.name}}</h2>
                 <p>{{resume.university.shortDescription}}</p>
-                <p>{{resume.university.description}}</p>
+                <button>read more</button>
+                <p >{{resume.university.description}}</p>
                 <h2>{{resume.highSchool.name}}</h2>
                 <p>{{resume.highSchool.shortDescription}}</p>
                 <p>{{resume.highSchool.description}}</p>
             </div>
+
+            
         </div>
 
         <div class="cont">
-                <div class="title"><h1 class="section">Work experience</h1></div>
-                <div  class="text">
-                        <h2>Ovo je naslov</h2>
-                        <p>Ovo je tekst koji razmatramo </p>
+            <div class="title">
+                <h1 class="section">Work experience</h1>
+            </div>
+            <div *ngFor="let work of workE" class="text">
+                <h2 >{{work.jobPosition}}-{{work.name}}</h2>
+                <p>{{work.shortDescription}}</p>
+                <p>{{work.description}}</p>
+            </div>
+        </div>
+
+
+        <div class="cont">
+            <div class="title">
+                <h1 class="section">Skills</h1>
+            </div>
+            <div class="text">
+                <h2>Hard skills</h2>
+                <ul class="costumlist" *ngFor="let hskills of resume.hardSkills"> 
+                    <li class="elements">{{hskills}}</li>
+                </ul>
+
+                <h2>Soft skills</h2>
+                <ul class="costumlist" *ngFor="let sskills of resume.softSkills"> 
+                    <li class="elements">{{sskills}}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cont">
+            <div class="title">
+                <h1 class="section">Languages</h1>
+            </div>
+            <div class="text">
+                    <h2>Languages</h2>
+                <ul class="costumlist" *ngFor="let languages of resume.languages"> 
+                    <li class="elements">{{languages}}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cont">
+            <div class="title">
+                <h1 class="section">Hobbies and interests</h1>
+            </div>
+            <div *ngFor="let freetime of hobbiesInterestsE" class="text">
+                    <h2 >{{freetime.name}}</h2>
+                    <p>{{freetime.description}}</p>
+            
                 </div>
             </div>
 
-        
-        <div class="cont">
-            <div class="title"><h1 class="section">Skills</h1></div>
-            <div class="text">
-                <h2>Hard skills</h2>
-                
-                <h2>Soft skills</h2>
-                <p>Ovo je tekst koji razmatramo </p>
-            </div>
-        </div>
-        
-        <div class="cont">
-            <div class="title"><h1 class="section">Languages</h1></div>
-            <div class="text">
-                <h2>Ovo je naslov</h2>
-                <p>Ovo je tekst koji razmatramo </p>
-            </div>
+
+
+
+
+        <div>
+
         </div>
 
-        <div class="cont">
-            <div class="title"><h1 class="section">Hobbies and interests</h1></div>
-            <div class="text">
-                <h2>Ovo je naslov</h2>
-                <p>Ovo je tekst koji razmatramo </p>
-            </div>
-        </div>
-
-
-        
-        
-    
-    <div >
-    
-</div>
-
-</div>
+    </div>
 </body>

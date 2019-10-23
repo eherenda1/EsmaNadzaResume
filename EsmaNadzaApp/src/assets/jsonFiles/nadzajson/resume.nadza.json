@@ -15,13 +15,21 @@
     },
 
     "work": [{ 
-        "name": "posao",
+        "name": "Ime firme",
         "jobPosition": "junior developer nadzy",
         "shortDescription": "kratak opis",
         "description":"puni opis"
-    }],
+    },
+    { 
+        "name": "Investment marketing sales",
+        "jobPosition": "Call-agent",
+        "shortDescription": "kratak opis",
+        "description":"puni opis"
+    }
 
-    "hardSkills": ["skill1", "skill2", "skill3"],
+],
+
+    "hardSkills": ["painting", "skill2", "skill3"],
 
     "softSkills": ["skill1", "skill2", "skill3"],
 
