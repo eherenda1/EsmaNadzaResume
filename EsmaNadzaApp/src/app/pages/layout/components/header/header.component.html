@@ -9,6 +9,9 @@
         <li *ngFor="let item of meni"  [routerLink]="[item.url]" (click)="select(item)" [ngClass]="{active:selected == item}">{{item.title}}</li>
       
     </ul>
+ 
 </div>
-
+<div>
+<img  class="smallerMeni" src="assets/bars-solid.svg">
+</div>
 </div>
