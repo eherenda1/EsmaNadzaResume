@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ReadmoreService } from 'src/app/readmore.service';
-import { IResume } from 'src/app/resume';
+
 
 @Component({
   selector: 'app-resume-extended',
@@ -9,9 +9,30 @@ import { IResume } from 'src/app/resume';
 })
 export class ResumeExtendedComponent implements OnInit {
 
-  constructor() { }
+  public detail:any = {};
+
+  constructor(private readmore:ReadmoreService) { }
+       
 
   ngOnInit() {
-  }
+    this.readmore.get().subscribe(r=>{
+      this.detail = r;
+      console.log("Detail page", r)
+    })
+ 
+    /*this.route.parent.params.subscribe((params:any) => {
+      this.code = params.code;
+    })
 
+    this._readmoreService.getItem(this.item).subscribe((data)=> {
+      this.item = data;
+      
+    });
+
+    
+  }
+*/
+  
+
+}
 }

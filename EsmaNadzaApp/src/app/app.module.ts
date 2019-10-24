@@ -22,7 +22,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {ResumeService} from './resume.service';
 import {ContactService} from './contact.service';
 import { ResumeExtendedComponent } from './pages/resume/resume-extended/resume-extended.component';
-
+import {ReadmoreService} from './readmore.service';
 
 @NgModule({
   declarations: [
@@ -47,7 +47,8 @@ import { ResumeExtendedComponent } from './pages/resume/resume-extended/resume-e
   providers: [UsersService,
              ResumeService,
              ProjectsService,
-             ContactService],
+             ContactService,
+             ReadmoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
