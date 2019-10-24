@@ -1,17 +1,18 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <div class="head">
     <div *ngIf="user" class="mainInformation">
    <h1 class="ime" >{{user.firstname}} {{user.lastname}}</h1>
    <h2 >{{user.jobPosition}}</h2>
 </div>
-<div class="meni" >
-    <ul>
+<div class="meni" [ngClass] = "{active: show}" >
+    <ul (click)="show = false">
         
-        <li *ngFor="let item of meni"  [routerLink]="[item.url]" (click)="select(item)" [ngClass]="{active:selected == item}">{{item.title}}</li>
+        <li  *ngFor="let item of meni"  [routerLink]="[item.url]" (click)="select(item)" [ngClass]="{active:selected == item}">{{item.title}}</li>
       
     </ul>
  
 </div>
-<div>
-<img  class="smallerMeni" src="assets/bars-solid.svg">
-</div>
+
+    <i class="fas fa-bars fa-2x" (click)="show = !show"></i>
+
 </div>

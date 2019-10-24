@@ -21,19 +21,23 @@ export class HeaderComponent {
     this.meni = [
       {
         title:'HOME',
-        url: "home"
+        url: "home",
+        show:true
       },
       {
         title:'RESUME',
-        url: "resume" 
+        url: "resume",
+        show:true
       },
       {
         title:'PROJECTS',
-        url: "projects"
+        url: "projects",
+        show:true
       },
       {
         title:'CONTACT',
-        url: "contact"
+        url: "contact",
+        show:true
       }
 
     ]
@@ -56,4 +60,5 @@ export class HeaderComponent {
   select(item) {
     this.selected = item;
   }
+  
 }

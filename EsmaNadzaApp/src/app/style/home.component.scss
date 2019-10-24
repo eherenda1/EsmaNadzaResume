@@ -1,31 +1,100 @@
-.page{
-    display: flex;
+.home{
+    display: block;
+    padding-top: 6%;
 }
 .profilePic{
-    width: 100%;
-
+    float: left;
+    width: 385px;
+    height: 380px;
     border-radius: 50%;
     background-color:pink;
     overflow: hidden;
-    flex: 1 1 35%;
     img{
     width: 100%;
     object-fit:cover;
     }
 }
 .homeText{
-    flex: 1 1 50%;
-    h2,p{
-        margin-left: 70px;
-    }
+    width: 60%;
+    float:right;
     p{
-        margin-top: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
-    ul{
-       
-    }
+    
+   ul{
     li{
-     
-
+        display: inline-flex;
+        padding: 10px 10px;
+        list-style-type: none;
+      }
+       .fab{
+        color:$footerbackground;
+       }
+    
+   }
+            
+            
+}
+@media only screen and (max-width: 1700px) {
+    .home .profilePic{
+        width: 350px;
+        height: 350px;
+       
+    
+    }
+    .home .homeText{
+        width: 55%;
     }
 }
+    @media only screen and (max-width: 1500px) {
+        .home .profilePic{
+            width: 295px;
+            height: 295px;
+           
+        
+        }
+        }
+        @media only screen and (max-width: 1153px) {
+            
+            .home{
+                width: 85%;
+                padding-top:9%;
+      
+            }
+            .home .homeText{
+                width: 67%;
+            }
+              }
+
+    @media only screen and (max-width: 1089px){
+        .home{
+            padding-top: 5%;
+        }
+        .home .homeText{
+            width: 58%;
+        }
+    }
+    @media only screen and (max-width: 900px){
+        .home{
+            padding-top: 5%;
+            width:85%;
+        }
+        .home .homeText{
+            width: 55%;
+        }
+    }
+    @media only screen and (max-width: 830px){
+        .home .profilePic{
+          margin-left:25%;
+        }
+        .home .homeText{
+            width: 100%;
+            margin-top: 3%
+        }
+    }
+    @media only screen and (max-width: 660px){
+        .home .profilePic{
+            margin-left:19%;
+          }
+    }

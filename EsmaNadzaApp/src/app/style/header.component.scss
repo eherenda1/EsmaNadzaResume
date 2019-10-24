@@ -5,10 +5,14 @@
     height: 100%;
     width: 60%;
     display: flex;
-    .smallerMeni{
-        height: 30px;
+    .fas{
+        z-index: 100;
+        height: 42px;
         margin-top: 20px;
         margin-right: 20px;
+        color:$mainbackground;
+        background: #4D4D4D;
+        padding: 6px;
         display: none;
       
     }
@@ -55,7 +59,7 @@
   .head{
       width: 100%;
       display: flex;
-      .smallerMeni{
+      .fas{
           display: block;
       }
   }
@@ -72,7 +76,35 @@
     }
     
 }
-.meni{
-    display:none;
-}
+    .meni{
+        display: none;
+        
+        background-color: rgba($mainbackground,0.9);
+        position: fixed;
+        top: 0;
+        left:0;
+        right:0;
+        bottom:0;
+        
+        ul{
+            margin:0;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+                
+          
+        }
+        &.active{
+            
+            li{
+                display:block;
+                border: 1px solid $maintextcolor;
+                color: $maintextcolor;             
+            }
+           
+            display: inline-flex;
+        }
+    }
+
     }
