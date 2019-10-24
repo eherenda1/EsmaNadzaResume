@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 
 export class ResumeService {
-
+  
   constructor(private http: HttpClient) { }
 
   getResume(code: string): Observable<IResume>{

@@ -21,3 +21,10 @@
     position: relative;
     box-shadow: 0 -1px 5px $maintextcolor;
 }
+
+@media only screen and (max-width: 1089px) {
+    .footer{
+        flex: 1 0 250px;
+    }
+ 
+  }

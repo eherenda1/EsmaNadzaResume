@@ -63,6 +63,11 @@ h2{
     padding-top: 10px;
 }
 
+.readmore{
+    color: $footerbackground;
+    text-decoration: underline;
+    
+}
 
 @media only screen and (max-width: 1100px) {
     .text {

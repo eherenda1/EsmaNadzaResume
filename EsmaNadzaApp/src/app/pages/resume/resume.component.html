@@ -6,24 +6,22 @@
 
 
 
-        <div class="cont">
+        <div class="cont" *ngFor="let item of resume">
             <div class="title">
-                <h1 class="section">Education</h1>
+                <h1 class="section">{{item.title}}</h1>
             </div>
-            <div class="text">
+            <div class="text" *ngFor="let child of item.children">
 
-                <h2>{{resume.university.name}}</h2>
-                <p>{{resume.university.shortDescription}}</p>
-                <button>read more</button>
-                <p >{{resume.university.description}}</p>
-                <h2>{{resume.highSchool.name}}</h2>
-                <p>{{resume.highSchool.shortDescription}}</p>
-                <p>{{resume.highSchool.description}}</p>
+                <h2>{{child.name}}</h2>
+                <p>{{child.subject}}</p>
+                <p>{{child.shortDescription}}</p>
+                <div routerLink="readmore" (click)="selected(child)"> read</div>
+                <p *ngIf="!readMore">{{child.description}}</p>
             </div>
 
             
         </div>
-
+<!--
         <div class="cont">
             <div class="title">
                 <h1 class="section">Work experience</h1>
@@ -76,13 +74,12 @@
                 </div>
             </div>
 
-
-
-
-
+-->
         <div>
 
         </div>
 
     </div>
 </body>
+
+<router-outlet></router-outlet>

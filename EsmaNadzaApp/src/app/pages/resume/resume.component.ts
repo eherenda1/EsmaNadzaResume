@@ -9,12 +9,17 @@ import { IResume, IWork, IHobbiesInterests } from 'src/app/resume';
   templateUrl: './resume.component.html',
  
 })
+
 export class ResumeComponent implements OnInit {
   public code: string;
   public resume: IResume;
   public workE: IWork[];
   public hobbiesInterestsE: IHobbiesInterests[];
-  public readMore: boolean;
+  readMore: boolean = true;
+  state: boolean= true;
+  showme: boolean = true;
+
+  
 
   constructor(private _resumeService: ResumeService, private route: ActivatedRoute) {
 
@@ -23,6 +28,13 @@ export class ResumeComponent implements OnInit {
   wants2readMore(){
     this.readMore = !this.readMore;
   }
+
+  showthisbody(){
+    this.showme = !this.showme;
+  }
+
+  
+
   ngOnInit(){
     this.route.parent.params.subscribe((params:any) => {
       this.code = params.code;
@@ -32,10 +44,17 @@ export class ResumeComponent implements OnInit {
      this.workE = this.resume.work;
      this.hobbiesInterestsE = this.resume.hobbiesInterests;
    });
-   
+
    
   // this._resumeService.getResume(this.code).subscribe((data)=> this.resume.work = data);
 
    
   }
+  
+  selected(item){
+    this.resume.set(item)
+    console.log(item);
+
+  }
+  
 }

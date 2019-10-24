@@ -21,6 +21,8 @@ import {ProjectsService} from './projects.service';
 import {HttpClientModule} from '@angular/common/http';
 import {ResumeService} from './resume.service';
 import {ContactService} from './contact.service';
+import { ResumeExtendedComponent } from './pages/resume/resume-extended/resume-extended.component';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import {ContactService} from './contact.service';
     ContactComponent, 
     ProjectComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ResumeExtendedComponent
   ],
   imports: [
     BrowserModule,
