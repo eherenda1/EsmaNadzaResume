@@ -1,0 +1,48 @@
+.projects{
+    display: block;
+}
+.project{
+    display: flex;
+    height:50%;
+    border-top: 1px solid $maintextcolor;
+ 
+}
+.mainPr{
+    float: left;
+    width: 385px;
+    height: 90%;
+    margin-top:  16px;
+    background-color: pink;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.proj{
+    
+        background: $activecolor;
+        border-radius: $border-radius;
+        width: 96px;
+        height: 96px;
+        float: left;
+        margin-left: 10px;
+    
+       
+    
+    
+}
+.name{
+    background: $activecolor;
+    font-size: 17px;
+}
+.up{
+    border-bottom: 1px solid $maintextcolor;
+    height: 40%;
+}
+.text{
+    p{
+        margin-top: 3%;
+    }
+}

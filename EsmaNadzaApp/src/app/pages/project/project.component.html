@@ -1,5 +1,24 @@
-<div class="page">
-  <ul *ngFor="let project of projects">
-    <li [routerLink]="['layout/projects']"> <h1>{{project.name}}</h1> <br/> <h2>{{project.shortDescription}}</h2></li>
-  </ul>
+<div class="page projects">
+    <h1 class="maintitle">PROJECTS</h1>
+
+
+
+  <div class=" project" *ngFor="let project of projects">
+     <div class="mainPr">
+          <img src="{{project.mainImage}}"> 
+        </div>
+      <div class="text">
+        <div class="up">
+        <div class=" proj">
+          <h1 class="section name">{{project.name}}</h1>
+        </div>
+      </div>
+      <p>{{project.shortDescription}}</p>
+      </div>
+     
+    
+         
+      </div>
+  
 </div>
+

@@ -52,7 +52,8 @@ export class ResumeComponent implements OnInit {
   }
   
   selected(item){
-    this.resume.set(item)
+ /*
+    this.resume.set(item);*/
     console.log(item);
 
   }

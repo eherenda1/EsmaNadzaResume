@@ -1,52 +1,106 @@
-{
-    "highSchool": { 
-
-        "name": "Gymnasium Dobrinja",
-        "shortDescription": "2012-2016, Matematics and Informatics",
-        "description":""
-
-    },
-
-    "university": { 
+[
+    {   
+        "title":"Education",
+        "children":[
+            { 
+                "name": "Gymnasium Dobrinja",
+                "subject":"",
+                "shortDescription": "2012-2016, Matematics and Informatics",
+                "description":"",
+                "images":[]
+            },
+            { 
         
-        "name": "Faculty of Electrical Engineering, University of Sarajevo",
-        "shortDescription": "2016-2019, Computer Science and Informatics",
-        "description":"dgdfgdfgd"
+                "name": "Faculty of Electrical Engineering, University of Sarajevo",
+                "subject":"",
+                "shortDescription": "2016-2019, Computer Science and Informatics",
+                "description":"",
+                "images":[]
+            }
+        ]
     },
-
-    "work": [{ 
-        "name": "ZIRA",
-        "jobPosition": "Junior developer",
-        "shortDescription": "Oct 2019 - Present",
-        "description":""
-    }],
-
-    "hardSkills": ["C", "C++", "C#","HTML5","CSS3","JavaScript","Node.js","ASP.NET","SQL","Blender 3D Modeling","Microsoft Office"],
-
-    "softSkills": ["Active listening", "Perseverance", "Teamwork", "Flexibility","Extroversion","Emotional Intelligence","Written and Oral communication","Creativity and Problem solving"],
-
-    "languages": ["Bosnian", "English"],
-
-    "hobbiesInterests": [{ 
-        "name": "Writing",
-        "description":"",
-        "images": [""]
+    {   
+        "title":"Work experience",
+        "children":[
+            { 
+                "name": "ZIRA",
+                "subject": "Junior developer",
+                "shortDescription": "Oct 2019 - Present",
+                "description":"",
+                "images":[]
+            }
+        ]
     },
-    { 
-        "name": "Reading",
-        "description":"",
-        "images": [""]
+    {   
+        "title":"Skills",
+        "children":[
+            { 
+                "name": "Hard skills",
+                "subject": "",
+                "shortDescription": "",
+                "description":"",
+                "images":[],
+                "skills":["C", "C++", "C#","HTML5","CSS3","JavaScript","Node.js","ASP.NET","SQL","Blender 3D Modeling","Microsoft Office"]
+            },
+            { 
+                "name": "Soft skills",
+                "subject": "",
+                "shortDescription": "",
+                "description":"",
+                "images":[],
+                "skills":["Active listening", "Perseverance", "Teamwork", "Flexibility","Extroversion","Emotional Intelligence","Written and Oral communication","Creativity and Problem solving"]
+            }
+        ]
     },
-    { 
-        "name": "Volleyball",
-        "description":"",
-        "images": [""]
+    {   
+        "title":"Languages",
+        "children":[
+            { 
+                "name": "Languages",
+                "subject": "",
+                "shortDescription": "",
+                "description":"",
+                "images":[],
+                "skills":["Bosnian", "English"]
+            }
+        ]
     },
-    { 
-        "name": "Psychology",
-        "description":"",
-        "images": [""]
-    }],
+    {   
+        "title":"Hobbies and interests",
+        "children":[
+            { 
+                "name": "Writing",
+                "subject": "",
+                "shortDescription": "",
+                "description":"",
+                "images":[],
+                "skills":[]
+            },
+            { 
+                "name": "Reading",
+                "subject": "",
+                "shortDescription": "",
+                "description":"",
+                "images":[],
+                "skills":[]
+            },
+            { 
+                "name": "Volleyball",
+                "subject": "",
+                "shortDescription": "",
+                "description":"",
+                "images":[],
+                "skills":[]
+            },
+            { 
+                "name": "Psychology",
+                "subject": "",
+                "shortDescription": "",
+                "description":"",
+                "images":[],
+                "skills":[]
+            }
+        ]
+    }
 
-    "myDescription": "I am a detail-oriented electrical engineering student who is motivated and eager to broaden her knowledge and understanding in the area of software engineering."
-}
+]
