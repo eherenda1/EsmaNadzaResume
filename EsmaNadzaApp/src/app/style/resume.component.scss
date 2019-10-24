@@ -1,18 +1,6 @@
-*{
-
-   
-    font-family: $textstyle;
-    color: $maintextcolor;   
-
-}
-
-
 .main{
-
     width: 100%;
-    
 }
-
 
 .title{
     background: $footerbackground;
@@ -20,10 +8,9 @@
     width: 140px;
     height: 140px;
     float: left;
-    margin-left: 3%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .section{
@@ -38,45 +25,84 @@
     background: $footerbackground;
     margin: 0 auto;
     word-wrap: break-word;
-
 }
 
-
 .text{
-    
-    
     width: 70%;
     float: left;
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: justify;
+}
 
+.costumlist{
+    margin-left: 30px;
 }
 
 .cont{
-    
-    
     display: block;
     height: auto;
     overflow: auto;
     border-top: 1px solid $maintextcolor;
-   
+}
+
+button{
+    top:60px;
+    right:20px;
+    cursor: pointer;
+    background-color: $footerbackground;
+    font-weight:bold;
+    padding:5px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+h2{
+    padding-top: 10px;
+}
+
+.readmore{
+    color: $footerbackground;
+    text-decoration: underline;
+    
 }
 
 @media only screen and (max-width: 1100px) {
     .text {
         width: 50%;
-        
-    }
-  }
+   }
+}
 
-  @media only screen and (max-width: 860px) {
+@media only screen and (max-width: 860px) {
     .text {
         float: none;
         width: 70%;
-        
+        text-align: center;
         clear: both;
-       
-    }
-  }
+        margin: 0 auto;
+        margin-top: 10px;
+   }
+    .title {
+        float: none;
+        width: 160px;
+        height: 160px;
+        margin: 0 auto;
+   }
+    h2{
+        text-align: center;
+   }
+    .cont{
+        padding-top: 12px;
+        padding-bottom: 12px;
+   }
+
+   .elements{
+    margin: 0 auto;
+    width:80px;
+   }
+}
+
+
+

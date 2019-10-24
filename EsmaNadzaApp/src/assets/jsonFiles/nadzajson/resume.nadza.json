@@ -1,38 +1,89 @@
-{
-    "highSchool": { 
-
-        "name": "Treća gimnazija",
-        "shortDescription": "kratak opis o srednjoj školi",
-        "description":"puni opis o srednjoj školi.is o sreis o srednjoj školiis o srednjoj školiis o srednjoj školiis o srednjoj školiis o srednjoj školi "
-
-    },
-
-    "university": { 
+[
+    {   
+        "title":"Education",
+        "children":[
+            { 
+                "name": "Treća gimnazija",
+                "subject":"",
+                "shortDescription": "kratak opis o srednjoj školi",
+                "description":"puni opis o srednjoj školi.is o sreis o srednjoj školiis o srednjoj školiis o srednjoj školiis o srednjoj školiis o srednjoj školi ",
+                "images":[]
+            },
+            { 
         
-        "name": "Elektrotehnički fakultet",
-        "shortDescription": "kratak opis",
-        "description":"puni opis"
+                "name": "Elektrotehnički fakultet",
+                "subject":"",
+                "shortDescription": "kratak opis",
+                "description":"puni opis",
+                "images":[]
+            }
+        ]
     },
+    {   
+        "title":"Work experience",
+        "children":[
+            { 
+                "name": "Ime firme",
+                "subject": "junior developer nadzy",
+                "shortDescription": "kratak opis",
+                "description":"puni opis",
+                "images":[]
+            },
+            { 
+                "name": "Investment marketing sales",
+                "subject": "Call-agent",
+                "shortDescription": "kratak opis",
+                "description":"puni opis",
+                "images":[]
+            }
+        ]
+    },
+    {   
+        "title":"Skills",
+        "children":[
+            { 
+                "name": "Hard skills",
+                "subject": "junior developer nadzy",
+                "shortDescription": "kratak opis",
+                "description":"puni opis",
+                "images":[],
+                "skils":["painting", "skill2", "skill3"]
+            },
+            { 
+                "name": "Soft skills",
+                "subject": "Call-agent",
+                "shortDescription": "kratak opis",
+                "description":"puni opis",
+                "images":[],
+                "skils":["skill1", "skill2", "skill3"]
+            }
+        ]
+    },
+    {   
+        "title":"Languages",
+        "children":[
+            { 
+                "name": "Languages",
+                "subject": "junior developer nadzy",
+                "shortDescription": "kratak opis",
+                "description":"puni opis",
+                "images":[],
+                "skils":["language1", "language2", "language3"]
+            }
+        ]
+    },
+    {   
+        "title":"Hobbies and interests",
+        "children":[
+            { 
+                "name": "hobby",
+                "subject": "hobby",
+                "shortDescription": "kratak opis hobby",
+                "description":"puni opis hobby",
+                "images":[],
+                "skils":[]
+            }
+        ]
+    }
 
-    "work": [{ 
-        "name": "posao",
-        "jobPosition": "junior developer nadzy",
-        "shortDescription": "kratak opis",
-        "description":"puni opis"
-    }],
-
-    "hardSkills": ["skill1", "skill2", "skill3"],
-
-    "softSkills": ["skill1", "skill2", "skill3"],
-
-    "languages": ["language1", "language2", "language3"],
-
-    "hobbiesInterests": [{ 
-        "name": "hobby",
-        "description":"puni opis",
-        "images": [""]
-    }],
-    "myDescription": "Ovo je opis o Nadzi."
-
-
-}
+]
