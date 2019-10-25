@@ -4,7 +4,7 @@ import { ResumeService } from 'src/app/resume.service';
 import { ActivatedRoute } from "@angular/router";
 import { IUser } from 'src/app/user';
 import { IResume } from 'src/app/resume';
-
+ 
 @Component({
   selector: 'home-page',
   templateUrl: './home.component.html',
@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   public code: string;
   public resume: IResume;
   constructor(private _userService: OneuserService, private _resumeService: ResumeService, private route: ActivatedRoute) {
-
+ 
   }
   ngOnInit(){
     this.route.parent.params.subscribe((params:any) => {

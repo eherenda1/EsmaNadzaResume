@@ -4,8 +4,6 @@
         <h1 class="maintitle">RESUME</h1>
         <button>Export to pdf</button>
 
-
-
         <div class="cont" *ngFor="let item of resume">
             <div class="title">
                 <h1 class="section">{{item.title}}</h1>
@@ -19,9 +17,9 @@
                 <p *ngIf="!readMore">{{child.description}}</p>
             </div>
 
-            
+
         </div>
-<!--
+        <!--
         <div class="cont">
             <div class="title">
                 <h1 class="section">Work experience</h1>

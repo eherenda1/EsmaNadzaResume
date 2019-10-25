@@ -1,0 +1,45 @@
+.prex {
+    .details{
+        width:100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        .listPic{
+            display: flex;
+            margin-left: 15%;
+            
+        .images{
+          
+            margin-left: 2%;
+            margin-right:2%;
+        }
+        img{
+            width: 552px;
+            height: 357px;
+            margin-top: 25px;
+          
+            margin-right: 2%;
+             
+        }
+    }
+    .pdescription{
+        padding-top: 25px;
+    }
+}
+    h1{
+    border-bottom: 1px solid $maintextcolor;
+}
+button{
+    height: 7%;
+    width: 4%;
+    margin-top: 20%;
+
+}
+.bpic{
+    height: 7%;
+    width: 4%;
+    margin-top: 20%;
+    background-color: rgba($mainbackground,0.9);
+    color:$maintextcolor;
+    font-size: 17px;
+}
+}

@@ -1,0 +1,18 @@
+<div (shift)="shift($event)" class="page prex">
+    <button (click)="left()">
+        <</button> <div *ngIf="detail" class="details">
+            <h1>{{detail.name}}</h1>
+            <div class="listPic">
+            <button class="bpic" (click)="leftI()">
+                <</button> 
+                <div class="images">
+                    <img src="{{image}}">
+                </div>
+<button class="bpic" (click)="rightI()">></button>
+            </div>
+<div class="pdescription">
+    {{detail.description}}
+</div>
+</div>
+<button (click)="right()">></button>
+</div>

@@ -10,6 +10,7 @@ import { ProjectComponent } from './pages/project/project.component';
 import {HeaderComponent} from './pages/layout/components/header/header.component';
 import {FooterComponent} from './pages/layout/components/footer/footer.component';
 import {ResumeExtendedComponent} from './pages/resume/resume-extended/resume-extended.component';
+import {ProjectExtendedComponent} from './pages/project/project-extended/project-extended.component';
 
 const routes: Routes = [
   {path: '', component:StartComponent},
@@ -22,7 +23,12 @@ const routes: Routes = [
         { path: 'readmore', component:ResumeExtendedComponent},
       ]
     },
-      { path:'projects', component:ProjectComponent},
+      { path:'projects', component:ProjectComponent
+  /*    children: [
+        { path: 'projects/readmore', component:ProjectExtendedComponent},
+      ]*/
+    },
+    { path: 'projects/readmore', component:ProjectExtendedComponent},
       { path:'contact', component:ContactComponent},
     ]
   }
