@@ -8,16 +8,19 @@
             <div class="title">
                 <h1 class="section">{{item.title}}</h1>
             </div>
+
+        
+            
             <div class="text" *ngFor="let child of item.children">
 
-                <h2>{{child.name}}</h2>
+                <h2 class="subtitle">{{child.name}}</h2>
                 <p>{{child.subject}}</p>
                 <p>{{child.shortDescription}}</p>
                 <div routerLink="readmore" (click)="selected(child)"> read</div>
                 <p *ngIf="!readMore">{{child.description}}</p>
             </div>
-
-
+       
+        
         </div>
         <!--
         <div class="cont">

@@ -1,3 +1,20 @@
-<ul *ngFor="let user of users">
-    <li [routerLink]="['layout',user.code,'home']">{{user.firstname}} {{user.lastname}}</li>
-  </ul>
+
+
+<div class="personcontainer">
+<div *ngFor="let user of users" class="personwrapper">
+ <div class="secondpersonwrapper">
+  <div [routerLink]="['layout',user.code,'home']" class="person">
+      <div  class="profilePic">
+          <img  src="{{user.imgUrl}}"> 
+          
+
+        </div>
+
+       
+    
+</div>
+<h1 [routerLink]="['layout',user.code,'home']" class="imestart" >{{user.firstname}} {{user.lastname}}</h1>
+</div>
+</div>
+</div>
+
