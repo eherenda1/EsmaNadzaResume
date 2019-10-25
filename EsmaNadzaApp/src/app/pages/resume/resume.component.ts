@@ -48,7 +48,7 @@ export class ResumeComponent implements OnInit {
   }
   
   selected(item){
-    this.readmore.set(item);
+    //this.readmore.set(item);
   }
   
 }
