@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ResumeService } from 'src/app/resume.service';
+import { ReadmoreService } from 'src/app/readmore.service';
 import { ActivatedRoute } from "@angular/router";
 import { IResume, IWork, IHobbiesInterests } from 'src/app/resume';
 
@@ -21,24 +22,19 @@ export class ResumeComponent implements OnInit {
 
   
 
-  constructor(private _resumeService: ResumeService, private route: ActivatedRoute) {
+  constructor(private _resumeService: ResumeService, private readmore:ReadmoreService, private route: ActivatedRoute) {
 
   }
   
-  wants2readMore(){
-    this.readMore = !this.readMore;
-  }
-
-  showthisbody(){
-    this.showme = !this.showme;
-  }
-
+ 
   
 
   ngOnInit(){
     this.route.parent.params.subscribe((params:any) => {
       this.code = params.code;
     })
+
+
    this._resumeService.getResume(this.code).subscribe((data)=> {
      this.resume = data;
      this.workE = this.resume.work;
@@ -52,10 +48,7 @@ export class ResumeComponent implements OnInit {
   }
   
   selected(item){
- /*
-    this.resume.set(item);*/
-    console.log(item);
-
+    this.readmore.set(item);
   }
   
 }
