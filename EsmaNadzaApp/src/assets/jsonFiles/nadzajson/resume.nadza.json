@@ -3,18 +3,18 @@
         "title":"Education",
         "children":[
             { 
-                "name": "Treća gimnazija",
+        
+                "name": "Faculty of Electrical Engineering, University of Sarajevo",
                 "subject":"",
-                "shortDescription": "kratak opis o srednjoj školi",
-                "description":"puni opis o srednjoj školi.is o sreis o srednjoj školiis o srednjoj školiis o srednjoj školiis o srednjoj školiis o srednjoj školi ",
+                "shortDescription": "2016-2019, Telecommunication",
+                "description":"Full descripton what I've done ",
                 "images":[]
             },
             { 
-        
-                "name": "Elektrotehnički fakultet",
+                "name": "Third gymnasium, Sarajevo",
                 "subject":"",
-                "shortDescription": "kratak opis",
-                "description":"puni opis",
+                "shortDescription": "2012-2016",
+                "description":"I attended the Third gymnasium in Sarajevo as a student of the language department. This gave me the opportunity to increase my knowledge of the english and german language, where I also learned some french too.",
                 "images":[]
             }
         ]
@@ -23,17 +23,17 @@
         "title":"Work experience",
         "children":[
             { 
-                "name": "Ime firme",
-                "subject": "junior developer nadzy",
-                "shortDescription": "kratak opis",
+                "name": "Zira",
+                "subject": "Junior developer",
+                "shortDescription": "2019.-",
                 "description":"puni opis",
                 "images":[]
             },
             { 
                 "name": "Investment marketing sales",
                 "subject": "Call-agent",
-                "shortDescription": "kratak opis",
-                "description":"puni opis",
+                "shortDescription": "5.8.2019-30.9.2019",
+                "description":"In order to get some work experience and to improve my communication skills and abilities, I've decided to use my free time and to work as a call-agent. The company coorporates with a german electronic industriy and therefor people who knew german were needed to work as call-agents. Because of my good german knowledge I've got  the job. ",
                 "images":[]
             }
         ]
@@ -43,19 +43,19 @@
         "children":[
             { 
                 "name": "Hard skills",
-                "subject": "junior developer nadzy",
+                "subject": "",
                 "shortDescription": "kratak opis",
                 "description":"puni opis",
                 "images":[],
-                "skils":["painting", "skill2", "skill3"]
+                "skils":["VHDL", "Matlab", "C", "C++"]
             },
             { 
                 "name": "Soft skills",
-                "subject": "Call-agent",
-                "shortDescription": "kratak opis",
-                "description":"puni opis",
+                "subject": "",
+                "shortDescription": "",
+                "description":"",
                 "images":[],
-                "skils":["skill1", "skill2", "skill3"]
+                "skils":["Time management", "Organisation", "Presentation skills"]
             }
         ]
     },
@@ -68,7 +68,7 @@
                 "shortDescription": "kratak opis",
                 "description":"puni opis",
                 "images":[],
-                "skils":["language1", "language2", "language3"]
+                "skils":["Bosnian/Serbian/Croatian", "German (C1)", "English"]
             }
         ]
     },
@@ -76,7 +76,24 @@
         "title":"Hobbies and interests",
         "children":[
             { 
-                "name": "hobby",
+                "name": "Painting",
+                "subject": "hobby",
+                "shortDescription": "kratak opis hobby",
+                "description":"puni opis hobby",
+                "images":[],
+                "skils":[]
+            },
+    
+            { 
+                "name": "Writing stories",
+                "subject": "hobby",
+                "shortDescription": "kratak opis hobby",
+                "description":"puni opis hobby",
+                "images":[],
+                "skils":[]
+            },
+            { 
+                "name": "Reading",
                 "subject": "hobby",
                 "shortDescription": "kratak opis hobby",
                 "description":"puni opis hobby",
@@ -84,6 +101,7 @@
                 "skils":[]
             }
         ]
+
     }
 
 ]
