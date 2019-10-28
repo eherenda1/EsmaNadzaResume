@@ -9,10 +9,22 @@
 <h2>Follow me:</h2>
 
 <ul>
-    <li><a href="{{user.fbLink}}"><i class="fab fa-facebook fa-4x"></i></a></li>
-    <li><a href="{{user.igLink}}"><i class="fab fa-instagram fa-4x"></i></a></li>
-    <li><a href="{{user.linkedLink}}"><i class="fab fa-linkedin fa-4x"></i></a></li>
-    <li><a href="{{user.ytLink}}"><i class="fab fa-youtube-square fa-4x"></i></a></li>
+    <li [ngClass]="{
+      'facebook' : user.fbLink != '',
+      'negative' : user.fbLink == ''
+   }"><a href="{{user.fbLink}}"><i   class="fab fa-facebook fa-4x"></i></a></li>
+    <li [ngClass]="{
+      'positive' : user.igLink != '',
+      'negative' : user.igLink == ''
+   }"><a href="{{user.igLink}}"><i class="fab fa-instagram fa-4x"></i></a></li>
+    <li [ngClass]="{
+      'linkedLink' : user.linkedLink != '',
+      'negative' : user.linkedLink == ''
+   }" ><a href="{{user.linkedLink}}"><i  class="fab fa-linkedin fa-4x"></i></a></li>
+    <li [ngClass]="{
+      'youtube' : user.ytLink != '',
+      'negative' : user.ytLink == ''
+   }"><a href="{{user.ytLink}}"><i  class="fab fa-youtube-square fa-4x"></i></a></li>
   </ul>
 </div>
 </div>

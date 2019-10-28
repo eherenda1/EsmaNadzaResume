@@ -27,11 +27,32 @@
         display: inline-flex;
         padding: 10px 10px;
         list-style-type: none;
+        .fa-instagram{
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip: text;
+                    /* Also define standard property for compatibility */
+                    background-clip: text;
+            -webkit-text-fill-color: transparent
+           }
+           .fa-youtube-square{
+            color:red;
+        }
+        .fa-facebook{
+            color:  rgb(66,103,178)
+         }
+         .fa-linkedin{
+            color: rgb(40,103,178);
+        }
       }
-       .fab{
-        color:$footerbackground;
-       }
+       
     
+   }
+  
+
+
+  
+ .negative{
+       display: none;
    }
             
             
