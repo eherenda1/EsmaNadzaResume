@@ -4,8 +4,7 @@ import { ReadmoreService } from 'src/app/readmore.service';
 
 @Component({
   selector: 'app-resume-extended',
-  templateUrl: './resume-extended.component.html',
-  styleUrls: ['./resume-extended.component.scss']
+  templateUrl: './resume-extended.component.html'
 })
 export class ResumeExtendedComponent implements OnInit {
 
