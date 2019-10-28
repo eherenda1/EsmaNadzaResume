@@ -7,9 +7,12 @@
 
         
         <div class="cont" *ngFor="let item of resume">
-            <div class="wrapper1"><div class="title">
+            <div class="wrapper1">
+                <div class="title">
                    <h1 class="section" >{{item.title}}</h1>
-            </div> </div> 
+            </div>
+         </div> 
+
         
             <div class="wrapper2">
             <div class="textresume" *ngFor="let child of item.children">
@@ -27,6 +30,7 @@
         
     <div></div>
   </div>
+
 </body>
 
 <router-outlet></router-outlet>

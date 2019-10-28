@@ -1,26 +1,32 @@
 <body class="page" *ngIf="detail">
 
+    <div class="contreadmore">
+        <div class="holder">
+        <div class="wrapper1">
+            <div class="title">
+                <h1 class="section">{{caption}}</h1>
+            </div>
+        </div>
 
+        <div class="wrapper2">
+            <div class="textresume">
 
+                <h2 class="subtitle">{{detail.name}}</h2>
+                <p>{{detail.subject}}</p>
+                <p>{{detail.description}}</p>
 
+            </div>
 
-<div class="cont" >
-    <div class="wrapper1"><div class="title">
-           <h1 class="section"  >{{caption}}</h1>
-    </div> </div> 
-
-    <div class="wrapper2">
-    <div class="textresume">
-
-        <h2 class="subtitle">{{detail.name}}</h2>
-        <p>{{detail.subject}}</p>
-        <p>{{detail.description}}</p>
+            
+        </div>
+        </div>
+        <div class="options">
+        <div class="previous"><<Previous</div>
+        <div class="next">Next>></div>
         
         
     </div>
-
-</div>
-</div>
-
+    </div>
+    
 
 </body>

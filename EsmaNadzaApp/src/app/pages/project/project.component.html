@@ -1,25 +1,29 @@
-<div class="page projects">
+<div class="page">
+  <div class="projects">
     <h1 class="maintitle">PROJECTS</h1>
 
 
 
   <div class=" project" *ngFor="let project of projects">
-     <div class="mainPr">
+     <div class="holder"><div class="mainPr">
           <img src="{{project.mainImage}}"> 
-        </div>
+        </div> 
+      </div>
       <div class="text">
         <div class="up">
-        <div class=" proj">
-          <h1 class="section name">{{project.name}}</h1>
+        <div class="proj">
+          <div class="sectionname">{{project.name}}</div>
         </div>
       </div>
-      <p>{{project.shortDescription}}</p>
+      <div><div class="down">
+      <div>{{project.shortDescription}}</div>
       
-      <a  routerLink="readmore" (click)="selected(project)">Read more>></a>
+      <div><a  routerLink="readmore" (click)="selected(project)">Read more>></a></div>
+      
     
       </div>
-     
-    
+    </div>
+  </div>
          
       </div>
   
