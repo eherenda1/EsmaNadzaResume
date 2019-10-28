@@ -16,15 +16,17 @@
         display: table-cell;
         vertical-align: middle;
 
-         div,img{
+         div,.far,.fas{
            display: inline-block;
          }
         
         
-            img{
-                float: left;
-                width:70px;
-            }
+           .far, .fas{
+               color: $activecolor;
+           }
+           .data{
+               padding-left:11px;
+           }
             .label{
               margin-top: 20px;
               font-weight: bold;
