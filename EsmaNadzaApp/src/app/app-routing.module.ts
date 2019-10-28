@@ -18,11 +18,12 @@ const routes: Routes = [
     component:LayoutComponent,
     children: [
       { path:'home', component:HomeComponent},
-      { path:'resume', component:ResumeComponent,
-      children: [
+      { path:'resume', component:ResumeComponent},
+      /*children: [
         { path: 'readmore', component:ResumeExtendedComponent},
       ]
-    },
+    },*/
+    { path: 'resume/details', component: ResumeExtendedComponent},
       { path:'projects', component:ProjectComponent
   /*    children: [
         { path: 'projects/readmore', component:ProjectExtendedComponent},

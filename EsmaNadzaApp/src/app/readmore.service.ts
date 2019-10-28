@@ -7,6 +7,8 @@ import { Observable, of } from 'rxjs';
 export class ReadmoreService {
   private item;
   private items;
+  private title;
+ 
   constructor() { }
 
   public get(): Observable<any>{ 
@@ -24,5 +26,13 @@ export class ReadmoreService {
 
   setItems(items:any){ 
     this.items = items;
+  }
+  
+  public gettitle(): Observable<string>{
+    return of(this.title);
+  }
+
+  settitle(title: string){
+    this.title=title;
   }
 }

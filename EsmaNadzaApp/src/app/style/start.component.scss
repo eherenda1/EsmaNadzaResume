@@ -47,3 +47,28 @@
 .imestart{
     padding-top: 10px;
 }
+
+.imestart, .profilePicstart{
+    cursor: pointer;
+}
+
+.profilePicstart{
+    float: left;
+    width: 385px;
+    height: 380px;
+    border-radius: 50%;
+    background-color:pink;
+    overflow: hidden;
+    img{
+    width: 100%;
+    object-fit:cover;
+    }
+}
+
+.profilePicstart :hover {
+    transform: scale(1.1);
+  }
+
+.imestart :hover {
+    color: black;
+  }

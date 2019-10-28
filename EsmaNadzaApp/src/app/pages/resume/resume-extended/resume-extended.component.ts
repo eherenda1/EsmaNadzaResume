@@ -10,28 +10,21 @@ import { ReadmoreService } from 'src/app/readmore.service';
 export class ResumeExtendedComponent implements OnInit {
 
   public detail:any = {};
+  public caption: string;
 
   constructor(private readmore:ReadmoreService) { }
        
 
   ngOnInit() {
-    this.readmore.get().subscribe(r=>{
-      this.detail = r;
-      console.log("Detail page", r)
+    this.readmore.get().subscribe(data=>{
+      this.detail = data;
+      console.log("Detail page", data)
     })
- 
-    /*this.route.parent.params.subscribe((params:any) => {
-      this.code = params.code;
-    })
-
-    this._readmoreService.getItem(this.item).subscribe((data)=> {
-      this.item = data;
-      
-    });
-
     
-  }
-*/
+    this.readmore.gettitle().subscribe(data=>{
+      this.caption = data;
+      console.log("naslov", this.caption);
+    })
   
 
 }

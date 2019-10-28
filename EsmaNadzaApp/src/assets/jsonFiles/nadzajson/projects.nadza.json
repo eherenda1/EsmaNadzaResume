@@ -1,13 +1,13 @@
 [
     {
-    "name": "Nadza projekat 1",
-    "shortDescription": "Nadzaaaa kratak opis",
+    "name": "6x6 crossbar with priority arbitration",
+    "shortDescription": "Komutation circuits",
     "description":"puni opis",
     "images": [""]
     },
     {
-    "name": "Nadza projekat 2",
-    "shortDescription": " Nadza drugiii kratak opis",
+    "name": "Networking simulation",
+    "shortDescription": "Communication networks and protocols",
     "description":"puni opis",
     "images": [""]
     }
