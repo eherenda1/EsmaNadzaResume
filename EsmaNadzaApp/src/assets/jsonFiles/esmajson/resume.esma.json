@@ -3,17 +3,17 @@
         "title":"Education",
         "children":[
             { 
-                "name": "Gymnasium Dobrinja",
-                "subject":"",
-                "shortDescription": "2012-2016, Matematics and Informatics",
-                "description":"",
-                "images":[]
-            },
-            { 
         
                 "name": "Faculty of Electrical Engineering, University of Sarajevo",
                 "subject":"",
                 "shortDescription": "2016-2019, Computer Science and Informatics",
+                "description":"",
+                "images":[]
+            },
+            { 
+                "name": "Gymnasium Dobrinja",
+                "subject":"",
+                "shortDescription": "2012-2016, Matematics and Informatics",
                 "description":"",
                 "images":[]
             }
