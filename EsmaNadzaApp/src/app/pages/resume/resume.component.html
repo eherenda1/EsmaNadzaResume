@@ -9,9 +9,12 @@
 
         
         <div class="cont" *ngFor="let item of resume">
-            <div class="wrapper1"><div class="title">
+            <div class="wrapper1">
+                <div class="title">
                    <h1 class="section" >{{item.title}}</h1>
-            </div> </div> 
+            </div>
+         </div> 
+
         
             <div class="wrapper2">
             <div class="textresume" *ngFor="let child of item.children">
@@ -28,62 +31,9 @@
         </div>
 
     
-        <!--
-        <div class="cont">
-            <div class="title">
-                <h1 class="section">Work experience</h1>
-            </div>
-            <div *ngFor="let work of workE" class="text">
-                <h2 >{{work.jobPosition}}-{{work.name}}</h2>
-                <p>{{work.shortDescription}}</p>
-                <p>{{work.description}}</p>
-            </div>
-        </div>
-
-
-        <div class="cont">
-            <div class="title">
-                <h1 class="section">Skills</h1>
-            </div>
-            <div class="text">
-                <h2>Hard skills</h2>
-                <ul class="costumlist" *ngFor="let hskills of resume.hardSkills"> 
-                    <li class="elements">{{hskills}}</li>
-                </ul>
-
-                <h2>Soft skills</h2>
-                <ul class="costumlist" *ngFor="let sskills of resume.softSkills"> 
-                    <li class="elements">{{sskills}}</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="cont">
-            <div class="title">
-                <h1 class="section">Languages</h1>
-            </div>
-            <div class="text">
-                    <h2>Languages</h2>
-                <ul class="costumlist" *ngFor="let languages of resume.languages"> 
-                    <li class="elements">{{languages}}</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="cont">
-            <div class="title">
-                <h1 class="section">Hobbies and interests</h1>
-            </div>
-            <div *ngFor="let freetime of hobbiesInterestsE" class="text">
-                    <h2 >{{freetime.name}}</h2>
-                    <p>{{freetime.description}}</p>
-            
-                </div>
-            </div>
-
--->
-    <div></div>
+   
   </div>
+</div>
 </body>
 
 <router-outlet></router-outlet>
