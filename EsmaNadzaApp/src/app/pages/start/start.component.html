@@ -1,11 +1,22 @@
 
 
 <div class="personcontainer">
+  
 <div *ngFor="let user of users" class="personwrapper" [ngClass]="{
 'odd': user.id % 2 == 1,
 'notodd' : user.id % 2 == 0}">
+<div *ngIf="user.id==1">
+    <input type="checkbox"  (click)="setLang('bs')">Bosnian <br/>
+    <input type="checkbox"  checked="true" (click)="setLang('en')">English<br/>
+    <input type="checkbox"   (click)="setLang('de')">German
+
+  </div>
  <div class="secondpersonwrapper">
-  <div [routerLink]="['layout',user.code,'home']" class="person" [ngClass]="{
+    <h1>
+       {{ 'TITLE' | translate }}!
+      </h1>
+     
+  <div [routerLink]="[language,'layout',user.code,'home']" class="person" [ngClass]="{
     'boxshadow1': user.id % 2 == 1,
     'boxshadow2' : user.id % 2 == 0}">
       <div  class="profilePicstart"  >
@@ -17,9 +28,9 @@
 </div>
 
 <div class="imestart">
-<h1 [routerLink]="['layout',user.code,'home']" [ngClass]="{
+<h1 [routerLink]="[language,'layout',user.code,'home']" [ngClass]="{
   'namediv1': user.id % 2 == 1,
-  'namediv2' : user.id % 2 == 0}">{{user.firstname}} {{user.lastname}}</h1>
+  'namediv2' : user.id % 2 == 0}">{{'NAME' | translate}}: {{user.firstname}} {{user.lastname}}</h1>
 </div> </div>
 </div>
 </div>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ReadmoreService } from 'src/app/readmore.service';
-
+import { TranslateService } from 'src/app/translate.service';
 
 @Component({
   selector: 'app-resume-extended',
@@ -10,8 +10,11 @@ export class ResumeExtendedComponent implements OnInit {
 
   public detail:any = {};
   public caption: string;
-
-  constructor(private readmore:ReadmoreService) { }
+  public next: string;
+  public before: string;
+  public data: any;
+  public lang: any;
+  constructor(private readmore:ReadmoreService,private translate: TranslateService) { }
        
 
   ngOnInit() {

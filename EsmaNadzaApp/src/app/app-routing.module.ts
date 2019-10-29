@@ -14,7 +14,7 @@ import {ProjectExtendedComponent} from './pages/project/project-extended/project
 
 const routes: Routes = [
   {path: '', component:StartComponent},
-  { path: 'layout/:code', 
+  { path: ':lang/layout/:code', 
     component:LayoutComponent,
     children: [
       { path:'home', component:HomeComponent},
@@ -37,7 +37,7 @@ const routes: Routes = [
 ]; 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {onSameUrlNavigation: 'reload'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

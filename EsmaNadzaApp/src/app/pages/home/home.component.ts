@@ -4,7 +4,9 @@ import { ResumeService } from 'src/app/resume.service';
 import { ActivatedRoute } from "@angular/router";
 import { IUser } from 'src/app/user';
 import { IResume } from 'src/app/resume';
- 
+import { TranslateService } from 'src/app/translate.service';
+import { IEn} from 'src/app/en';
+
 @Component({
   selector: 'home-page',
   templateUrl: './home.component.html',
@@ -15,16 +17,28 @@ export class HomeComponent implements OnInit {
   public user: IUser;
   public code: string;
   public resume: IResume;
-  constructor(private _userService: OneuserService, private _resumeService: ResumeService, private route: ActivatedRoute) {
+  public followLabel: any;
+  public aboutLabel:any;
+  public lang: string;
+  public data: any;
+  constructor(private _userService: OneuserService, private _resumeService: ResumeService, private route: ActivatedRoute,private translate: TranslateService) {
  
   }
   ngOnInit(){
     this.route.parent.params.subscribe((params:any) => {
       this.code = params.code;
+      this.lang = params.lang;
     })
     this._userService.getUser(this.code).subscribe((r)=> {
       this.user = r;
     });
-   this._resumeService.getResume(this.code).subscribe((data)=> this.resume = data);
+   this._resumeService.getResume(this.code,this.lang).subscribe((data)=> this.resume = data);
+   this.translate.use(this.lang).then((r)=>{
+         this.data = r;
+         this.followLabel = this.data.FOLLOWME;
+         this.aboutLabel = this.data.ABOUT;
+  
+  });
   }
+  
 }

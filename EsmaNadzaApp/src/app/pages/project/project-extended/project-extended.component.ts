@@ -3,7 +3,7 @@ import { ReadmoreService } from 'src/app/readmore.service';
 import { ActivatedRoute } from "@angular/router";
 import { ProjectsService } from 'src/app/projects.service';
 import { IProject } from 'src/app/project';
-
+import { TranslateService } from 'src/app/translate.service';
 
 @Component({
   selector: 'app-project-extended',
@@ -19,7 +19,11 @@ export class ProjectExtendedComponent implements OnInit {
   public image: string;
   public increment: number = 0;
   public incrementI: number = 0;
-  constructor(private readmore: ReadmoreService, private _projectsService: ProjectsService, private route: ActivatedRoute) { }
+  public next: string;
+  public before: string;
+  public data: any;
+  public lang: any;
+  constructor(private readmore: ReadmoreService, private _projectsService: ProjectsService, private route: ActivatedRoute,private translate: TranslateService) { }
 
 
 
@@ -27,7 +31,7 @@ export class ProjectExtendedComponent implements OnInit {
     console.log("ngOnInit");
     this.route.parent.params.subscribe((params: any) => {
       this.code = params.code;
-
+      this.lang = params.lang;
     })
     this.readmore.getItems().subscribe(projects => {
       this.projects = projects;
@@ -43,6 +47,12 @@ export class ProjectExtendedComponent implements OnInit {
         }
       });
     });
+    this.translate.use(this.lang).then((r)=>{
+      this.data = r;
+      this.next = this.data.NEXT;
+      this.before = this.data.BEFORE;
+  
+  });
 
 
   }
