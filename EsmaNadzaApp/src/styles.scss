@@ -1,7 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-@import "./src/app/mystyle.scss";
+.default{@import "./src/app/mystyle.scss";}
 
+/*.darktheme{
+    @import "./src/app/themes/dark.theme.scss";
+}
 
+.lighttheme{
+    @import "./src/app/themes/dark.theme.scss";
+}
+*/
 *{
     box-sizing: border-box;
     padding : 0;
@@ -38,6 +45,8 @@ body, html{
 .nametitle{
     font-size: 43px;
 }
+
+
 
 
 @import "./src/app/style/start.component.scss";

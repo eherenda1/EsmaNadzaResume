@@ -1,32 +1,31 @@
 <body class="page" *ngIf="detail">
-
+<div (shift)="shift($event)">
     <div class="contreadmore">
         <div class="holder">
-        <div class="wrapper1">
-            <div class="title">
-                <h1 class="section">{{caption}}</h1>
-            </div>
-        </div>
-
-        <div class="wrapper2">
-            <div class="textresume">
-
-                <h2 class="subtitle">{{detail.name}}</h2>
-                <p>{{detail.subject}}</p>
-                <p>{{detail.description}}</p>
-
+            <div class="wrapper1">
+                <div class="title">
+                    <h1 class="section" >{{detail.title}}</h1>
+                </div>
             </div>
 
-            
+            <div class="wrapper2">
+                <div class="textresume" *ngFor="let child of detail.children">
+
+                    <h2 class="subtitle">{{child.name}}</h2>
+                    <p>{{child.subject}}</p>
+                    <p>{{child.description}}</p>
+
+                </div>
+
+            </div>
         </div>
-        </div>
+    </div>
         <div class="options">
-        <div class="previous"><<Previous</div>
-        <div class="next">Next>></div>
-        
-        
+            <a class="previous" (click)="left()">
+                <<Previous</a>
+                    <a class="next" (click)="right()">Next>></a>
+
+        </div>
     </div>
-    </div>
-    
 
 </body>

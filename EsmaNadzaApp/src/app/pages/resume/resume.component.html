@@ -3,7 +3,7 @@
 
     <div class="main">
         <h1 class="maintitle">RESUME</h1>
-        <button class="export">Export to pdf</button>
+        <button (click)= "generatePdf()" class="export">Export to pdf</button>
 
         
         <div class="cont" *ngFor="let item of resume">
@@ -20,10 +20,11 @@
                 <h2 class="subtitle">{{child.name}}</h2>
                 <p>{{child.subject}}</p>
                 <p>{{child.shortDescription}}</p>
-                <div routerLink="details" (click)="selected(child); selecttitle(item.title)" class="readmore">
+                <div routerLink="details" (click)="selected(item,child); selecttitle(item.title)" class="readmore">
                     read more>> </div>
                 
             </div>
+            
        
         </div>
         </div>
