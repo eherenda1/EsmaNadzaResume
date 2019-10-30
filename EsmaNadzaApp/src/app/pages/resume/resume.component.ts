@@ -32,7 +32,7 @@ export class ResumeComponent implements OnInit {
 
    this._resumeService.getResume(this.code).subscribe((data)=> {
      this.resume = data;
-     this.highs = this.resume.highSchool;
+     
      
    });
 
