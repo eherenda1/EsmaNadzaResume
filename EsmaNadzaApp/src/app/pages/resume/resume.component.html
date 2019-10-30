@@ -20,9 +20,10 @@
                 <h2 class="subtitle">{{child.name}}</h2>
                 <p>{{child.subject}}</p>
                 <p>{{child.shortDescription}}</p>
-                <div routerLink="details" (click)="selected(child); selecttitle(item.title)" class="readmore">{{readmoreTitle}}>></div>
+                <div routerLink="details" (click)="selected(item); selecttitle(item.title)" class="readmore">{{readmoreTitle}}>></div>
                 
             </div>
+            
        
         </div>
         </div>

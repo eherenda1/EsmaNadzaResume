@@ -2,9 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { ResumeService } from 'src/app/resume.service';
 import { ReadmoreService } from 'src/app/readmore.service';
 import { ActivatedRoute } from "@angular/router";
-import { IResume } from 'src/app/resume';
+
 import { TranslateService } from 'src/app/translate.service';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+import { IResume, IHighSchool } from 'src/app/resume';
+
+import  pdfMake from 'pdfmake/build/pdfmake';
+import pdfFonts from 'pdfmake/build/vfs_fonts';
+pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 
 @Component({
@@ -25,20 +30,24 @@ export class ResumeComponent implements OnInit {
 
   }
   
- 
-  
-
   ngOnInit(){
     this.route.parent.params.subscribe((params:any) => {
       this.code = params.code;
       this.lang = params.lang;
-    })
+    });
 
 
-   this._resumeService.getResume(this.code,this.lang).subscribe((data)=> {
-     this.resume = data;
-   });
    
+    this._resumeService.getResume(this.code,this.lang).subscribe((data)=> {
+      this.resume = data;
+      
+      
+    });
+ 
+    this._resumeService.getResume(this.code,this.lang).subscribe((data) => {
+     this.readmore.setItems(this.resume = data);
+     console.log("ovdje ovdje", data);
+   });
    this.translate.use(this.lang).then((r)=>{
     this.data = r;
     console.log(this.data);
@@ -64,8 +73,32 @@ export class ResumeComponent implements OnInit {
 
   selecttitle(title){
     this.readmore.settitle(title);
+    
   
   }
+
+  getDocumentDefinition() {
+    sessionStorage.setItem('resume', JSON.stringify(this.resume));
+    return {
+      content: 'This is a sample PDF'
+    };
+  }
+
+  generatePdf(){
+    const documentDefinition = { content: [
+      {
+        text: 'RESUME',
+          bold: true,
+          fontSize: 20,
+          alignment: 'center',
+
+      },
+      
+    ]
+    };
+    pdfMake.createPdf(documentDefinition).open();
+   }
+  
 
   
   
