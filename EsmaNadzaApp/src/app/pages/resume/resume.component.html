@@ -1,7 +1,7 @@
 <body class="page " *ngIf="resume">
   <div class="main">
     <h1 class="maintitle">{{ maintitle | translate }}</h1>
-    <button class="export">{{ buttonLabel | translate }}</button>
+    <button  (click)="export2PDF()" class="export">{{ buttonLabel | translate }}</button>
     <div class="cont" *ngFor="let item of resume">
       <div class="wrapper1">
         <div class="title">

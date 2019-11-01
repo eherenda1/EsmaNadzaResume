@@ -15,19 +15,33 @@ import { ProjectComponent } from "./pages/project/project.component";
 import { HeaderComponent } from "./pages/layout/components/header/header.component";
 import { FooterComponent } from "./pages/layout/components/footer/footer.component";
 
-import { UsersService } from "./users.service";
-import { ProjectsService } from "./projects.service";
-import { HttpClientModule } from "@angular/common/http";
-import { ResumeService } from "./resume.service";
-import { ContactService } from "./contact.service";
-import { ResumeExtendedComponent } from "./pages/resume/resume-extended/resume-extended.component";
-import { ProjectExtendedComponent } from "./pages/project/project-extended/project-extended.component";
-import { ReadmoreService } from "./readmore.service";
-import { TranslateService } from "./translate.service";
-import { TranslatePipe } from "./translate.pipe";
 
-export function setupTranslateFactory(service: TranslateService): Function {
-  return () => service.use("en");
+
+import {UsersService} from './users.service';
+import {ProjectsService} from './projects.service';
+import {HttpClientModule} from '@angular/common/http';
+import {ResumeService} from './resume.service';
+import {ContactService} from './contact.service';
+import {ResumeExtendedComponent } from './pages/resume/resume-extended/resume-extended.component';
+import {ProjectExtendedComponent} from './pages/project/project-extended/project-extended.component';
+
+
+import {ReadmoreService} from './readmore.service';
+import {ExportService} from './export.service';
+import {TranslateService} from './translate.service';
+import { TranslatePipe } from './translate.pipe'
+
+import { ExportComponent } from './pages/resume/export/export.component';
+import { PDFExportModule } from '@progress/kendo-angular-pdf-export';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
+
+
+export function setupTranslateFactory(
+  service: TranslateService): Function {
+  return () => service.use('en');
 }
 
 @NgModule({
@@ -44,22 +58,29 @@ export function setupTranslateFactory(service: TranslateService): Function {
     ResumeExtendedComponent,
     ProjectExtendedComponent,
     TranslatePipe,
+    ExportComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule, HttpClientModule],
-  providers: [
-    UsersService,
-    ResumeService,
-    ProjectsService,
-    ContactService,
-    ReadmoreService,
-    TranslateService,
-    {
-      provide: APP_INITIALIZER,
-      useFactory: setupTranslateFactory,
-      deps: [TranslateService],
-      multi: true,
-    },
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule,
+    HttpClientModule,
+    PDFExportModule,
+    BrowserAnimationsModule
+    
   ],
-  bootstrap: [AppComponent],
+  providers: [UsersService,
+             ResumeService,
+             ProjectsService,
+             ContactService,
+             ReadmoreService,
+             ExportService,
+             TranslateService,{
+              provide: APP_INITIALIZER,
+              useFactory: setupTranslateFactory,
+              deps: [ TranslateService ],
+              multi: true
+            }],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -22,24 +22,42 @@
       display: inline-block;
     }
 
-    .far,
-    .fas {
-      color: $activecolor;
+         div,.far,.fas{
+           display: inline-block;
+         }
+        
+        
+           .far, .fas{
+               color: $activecolor;
+           }
+           .data{
+               padding-left:11px;
+           }
+            .label{
+              margin-top: 20px;
+              font-weight: bold;
+             
+            }
+            p{
+                display: block;
+                color: $footertextcolor;
+            }
+        &:last-child {
+            text-align: right;
+            flex:1 1 100%;
+           
+        }
+        
     }
-    .data {
-      padding-left: 11px;
-    }
-    .label {
-      margin-top: 20px;
-      font-weight: bold;
-    }
-    p {
-      display: block;
-      color: white;
-    }
-    &:last-child {
-      text-align: right;
-      flex: 1 1 100%;
+    button{      
+        top:60px;
+        right:20px;
+        background-color: $activecolor; 
+        font-weight:bold;
+        padding:5px 10px;
+        border-radius: 5px;
+        color: $footertextcolor;
+        
     }
   }
   button {
@@ -51,7 +69,7 @@
     border-radius: 5px;
     color: $footerbackground;
   }
-}
+
 .choose {
   padding-top: 50px;
   padding-left: 50px;

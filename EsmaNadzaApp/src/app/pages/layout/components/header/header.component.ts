@@ -6,6 +6,8 @@ import { IUser } from "src/app/user";
 import { IResume } from "src/app/resume";
 import { TranslateService } from "src/app/translate.service";
 import { IEn } from "src/app/en";
+import { ExportService} from 'src/app/export.service';
+
 @Component({
   selector: "header-layout",
   templateUrl: "./header.component.html",
@@ -23,12 +25,16 @@ export class HeaderComponent {
   public path: string;
   public page: any;
   public choose = "SELECTPL";
+  public exported: any;
+  public element;
   public langopt: any[];
+  
   constructor(
     private _userService: OneuserService,
     private _resumeService: ResumeService,
     private route: ActivatedRoute,
     private router: Router,
+    private exports: ExportService,
     private translate: TranslateService,
   ) {}
 
@@ -56,6 +62,7 @@ export class HeaderComponent {
     });
     this._userService.getUser(this.code,this.lang).subscribe(r => {
       this.user = r;
+      this.exports.exportuser(this.exported = r);
     });
     this.translate.use(this.lang).then(r => {
       this.data = r;
@@ -95,4 +102,52 @@ export class HeaderComponent {
     this.page = this.path.substring(11, this.path.length);
     this.router.navigateByUrl("/" + this.lang + "/layout/" + this.page);
   }
+
+  export(user){
+    this.exported = user;
+  }
+
+  getlighttheme(){
+    this.element= document.querySelector("#indexbody");
+
+    console.log("Ime klase: ", this.element.className)
+
+    this.element.removeAttribute('class'); 
+
+    this.element.setAttribute('class', 'light');
+    
+   // this.element.classList.replace('default', 'esma');
+    console.log("Ime klase: ", this.element.className)
+    
+  }
+
+  getdarktheme(){
+    this.element= document.querySelector("#indexbody");
+
+    console.log("Ime klase: ", this.element.className)
+
+    this.element.removeAttribute('class'); 
+
+    this.element.setAttribute('class', 'dark');
+    
+   // this.element.classList.replace('default', 'esma');
+    console.log("Ime klase: ", this.element.className)
+    
+  }
+
+  getdefaulttheme(){
+    this.element= document.querySelector("#indexbody");
+
+    console.log("Ime klase: ", this.element.className)
+
+    this.element.removeAttribute('class'); 
+
+    this.element.setAttribute('class', 'default');
+    
+   // this.element.classList.replace('default', 'esma');
+    console.log("Ime klase: ", this.element.className)
+    
+  }
+
+ 
 }

@@ -10,6 +10,7 @@ import { TranslateService } from "src/app/translate.service";
 export class StartComponent implements OnInit {
   public users = [];
   public language = "en";
+ 
   constructor(
     private _usersService: UsersService,
     private translate: TranslateService,

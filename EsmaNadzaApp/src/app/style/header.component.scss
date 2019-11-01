@@ -37,6 +37,11 @@
     list-style-type: none;
     li:hover{
       color: $footerbackground;
+            &.active {
+                color: $textcolor4;
+                outline:none;
+            }
+        }
     }
     li {
       cursor: pointer;
@@ -69,7 +74,7 @@
   }
 
   
-}
+
 @media only screen and (max-width: 1237px) {
   .head {
     width: 100%;

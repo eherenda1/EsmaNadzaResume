@@ -46,6 +46,7 @@ export class ContactComponent implements OnInit {
 
     this._userService.getUser(this.code,this.lang).subscribe((r)=> {
       this.user = r;
+      console.log("Ovdj sam", this.user)
     });
      
    
