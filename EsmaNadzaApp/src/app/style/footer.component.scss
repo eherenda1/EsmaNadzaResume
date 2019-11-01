@@ -1,124 +1,114 @@
-.foot{
-    background-color: transparent;
+.foot {
+  background-color: transparent;
 
-    margin-left: $left;
-    margin-right: $right;
+  margin-left: $left;
+  margin-right: $right;
+  height: 100%;
+  width: 60%;
+
+  font-size: 17px;
+  display: table;
+
+  .contact {
     height: 100%;
-    width: 60%;
+    margin-right: 20px;
+    width: 200px;
+    display: table-cell;
+    vertical-align: middle;
 
-    font-size:17px;
-    display: table;
-    
-    .contact{
-        height: 100%;
-        margin-right: 20px;
-        width:200px;
-        display: table-cell;
-        vertical-align: middle;
+    div,
+    .far,
+    .fas {
+      display: inline-block;
+    }
 
-         div,.far,.fas{
-           display: inline-block;
-         }
-        
-        
-           .far, .fas{
-               color: $activecolor;
-           }
-           .data{
-               padding-left:11px;
-           }
-            .label{
-              margin-top: 20px;
-              font-weight: bold;
-             
-            }
-            p{
-                display: block;
-                color:white;
-            }
-        &:last-child {
-            text-align: right;
-            flex:1 1 100%;
-           
-        }
-        
+    .far,
+    .fas {
+      color: $activecolor;
     }
-    button{      
-        top:60px;
-        right:20px;
-        background-color: $activecolor; 
-        font-weight:bold;
-        padding:5px 10px;
-        border-radius: 5px;
-        color: $footerbackground;
-        
+    .data {
+      padding-left: 11px;
     }
- 
-}
-.choose{
-    padding-top: 50px;
-    padding-left: 50px;
-    color: $activecolor;
-}
-@media only screen and (max-width: 1739px) {
-    .foot .contact{
-        width:427px;
-        img{
-            width:49px;
-        }
-
+    .label {
+      margin-top: 20px;
+      font-weight: bold;
     }
-    .foot .contact .label{
-        margin-top:10px;
-       
-    }
-    .foot button{
-        top:60px;
-        right:20px;
-    }
-    }
-    
-    @media only screen and (max-width: 1287px) {
-        .foot .contact{
-            width:390px;
-            font-size:13px;
-            img{
-                width:49px;
-            }
-        }
-        }
-@media only screen and (max-width: 1089px) {
-    .foot{
-        display: block;
-       
-        button{      
-            top:60px;
-            right:20px;
-            background-color: $activecolor; 
-            font-weight:bold;
-            padding:8px 15px;
-            border-radius: 5px;
-            color: $footerbackground;
-            
-        }
-    }
-  .foot .contact{
+    p {
       display: block;
-      height: 25%;
-      margin-right: 20px;
-      padding: 10px;
-      font-size:17px;
-      img{
-
-        width:56px;
+      color: white;
     }
     &:last-child {
-        margin-left: 10px;
-
-        text-align: left;
-
-       
+      text-align: right;
+      flex: 1 1 100%;
     }
   }
- 
+  button {
+    top: 60px;
+    right: 20px;
+    background-color: $activecolor;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: $footerbackground;
   }
+}
+.choose {
+  padding-top: 50px;
+  padding-left: 50px;
+  color: $activecolor;
+}
+@media only screen and (max-width: 1739px) {
+  .foot .contact {
+    width: 427px;
+    img {
+      width: 49px;
+    }
+  }
+  .foot .contact .label {
+    margin-top: 10px;
+  }
+  .foot button {
+    top: 60px;
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: 1287px) {
+  .foot .contact {
+    width: 390px;
+    font-size: 13px;
+    img {
+      width: 49px;
+    }
+  }
+}
+@media only screen and (max-width: 1089px) {
+  .foot {
+    display: block;
+
+    button {
+      top: 60px;
+      right: 20px;
+      background-color: $activecolor;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 5px;
+      color: $footerbackground;
+    }
+  }
+  .foot .contact {
+    display: block;
+    height: 25%;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 17px;
+    img {
+      width: 56px;
+    }
+    &:last-child {
+      margin-left: 10px;
+
+      text-align: left;
+    }
+  }
+}

@@ -1,40 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
- //Za user stranicu
-    //pozadina
-    $background1: white;
-    $background2: black;
-    $transp: 0.6; //da bude prozirna
+@import url("https://fonts.googleapis.com/css?family=Vollkorn&display=swap");
+//Za user stranicu
+//pozadina
+$background1: white;
+$background2: black;
+$transp: 0.6; //da bude prozirna
 
-    //tekst
-    $namefont: 43px;
-    $subtitlefont: 24px;
-    $paragraphfont: 12px;
-    $textcolor1: black;
-    $textcolor2: white; 
-    $textstyle: 'Vollkorn', serif;
+//tekst
+$namefont: 43px;
+$subtitlefont: 24px;
+$paragraphfont: 12px;
+$textcolor1: black;
+$textcolor2: white;
+$textstyle: "Vollkorn", serif;
 
-    //slika
-    $border-radius: 100%;
-    $shadow1: black;
-    $shadow2: white;
-    $picture-size: 50%;
-    
-    //Za CV stranicu
+//slika
+$border-radius: 100%;
+$shadow1: black;
+$shadow2: white;
+$picture-size: 50%;
 
-    $footerbackground: rgb(232,53, 86);
-    $mainbackground: white; 
-    $maintextcolor: black;
+//Za CV stranicu
 
-    //lista
-    $activecolor: gray;
+$footerbackground: rgb(232, 53, 86);
+$mainbackground: white;
+$maintextcolor: black;
 
-    //da glavni blok bude centriran
+//lista
+$activecolor: gray;
 
-    $mainposition: relative;
-    $maindisplay: block;
-    $left: auto;
-    $right: auto;
+//da glavni blok bude centriran
 
-
-
-
+$mainposition: relative;
+$maindisplay: block;
+$left: auto;
+$right: auto;

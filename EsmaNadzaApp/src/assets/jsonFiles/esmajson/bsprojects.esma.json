@@ -1,34 +1,35 @@
-
 [
-    {
-        
+  {
     "name": "C# Aplikacija",
     "shortDescription": "Bosanski C#Bosanski C#Bosanski C#Bosanski C#Bosanski C#Bosanski C#Bosanski C#Bosanski C#Bosanski C#Bosanski C#Bosanski C#Bosanski C#Bosanski C#Bosanski C#Bosanski C#Bosanski C#",
     "description": "It was a cold grey day in late November. The weather had changed overnight, when a backing wind brought a granite sky and a mizzling rain with it, and although it was now only a little after two o'clock in the afternoon the pallor of a winter evening seemed to have closed upon the hills, cloaking them in mist.lorem",
     "mainImage": "https://www.qualtrics.com/m/assets/blog/wp-content/uploads/2018/08/shutterstock_1068141515.jpg",
-    "images": ["https://www.qualtrics.com/m/assets/blog/wp-content/uploads/2018/08/shutterstock_1068141515.jpg","https://www.incimages.com/uploaded_files/image/970x450/getty_501816888_2000133320009280121_341185.jpg","https://www.ft.com/__origami/service/image/v2/images/raw/http://prod-upp-image-read.ft.com/429941bc-56df-11e9-8b71-f5b0066105fe?source=next&fit=scale-down&quality=highest&width=1067"]
-    },
-    
-    {
-        "name": "Web Applicaton",
-        "shortDescription": "Bosanski Web ApplicationBosanski Web ApplicationBosanski Web ApplicationBosanski Web ApplicationBosanski Web ApplicationBosanski Web ApplicationBosanski Web ApplicationBosanski Web ApplicationBosanski Web ApplicationBosanski Web ApplicationBosanski Web ApplicationBosanski Web Application",
-        "description":"puni opis",
-        "mainImage": "https://www.incimages.com/uploaded_files/image/970x450/getty_501816888_2000133320009280121_341185.jpg",
-        "images": [""]
-    },
-    {
-        "name": "ASP.NET",
-        "shortDescription": "Bosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NET",
-        "description":"puni opis",
-        "mainImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFt56h7d4L4dH1v6eCk48Jnvu2OCRRBWiyRtX6OkincyLywjEt&s",
-        "images": [""]
-    },
-    {
-        "name": "Blender",
-        "shortDescription": "Bosanski Blender Bosanski Blender Bosanski BlenderBosanski BlenderBosanski BlenderBosanski BlenderBosanski BlenderBosanski BlenderBosanski BlenderBosanski BlenderBosanski BlenderBosanski Blender",
-        "description":"puni opis",
-        "mainImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFt56h7d4L4dH1v6eCk48Jnvu2OCRRBWiyRtX6OkincyLywjEt&s",
-        "images": [""]
-    }
-]
+    "images": [
+      "https://www.qualtrics.com/m/assets/blog/wp-content/uploads/2018/08/shutterstock_1068141515.jpg",
+      "https://www.incimages.com/uploaded_files/image/970x450/getty_501816888_2000133320009280121_341185.jpg",
+      "https://www.ft.com/__origami/service/image/v2/images/raw/http://prod-upp-image-read.ft.com/429941bc-56df-11e9-8b71-f5b0066105fe?source=next&fit=scale-down&quality=highest&width=1067"
+    ]
+  },
 
+  {
+    "name": "Web Aplikacija",
+    "shortDescription": "Bosanski Web ApplicationBosanski Web ApplicationBosanski Web ApplicationBosanski Web ApplicationBosanski Web ApplicationBosanski Web ApplicationBosanski Web ApplicationBosanski Web ApplicationBosanski Web ApplicationBosanski Web ApplicationBosanski Web ApplicationBosanski Web Application",
+    "description": "puni opis",
+    "mainImage": "https://www.incimages.com/uploaded_files/image/970x450/getty_501816888_2000133320009280121_341185.jpg",
+    "images": [""]
+  },
+  {
+    "name": "ASP.NET",
+    "shortDescription": "Bosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NETBosanski ASP.NET",
+    "description": "puni opis",
+    "mainImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFt56h7d4L4dH1v6eCk48Jnvu2OCRRBWiyRtX6OkincyLywjEt&s",
+    "images": [""]
+  },
+  {
+    "name": "Blender",
+    "shortDescription": "Bosanski Blender Bosanski Blender Bosanski BlenderBosanski BlenderBosanski BlenderBosanski BlenderBosanski BlenderBosanski BlenderBosanski BlenderBosanski BlenderBosanski BlenderBosanski Blender",
+    "description": "puni opis",
+    "mainImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFt56h7d4L4dH1v6eCk48Jnvu2OCRRBWiyRtX6OkincyLywjEt&s",
+    "images": [""]
+  }
+]

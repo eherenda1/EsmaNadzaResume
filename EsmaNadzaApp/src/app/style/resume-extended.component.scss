@@ -1,35 +1,57 @@
-
-.next{
-   
+.resumeextend {
+  padding-top: 15px;
 }
 
-
-
-.contreadmore{
-    flex-direction: column;
-    display: flex;
-    width: 100%;
-
-    align-items: stretch; 
-    border-top: 1px solid $maintextcolor;
+.extended {
+  padding-bottom: 15px;
+}
+.titleextended {
+  display: flex;
+  align-items: center;
+}
+.caption {
+  color: rgb(121, 43, 82, 0.9);
+  word-wrap: break-word;
+  display: flex;
+  text-align: center;
+  font-size: 32px;
+}
+.expand {
+  width: 100%;
+}
+.wrapper2resumeextended {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.contreadmore {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  border-top: 1px solid $maintextcolor;
 }
 
-.options{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+.options {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
-.next, .previous{
-    color: $footerbackground;
-    text-decoration: underline;
+.next,
+.previous {
+  color: rgb(121, 43, 82, 0.9);
+  text-decoration: underline;
+  font-size: 19px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.negative{
+  display: none;
 }
 
 @media only screen and (max-width: 860px) {
-    .holder {
-        flex-direction: column;
-        align-items: center;
-        
-   }
-
+  .holder {
+    flex-direction: column;
+    align-items: center;
+  }
 }

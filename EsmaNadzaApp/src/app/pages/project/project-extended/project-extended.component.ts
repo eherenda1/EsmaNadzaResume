@@ -1,17 +1,15 @@
-import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
-import { ReadmoreService } from 'src/app/readmore.service';
+import { Component, EventEmitter, Input, Output, OnInit } from "@angular/core";
+import { ReadmoreService } from "src/app/readmore.service";
 import { ActivatedRoute } from "@angular/router";
-import { ProjectsService } from 'src/app/projects.service';
-import { IProject } from 'src/app/project';
-import { TranslateService } from 'src/app/translate.service';
+import { ProjectsService } from "src/app/projects.service";
+import { IProject } from "src/app/project";
+import { TranslateService } from "src/app/translate.service";
 
 @Component({
-  selector: 'app-project-extended',
-  templateUrl: './project-extended.component.html',
-
+  selector: "app-project-extended",
+  templateUrl: "./project-extended.component.html",
 })
 export class ProjectExtendedComponent implements OnInit {
-
   public detail: IProject;
   public projects: IProject[];
   public code: string;
@@ -23,46 +21,57 @@ export class ProjectExtendedComponent implements OnInit {
   public before: string;
   public data: any;
   public lang: any;
-  constructor(private readmore: ReadmoreService, private _projectsService: ProjectsService, private route: ActivatedRoute,private translate: TranslateService) { }
+  public index: number = 0;
 
-
+  constructor(
+    private readmore: ReadmoreService,
+    private _projectsService: ProjectsService,
+    private route: ActivatedRoute,
+    private translate: TranslateService,
+  ) {}
 
   ngOnInit() {
-    console.log("ngOnInit");
     this.route.parent.params.subscribe((params: any) => {
       this.code = params.code;
       this.lang = params.lang;
-    })
-    this.readmore.getItems().subscribe(projects => {
-      this.projects = projects;
-      this.readmore.get().subscribe((project) => {
-        this.detail = project;
-        if(this.detail){
-        this.images = this.detail.images;
-        
-      this.image=this.images[0];
-
-        this.shift(this.projects.indexOf(this.detail));
-        this.shiftImages(0);
-        }
-      });
+      this._projectsService
+        .getProjects(this.code, this.lang)
+        .subscribe(data => {
+          this.readmore.setItems((this.projects = data));
+          for (let i = 0; i < this.projects.length; i++) {
+            if (i == this.index) this.readmore.set(this.projects[i]);
+          }
+          this.readmore.get().subscribe(project => {
+            this.detail = project;
+            if (this.detail) {
+              this.images = this.detail.images;
+              this.image = this.images[0];
+              this.shift(this.projects.indexOf(this.detail));
+              this.shiftImages(0);
+            }
+          });
+        });
     });
-    this.translate.use(this.lang).then((r)=>{
+
+    this.translate.use(this.lang).then(r => {
       this.data = r;
-      this.next = this.data.NEXT;
-      this.before = this.data.BEFORE;
-  
-  });
-
-
+      this.next = "NEXT";
+      this.before = "BEFORE";
+    });
   }
 
   shift(increment) {
-    if (!this.projects.length || increment >= this.projects.length || increment < 0) return;
+    if (
+      !this.projects.length ||
+      increment >= this.projects.length ||
+      increment < 0
+    )
+      return;
     this.detail = this.projects[increment];
+    this.index = increment;
     this.images = this.detail.images;
     this.image = this.detail.images[0];
-    this.incrementI=0;
+    this.incrementI = 0;
     this.increment = increment;
   }
 
@@ -73,9 +82,14 @@ export class ProjectExtendedComponent implements OnInit {
     this.shift(this.increment + 1);
   }
   shiftImages(incrementI) {
-    if (!this.images.length || incrementI >= this.images.length || incrementI < 0) return;
-    this.image= this.images[incrementI];
-    
+    if (
+      !this.images.length ||
+      incrementI >= this.images.length ||
+      incrementI < 0
+    )
+      return;
+    this.image = this.images[incrementI];
+
     this.incrementI = incrementI;
   }
   leftI() {

@@ -1,30 +1,51 @@
-
 <div class="page home" *ngIf="user">
-<div  class="profilePic">
-<img  src="{{user.imgUrl}}"> 
-</div>
-<div class="homeText">
-    <h2>{{aboutLabel}}</h2>
-<p *ngIf="resume">{{resume.myDescription}} Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iure exercitationem nisi harum nesciunt numquam veritatis obcaecati magnam cum officiis voluptas, in impedit quaerat deleniti nobis illum blanditiis? Quos, voluptas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus assumenda magnam qui accusamus suscipit dicta numquam dolor rem quasi debitis ipsam, impedit unde aliquam doloribus incidunt beatae aut vel ducimus.</p>
-<h2>{{followLabel}}</h2>
+  <div class="profilePic">
+    <img src="{{ user.imgUrl }}" />
+  </div>
+  <div class="homeText">
+    <h2>{{ aboutLabel | translate }}</h2>
+    <p>
+      {{user.myDescription}}
+    </p>
+    <h2>{{ followLabel | translate }}</h2>
 
-<ul>
-    <li [ngClass]="{
-      'facebook' : user.fbLink != '',
-      'negative' : user.fbLink == ''
-   }"><a href="{{user.fbLink}}"><i   class="fab fa-facebook fa-4x"></i></a></li>
-    <li [ngClass]="{
-      'positive' : user.igLink != '',
-      'negative' : user.igLink == ''
-   }"><a href="{{user.igLink}}"><i class="fab fa-instagram fa-4x"></i></a></li>
-    <li [ngClass]="{
-      'linkedLink' : user.linkedLink != '',
-      'negative' : user.linkedLink == ''
-   }" ><a href="{{user.linkedLink}}"><i  class="fab fa-linkedin fa-4x"></i></a></li>
-    <li [ngClass]="{
-      'youtube' : user.ytLink != '',
-      'negative' : user.ytLink == ''
-   }"><a href="{{user.ytLink}}"><i  class="fab fa-youtube-square fa-4x"></i></a></li>
-  </ul>
-</div>
+    <ul>
+      <li
+        [ngClass]="{
+          facebook: user.fbLink != '',
+          negative: user.fbLink == ''
+        }"
+      >
+        <a href="{{ user.fbLink }}"><i class="fab fa-facebook fa-4x"></i></a>
+      </li>
+      <li
+        [ngClass]="{
+          positive: user.igLink != '',
+          negative: user.igLink == ''
+        }"
+      >
+        <a href="{{ user.igLink }}"><i class="fab fa-instagram fa-4x"></i></a>
+      </li>
+      <li
+        [ngClass]="{
+          linkedLink: user.linkedLink != '',
+          negative: user.linkedLink == ''
+        }"
+      >
+        <a href="{{ user.linkedLink }}"
+          ><i class="fab fa-linkedin fa-4x"></i
+        ></a>
+      </li>
+      <li
+        [ngClass]="{
+          youtube: user.ytLink != '',
+          negative: user.ytLink == ''
+        }"
+      >
+        <a href="{{ user.ytLink }}"
+          ><i class="fab fa-youtube-square fa-4x"></i
+        ></a>
+      </li>
+    </ul>
+  </div>
 </div>

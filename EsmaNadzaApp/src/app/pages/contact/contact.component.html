@@ -1,38 +1,59 @@
 <div class="page">
-        <div class="main">
-    
-            <h1 class="maintitle">{{maintitle}}</h1>
-    
-            <div class="maincontact">
-    
-                <div class="inputholder">
-    
-                    <div class="inputs">
-    
-                        <input class="inputdiv" type="text" placeholder="{{holderName}}">
-                        <input class="inputdiv" type="text" placeholder="{{holderEmail}}">
-                        <input class="inputdiv" type="text" placeholder="{{holderSubject}}">
-                        <textarea class="writetext" type="text" placeholder="{{holderMessage}}" cols="70" rows="5"></textarea>
-                        <button class="send">Send</button>
-    
-                    </div>
-                </div>
-    
-                <div class="contentholder">
-                    <div class="content">
-                        <div *ngIf="user" class="divholder">
-                            <h2>{{contactHello}}</h2>{{contactText}}</div>
-                        <h2>{{contactInformation}}</h2>
-                        <div class="contacticons">
-                            <div class="icons"><i class="fa fa-phone fa-1x">  {{user.phoneNumber}}</i> </div>
-                            <div class="icons"><i class="fa fa-envelope fa-1x">  {{user.email}} </i></div>
-    
-                        </div>
-                    </div>
-                </div>
-    
+  <div class="main">
+    <h1 class="maintitle">{{ maintitle | translate }}</h1>
+
+    <div class="maincontact">
+      <div class="inputholder">
+        <form class="inputs" id="inputs">
+          <input
+            class="inputdiv"
+            type="text"
+            name="name"
+            placeholder="{{ holderName |translate }}"
+          />
+          <input
+            class="inputdiv"
+            type="text"
+            name="email"
+            placeholder="{{ holderEmail | translate }}"
+          />
+          <input
+            class="inputdiv"
+            type="text"
+            name="subject"
+            placeholder="{{ holderSubject | translate }}"
+          />
+          <textarea
+            class="writetext"
+            type="text"
+            name="message"
+            placeholder="{{ holderMessage | translate }}"
+            cols="70"
+            rows="5"
+          ></textarea>
+          <button type="submit" id="submit" (click)="function()" class="send">
+            {{ send | translate }}
+          </button>
+        </form>
+      </div>
+
+      <div *ngIf="user" class="contentholder">
+        <div class="content">
+          <div class="divholder">
+            <h2>{{ contactHello | translate }}</h2>
+            {{ contactText | translate }}
+          </div>
+          <h2>{{ contactInformation | translate }}</h2>
+          <div class="contacticons">
+            <div class="icons">
+              <i class="fa fa-phone fa-1x"> {{ user.phoneNumber }}</i>
             </div>
-    
+            <div class="icons">
+              <i class="fa fa-envelope fa-1x"> {{ user.email }} </i>
+            </div>
+          </div>
         </div>
-    
-    
+      </div>
+    </div>
+  </div>
+</div>

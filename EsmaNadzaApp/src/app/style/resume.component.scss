@@ -1,100 +1,95 @@
-.main{
-   width:100%;
+.main {
+  width: 100%;
 }
 
-.wrapper1, .wrapper2{
-    display: flex;
+.wrapper1,
+.wrapper2 {
+  display: flex;
 }
 
-
-.wrapper1{
-    padding-top: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 30px;
+.wrapper1 {
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 30px;
 }
 
-.wrapper2{
-    flex-direction: column;
-    align-items: stretch; 
-    width: 60%;
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-bottom: 20px;
+.wrapper2 {
+  flex-direction: column;
+  align-items: stretch;
+  width: 60%;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
 }
-
 
 .cont {
-    display: flex;
-    width: 100%;
-
-    align-items: stretch; 
-    border-top: 1px solid $maintextcolor;
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  border-top: 1px solid $maintextcolor;
 }
 
-.title{
-
-    background: $footerbackground;
-    border-radius: $border-radius;
-    width: 140px;
-    height: 140px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.title {
+  background: $footerbackground;
+  border-radius: $border-radius;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.section{
-    color: $textcolor2;
-    border-radius:$border-radius;
-    word-wrap: break-word;
-    display: flex;
-    text-align: center;
-    font-size: $subtitlefont;
+.section {
+  color: $textcolor2;
+  border-radius: $border-radius;
+  word-wrap: break-word;
+  display: flex;
+  text-align: center;
+  font-size: $subtitlefont;
 }
 
 @media only screen and (max-width: 860px) {
-    .cont {
-        flex-direction: column;
-        align-items: center;
-        
-   }
+  .cont {
+    flex-direction: column;
+    align-items: center;
+  }
 
-   .textresume{
-       text-align: center;
-   }
+  .textresume {
+    text-align: center;
+  }
 
-   .wrapper2{
-       padding-left: 0px;
-       padding-right: 0px;
-       padding-top: 0px;
-   }
+  .wrapper2 {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+  }
 
-   .wrapper1{
-       padding-bottom: 10px;
-       padding-top: 20px;
-   }
+  .wrapper1 {
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
 
-   .title{
+  .title {
     width: 150px;
     height: 150px;
-
-   }
+  }
 }
 
-.export{
-    top:60px;
-    right:20px;
-    cursor: pointer;
-    background-color: $footerbackground;
-    font-weight:bold;
-    padding:5px 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    color: white;
+.export {
+  top: 60px;
+  right: 20px;
+  cursor: pointer;
+  background-color: $footerbackground;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: white;
 }
 
-.readmore{
-    color: $footerbackground;
-    text-decoration: underline;
+.readmore {
+  color: $footerbackground;
+  text-decoration: underline;
+  cursor: pointer;
 }

@@ -1,121 +1,115 @@
-.home{
-    display: block;
-    padding-top: 6%;
+.home {
+  display: block;
+  padding-top: 6%;
 }
-.profilePic{
-    float: left;
-    width: 385px;
-    height: 380px;
-    border-radius: 50%;
-    background-color:pink;
-    overflow: hidden;
-    img{
+.profilePic {
+  float: left;
+  width: 385px;
+  height: 380px;
+  border-radius: 50%;
+  background-color: pink;
+  overflow: hidden;
+  img {
     width: 100%;
-    object-fit:cover;
-    }
+    object-fit: cover;
+  }
 }
-.homeText{
-    width: 60%;
-    float:right;
-    p{
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    
-   ul{
-    li{
-        display: inline-flex;
-        padding: 10px 10px;
-        list-style-type: none;
-        .fa-instagram{
-            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-            -webkit-background-clip: text;
-                    /* Also define standard property for compatibility */
-                    background-clip: text;
-            -webkit-text-fill-color: transparent
-           }
-           .fa-youtube-square{
-            color:red;
-        }
-        .fa-facebook{
-            color:  rgb(66,103,178)
-         }
-         .fa-linkedin{
-            color: rgb(40,103,178);
-        }
+.homeText {
+  width: 60%;
+  float: right;
+  p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  ul {
+    li {
+      display: inline-flex;
+      padding: 10px 10px;
+      list-style-type: none;
+      .fa-instagram {
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0%,
+          #fdf497 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
-       
-    
-   }
-  
+      .fa-youtube-square {
+        color: red;
+      }
+      .fa-facebook {
+        color: rgb(66, 103, 178);
+      }
+      .fa-linkedin {
+        color: rgb(40, 103, 178);
+      }
+    }
+  }
 
-
-  
- .negative{
-       display: none;
-   }
-            
-            
+  .negative {
+    display: none;
+  }
 }
 @media only screen and (max-width: 1700px) {
-    .home .profilePic{
-        width: 350px;
-        height: 350px;
-       
-    
-    }
-    .home .homeText{
-        width: 55%;
-    }
+  .home .profilePic {
+    width: 350px;
+    height: 350px;
+  }
+  .home .homeText {
+    width: 55%;
+  }
 }
-    @media only screen and (max-width: 1500px) {
-        .home .profilePic{
-            width: 295px;
-            height: 295px;
-           
-        
-        }
-        }
-        @media only screen and (max-width: 1153px) {
-            
-            .home{
-                width: 85%;
-                padding-top:9%;
-      
-            }
-            .home .homeText{
-                width: 67%;
-            }
-              }
+@media only screen and (max-width: 1500px) {
+  .home .profilePic {
+    width: 295px;
+    height: 295px;
+  }
+}
+@media only screen and (max-width: 1237px) {
+  .home {
+    width: 85%;
+    padding-top: 9%;
+  }
+  .home .homeText {
+    width: 67%;
+  }
+}
 
-    @media only screen and (max-width: 1089px){
-        .home{
-            padding-top: 5%;
-        }
-        .home .homeText{
-            width: 58%;
-        }
-    }
-    @media only screen and (max-width: 900px){
-        .home{
-            padding-top: 5%;
-            width:85%;
-        }
-        .home .homeText{
-            width: 55%;
-        }
-    }
-    @media only screen and (max-width: 830px){
-        .home .profilePic{
-          margin-left:25%;
-        }
-        .home .homeText{
-            width: 100%;
-            margin-top: 3%
-        }
-    }
-    @media only screen and (max-width: 660px){
-        .home .profilePic{
-            margin-left:19%;
-          }
-    }
+@media only screen and (max-width: 1089px) {
+  .home {
+    width: 85%;
+    padding-top: 5%;
+  }
+  .home .homeText {
+    width: 58%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .home {
+    padding-top: 5%;
+    width: 85%;
+  }
+  .home .homeText {
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .home .profilePic {
+    margin-left: 25%;
+  }
+  .home .homeText {
+    width: 100%;
+    margin-top: 3%;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .home .profilePic {
+    margin-left: 19%;
+  }
+}
