@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
  //Za user stranicu
-    //pozadina
-    $background1: white;
-    $background2: black;
-    $transp: 0.6; //da bude prozirna
+   
 
     //tekst
     $namefont: 43px;
@@ -11,6 +8,8 @@
     $paragraphfont: 12px;
     $textcolor1: black;
     $textcolor2: white; 
+    $textcolor3: rgb(232,53, 86);
+    $textcolor4: #61D0D4;
     $textstyle: 'Vollkorn', serif;
 
     //slika
@@ -24,6 +23,7 @@
     $footerbackground: rgb(232,53, 86);
     $mainbackground: rgb(234, 229, 229); 
     $maintextcolor: rgb( 77, 77, 77);
+    $footertextcolor: white;
 
     //lista
     $activecolor: #61D0D4;

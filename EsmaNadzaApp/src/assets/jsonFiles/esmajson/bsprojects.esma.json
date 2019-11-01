@@ -1,0 +1,34 @@
+
+[
+    {
+        
+    "name": "C# Aplikacija",
+    "shortDescription": "Bosanski ",
+    "description": "It was a cold grey day iinter evening seemed to have closed upon the hills, cloaking them in mist.lorem",
+    "mainImage": "https://www.qualtrics.com/m/assets/blog/wp-content/uploads/2018/08/shutterstock_1068141515.jpg",
+    "images": ["https://www.qualtrics.com/m/assets/blog/wp-content/uploads/2018/08/shutterstock_1068141515.jpg","https://www.incimages.com/uploaded_files/image/970x450/getty_501816888_2000133320009280121_341185.jpg","https://www.ft.com/__origami/service/image/v2/images/raw/http://prod-upp-image-read.ft.com/429941bc-56df-11e9-8b71-f5b0066105fe?source=next&fit=scale-down&quality=highest&width=1067"]
+    },
+    
+    {
+        "name": "Web Applicaton",
+        "shortDescription": "Bosansk ",
+        "description":"puni opis",
+        "mainImage": "https://www.incimages.com/uploaded_files/image/970x450/getty_501816888_2000133320009280121_341185.jpg",
+        "images": [""]
+    },
+    {
+        "name": "ASP.NET",
+        "shortDescription": "Bosanski ",
+        "description":"puni opis",
+        "mainImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFt56h7d4L4dH1v6eCk48Jnvu2OCRRBWiyRtX6OkincyLywjEt&s",
+        "images": [""]
+    },
+    {
+        "name": "Blender",
+        "shortDescription": "Bosanski ",
+        "description":"puni opis",
+        "mainImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFt56h7d4L4dH1v6eCk48Jnvu2OCRRBWiyRtX6OkincyLywjEt&s",
+        "images": [""]
+    }
+]
+

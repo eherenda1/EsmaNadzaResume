@@ -34,7 +34,7 @@
             }
             p{
                 display: block;
-                color:white;
+                color: $footertextcolor;
             }
         &:last-child {
             text-align: right;
@@ -50,10 +50,15 @@
         font-weight:bold;
         padding:5px 10px;
         border-radius: 5px;
-        color: $footerbackground;
+        color: $footertextcolor;
         
     }
  
+}
+.choose{
+    padding-top: 50px;
+    padding-left: 50px;
+    color: $activecolor;
 }
 @media only screen and (max-width: 1739px) {
     .foot .contact{

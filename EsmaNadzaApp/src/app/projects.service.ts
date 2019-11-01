@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class ProjectsService {
 
   constructor(private http: HttpClient) { }
-  getProjects(code: string): Observable<IProject[]>{
-    return this.http.get<IProject[]>("/assets/jsonFiles/"+code+"json/projects."+code+".json")
+  getProjects(code: string,lang:string): Observable<IProject[]>{
+    return this.http.get<IProject[]>("/assets/jsonFiles/"+code+"json/"+lang+"projects."+code+".json")
   }
 }

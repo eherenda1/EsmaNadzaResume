@@ -32,20 +32,21 @@
         display:flex;
         justify-content: center;
         align-items: center;
-        background: $activecolor;
+        background: $textcolor4;
         border-radius: $border-radius;
         width: 96px;
         height: 96px;
         float: left;
 }
 .sectionname{
-    background: $activecolor;
+    background: $textcolor4;
     border-radius: $border-radius;
-    font-size: 17px;
+    font-size: 15px;
     width: 100%;
     text-align: center;
     word-wrap: break-word;
-  
+    font-weight: bold;
+    color: $textcolor2;
 }
 .up{
     border-bottom: 1px solid $maintextcolor;
@@ -72,8 +73,6 @@
     
     p{
         margin-top: 3%;
-      
-  
         margin-left: 30px;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -81,7 +80,7 @@
 
     }
     a {
-        color: $footerbackground;
+        color: $textcolor3;
       }
 }
 

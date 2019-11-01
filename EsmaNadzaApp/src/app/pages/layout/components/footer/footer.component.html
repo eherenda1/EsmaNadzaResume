@@ -1,28 +1,35 @@
+<div class="choose">
+        <input type="checkbox" class="check" (click)="setLang('bs')">Bosnian <br/>
+        <input type="checkbox" class="check" checked=true (click)="setLang('en')">English<br/>
+        <input type="checkbox" class="check" (click)="setLang('de')">German
+    
+      </div>
 <div class="foot">
+       
  <div class="contact" >
         <i class="fas fa-phone-square-alt fa-3x"></i>
             <div class="data">
-           <p class="label">Call:</p>
+           <p class="label">{{callLabel}}:</p>
         <p *ngIf="user"> {{user.phoneNumber}}</p>
         </div>
     </div>
     <div class="contact" >
             <i class="far fa-envelope fa-3x"></i>
             <div class="data">
-           <p class="label">Contact:</p>
+           <p class="label">{{contactLabel}}</p>
             <p *ngIf="user"> {{user.email}}</p>
         </div>
     </div>
     <div class="contact" >
             <i class="far fa-envelope fa-3x"></i>
             <div class="data">
-           <p class="label">Contact:</p>
+           <p class="label">{{contactLabel}}</p>
             <p *ngIf="user"> {{user.email}}</p>
         </div>
     </div>
     
     <div class="contact" >
-        <button [routerLink]="['']">View other people</button>
+        <button [routerLink]="['']">{{buttonValue}}</button>
     </div>
     
 </div>

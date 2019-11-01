@@ -3,7 +3,7 @@
     {
         
     "name": "C# Aplikacija",
-    "shortDescription": "I'm a Paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to write more. Tell a story about yourself.I'm a Paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to write more. Tell a story about yourself.",
+    "shortDescription": "Esma na kompjuteru",
     "description": "It was a cold grey day in late November. The weather had changed overnight, when a backing wind brought a granite sky and a mizzling rain with it, and although it was now only a little after two o'clock in the afternoon the pallor of a winter evening seemed to have closed upon the hills, cloaking them in mist.lorem",
     "mainImage": "https://www.qualtrics.com/m/assets/blog/wp-content/uploads/2018/08/shutterstock_1068141515.jpg",
     "images": ["https://www.qualtrics.com/m/assets/blog/wp-content/uploads/2018/08/shutterstock_1068141515.jpg","https://www.incimages.com/uploaded_files/image/970x450/getty_501816888_2000133320009280121_341185.jpg","https://www.ft.com/__origami/service/image/v2/images/raw/http://prod-upp-image-read.ft.com/429941bc-56df-11e9-8b71-f5b0066105fe?source=next&fit=scale-down&quality=highest&width=1067"]
@@ -11,21 +11,21 @@
     
     {
         "name": "Web Applicaton",
-        "shortDescription": "The idiosyncrasy of this town is smoke. It rolls sullenly in slow folds from the great chimneys of the iron-foundries, and settles down in black, slimy pools on the muddy streets. Smoke on the wharves, smoke on the dingy boats, on the yellow river--clinging in a coating of greasy soot to the house-front, the two faded poplars, the faces of the passers-by.",
+        "shortDescription": "Esma na fakultetu",
         "description":"puni opis",
         "mainImage": "https://www.incimages.com/uploaded_files/image/970x450/getty_501816888_2000133320009280121_341185.jpg",
         "images": [""]
     },
     {
         "name": "ASP.NET",
-        "shortDescription": "It was a cold grey day in late November. The weather had changed overnight, when a backing wind brought a granite sky and a mizzling rain with it, and although it was now only a little after two o'clock in the afternoon the pallor of a winter evening seemed to have closed upon the hills, cloaking them in mist.",
+        "shortDescription": "Esma radi projekat",
         "description":"puni opis",
         "mainImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFt56h7d4L4dH1v6eCk48Jnvu2OCRRBWiyRtX6OkincyLywjEt&s",
         "images": [""]
     },
     {
         "name": "Blender",
-        "shortDescription": "Blank face in the windowpane, Made clear in seconds of light, Disappears and returns again, Counting hours, searching the night.",
+        "shortDescription": "Esma is handsome",
         "description":"puni opis",
         "mainImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFt56h7d4L4dH1v6eCk48Jnvu2OCRRBWiyRtX6OkincyLywjEt&s",
         "images": [""]

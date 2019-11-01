@@ -32,11 +32,12 @@ export class ResumeExtendedComponent implements OnInit {
 
     this.readmore.getItems().subscribe(resumeextended => {
       this.resumeextended = resumeextended;
+      console.log(this.resumeextended);
       this.readmore.get().subscribe((resumeextended) => {
         this.detail = resumeextended;
-        
+       
         if(this.detail){
-        
+        console.log(this.resumeextended.indexOf(this.detail));
         this.shift(this.resumeextended.indexOf(this.detail));
       
         }

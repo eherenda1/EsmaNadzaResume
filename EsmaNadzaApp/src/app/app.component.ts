@@ -9,8 +9,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'EsmaNadzaApp';
   selecttheme: boolean = true;
+  theme;
+  
 
-  changeTheme(){
+  getlighttheme(){
+    if( document.querySelector("#main"))
+    console.log("Ovdje");
     
+
   }
 }

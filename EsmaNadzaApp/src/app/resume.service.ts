@@ -11,9 +11,10 @@ export class ResumeService {
   
   constructor(private http: HttpClient) { }
 
-  getResume(code: string): Observable<IResume>{
+  getResume(code: string, lang:string): Observable<IResume>{
     
-  
-    return this.http.get<IResume>("/assets/jsonFiles/"+code+"json/resume."+code+".json")
+    console.log(lang)
+    console.log("/assets/jsonFiles/"+code+"json/"+lang+"resume."+code+".json");
+    return this.http.get<IResume>("/assets/jsonFiles/"+code+"json/"+lang+"resume."+code+".json")
   }
 }

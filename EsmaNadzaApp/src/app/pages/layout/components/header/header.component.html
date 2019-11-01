@@ -1,8 +1,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-
+<div>
+        <button (click)="getlighttheme()">light</button>
+        <button (click)="getdarktheme()">dark</button>
+        <button (click)="getdefaulttheme()">main</button>
+        
+    </div>
 <div class="head">
+        
     <div *ngIf="user" class="mainInformation">
-   <h1 class="ime" >{{user.firstname}} {{user.lastname}}</h1>
+   <h1 class="ime" ngInit="export(user)">{{user.firstname}} {{user.lastname}}</h1>
    <h2 >{{user.jobPosition}}</h2>
 </div>
 <div class="meni" [ngClass] = "{active: show}" >

@@ -21,6 +21,7 @@ export class ReadmoreService {
   }
 
   public getItems(): Observable<any>{ 
+    console.log(this.items);
     return of(this.items);
   }
 

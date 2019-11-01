@@ -6,6 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectComponent } from './pages/project/project.component';
+import {ExportComponent} from './pages/resume/export/export.component';
 
 import {HeaderComponent} from './pages/layout/components/header/header.component';
 import {FooterComponent} from './pages/layout/components/footer/footer.component';
@@ -14,15 +15,15 @@ import {ProjectExtendedComponent} from './pages/project/project-extended/project
 
 const routes: Routes = [
   {path: '', component:StartComponent},
-  { path: 'layout/:code', 
+  { path: ':lang/layout/:code', 
     component:LayoutComponent,
     children: [
       { path:'home', component:HomeComponent},
-      { path:'resume', component:ResumeComponent},
-      /*children: [
-        { path: 'readmore', component:ResumeExtendedComponent},
+      { path:'resume', component:ResumeComponent,
+      children: [
+        { path: 'export', component:ExportComponent},
       ]
-    },*/
+    },
     { path: 'resume/details', component: ResumeExtendedComponent},
       { path:'projects', component:ProjectComponent
   /*    children: [
@@ -37,7 +38,7 @@ const routes: Routes = [
 ]; 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {onSameUrlNavigation: 'reload'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
