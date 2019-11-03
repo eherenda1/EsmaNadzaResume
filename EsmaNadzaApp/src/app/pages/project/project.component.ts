@@ -17,6 +17,7 @@ export class ProjectComponent {
   public data: any;
   public lang: string;
   public readmoreTitle: any;
+  public index: number = 0;
   constructor(
     private _projectsService: ProjectsService,
     private route: ActivatedRoute,
@@ -49,6 +50,13 @@ export class ProjectComponent {
   }
 
   selected(item) {
+    for(let i = 0; i<this.projects.length; i++){
+      if(this.projects[i] == item){
+        this.index = i;
+      }
+    }
     this.readmore.set(item);
+    this.readmore.setIndeks(this.index);
+
   }
 }

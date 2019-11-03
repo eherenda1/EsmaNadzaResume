@@ -1,10 +1,4 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<div>
-        <button (click)="getlighttheme()">light</button>
-        <button (click)="getdarktheme()">dark</button>
-        <button (click)="getdefaulttheme()">main</button>
-        
-    </div>
 <div class="head">
         
     <div *ngIf="user" class="mainInformation">
@@ -21,10 +15,15 @@
       >
         {{ item.title | translate }}
       </li>
-      <select #s (change)="setLang(s.value)"class="langmeni" placeholder="">
+      <select #l (change)="setLang(l.value)"class="langmeni" placeholder="">
           <option value="" selected disabled hidden>{{choose | translate}}</option>
         <option *ngFor="let type of langopt" [value] = "type.value" class="check">{{type.translate | translate}}</option>
      </select>
+     <select #s (change)="gettheme(s.value)"class="langmeni" placeholder="">
+        <option value="" selected disabled hidden>{{chooset | translate}}</option>
+        <option *ngFor="let theme of themes" [value] = "theme.value" class="check">{{theme.translate | translate}}</option>
+   
+ </select>     
     </ul>
   </div>
 

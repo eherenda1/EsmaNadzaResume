@@ -48,7 +48,9 @@ export class ResumeExtendedComponent implements OnInit {
           }
         });
 
-      
+      this.readmore.getIndeks().subscribe(data => {
+        this.index = data;
+      })
         this.readmore.setTitles(this.names);
         this.readmore.setItems(this.niz);
         for (let i = 0; i < this.niz.length; i++) {
@@ -72,9 +74,6 @@ export class ResumeExtendedComponent implements OnInit {
             if (this.detail) {
               this.images = this.detail.images;
              this.image = this.images[0];
-             console.log(this.image);
-             console.log(this.detail.images);
-            this.shiftImages(0);
               this.shift(this.resumeextended.indexOf(this.detail));
             }
           });
@@ -93,6 +92,7 @@ export class ResumeExtendedComponent implements OnInit {
     this.caption = this.captions[increment];
     this.increment = increment;
     this.index = this.increment;
+    this.readmore.setIndeks(this.index);
     this.images = this.detail.images;
     this.image = this.detail.images[0];
     this.incrementI = 0;
@@ -109,16 +109,20 @@ export class ResumeExtendedComponent implements OnInit {
       !this.images.length ||
       incrementI >= this.images.length ||
       incrementI < 0
-    )
+    ) {
+      console.log(this.images);
+      console.log(incrementI);
       return;
+    }
     this.image = this.images[incrementI];
-
+    console.log("lala", incrementI);
     this.incrementI = incrementI;
   }
   leftI() {
     this.shiftImages(this.incrementI - 1);
   }
   rightI() {
+    console.log("uslo",this.increment);
     this.shiftImages(this.incrementI + 1);
   }
 }

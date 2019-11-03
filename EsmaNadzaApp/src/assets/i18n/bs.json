@@ -10,14 +10,14 @@
   "CALL": "Telefon",
   "CONTACTfooter": "E-mail",
   "BUTTONfooter": "Pogledajte i druge profile",
-  "RESUMETITLE": "REZIME",
+  "RESUMETITLE": "Rezime",
   "EDUCATION": "Obrazovanje",
   "WORK": "Radno iskustvo",
   "SKILLS": "Vještine",
   "LANGUAGES": "Jezici",
   "HOBBIES": "Interesi",
   "BUTTONexport": "Eksportuj u pdf",
-  "PROJECTSTITLE": "PROJEKTI",
+  "PROJECTSTITLE": "Projekti",
   "READMORE": "Saznaj više",
   "CONTACTTITLE": "Kontakt",
   "HOLDERNAME": "Ime*",
@@ -33,5 +33,9 @@
   "BS": "Bosanski",
   "EN": "Engleski",
   "DE": "Njemački",
-  "SELECTPL":"Izaberite jezik"
+  "SELECTPL":"Izaberite jezik",
+  "LIGHT": "Svjetla tema",
+  "DARK": "Tamna tema",
+  "DEFAULT": "Originalna tema",
+  "SELECTPT": "Izaberite temu"
 }

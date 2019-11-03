@@ -10,14 +10,14 @@
   "CALL": "Telefon",
   "CONTACTfooter": "Kontakt",
   "BUTTONfooter": "Besuche andere  Profile",
-  "RESUMETITLE": "ZUSAMMENFASSUNG",
+  "RESUMETITLE": "Lebenslauf",
   "EDUCATION": "Ausbildung",
   "WORK": "Arbeitserfahrung",
   "SKILLS": "Kompetenzen",
   "LANGUAGES": "Sprachen",
   "HOBBIES": "Hobbies und Interessen",
   "BUTTONexport": "Als PDF exportieren",
-  "PROJECTSTITLE": "PROJEKTE",
+  "PROJECTSTITLE": "Projekte",
   "READMORE": "Mehr",
   "CONTACTTITLE": "Kontakt",
   "HOLDERNAME": "Name*",
@@ -33,5 +33,9 @@
   "BS": "Bosnisch",
   "EN": "Englisch",
   "DE": "Deutsch",
-  "SELECTPL":"Wählen Sie eine Sprache aus"
+  "SELECTPL":"Wählen Sie eine Sprache aus",
+  "LIGHT": "Light theme",
+  "DARK": "Dark theme",
+  "DEFAULT": "Main theme",
+  "SELECTPT": "Izaberite temu D"
 }

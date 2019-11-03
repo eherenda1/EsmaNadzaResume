@@ -9,9 +9,9 @@ import { Observable } from "rxjs";
 export class ContactService {
   constructor(private http: HttpClient) {}
 
-  getContact(code: string): Observable<IUser> {
+  getContact(code: string,lang:string): Observable<IUser> {
     return this.http.get<IUser>(
-      "/assets/jsonFiles/" + code + "json/user." + code + ".json",
+      "/assets/jsonFiles/" + code + "json/"+lang+"user." + code + ".json",
     );
   }
 }

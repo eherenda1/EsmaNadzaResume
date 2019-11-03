@@ -37,6 +37,9 @@ export class ProjectExtendedComponent implements OnInit {
       this._projectsService
         .getProjects(this.code, this.lang)
         .subscribe(data => {
+          this.readmore.getIndeks().subscribe(data=> {
+            this.index=data;
+          });
           this.readmore.setItems((this.projects = data));
           for (let i = 0; i < this.projects.length; i++) {
             if (i == this.index) this.readmore.set(this.projects[i]);
@@ -69,6 +72,7 @@ export class ProjectExtendedComponent implements OnInit {
       return;
     this.detail = this.projects[increment];
     this.index = increment;
+    this.readmore.setIndeks(this.index);
     this.images = this.detail.images;
     this.image = this.detail.images[0];
     this.incrementI = 0;
@@ -96,6 +100,7 @@ export class ProjectExtendedComponent implements OnInit {
     this.shiftImages(this.incrementI - 1);
   }
   rightI() {
+  
     this.shiftImages(this.incrementI + 1);
   }
 }

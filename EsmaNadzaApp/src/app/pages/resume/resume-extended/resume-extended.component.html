@@ -1,43 +1,42 @@
 <body class="page resumeextend" *ngIf="detail">
     <div class="expand" (shift)="shift($event)">
-            <div class="extended">
-                    <div class="titleextended">
-                        <h1 class="caption" >{{caption}}</h1>
-                    </div>
-                </div>
+        <div class="extended">
+            <div class="titleextended">
+                <h1 class="caption">{{caption}}</h1>
+            </div>
+        </div>
         <div class="contreadmore">
             <div class="holderextend">
                 <div class="wrapper2resumeextended">
                     <div class="textresume">
-    
+
                         <h2 class="subtitle">{{detail.name}}</h2>
                         <p>{{detail.subject}}</p>
                         <p>{{detail.shortDescription}}</p>
-                        <p>{{detail.description}}</p>
-                        <p>{{detail.images}}</p>
+
                         <div class="listPic" [ngClass]="{
                             positive: detail.images != '',
                             negative: detail.images == ''
                           }">
-                                <div class="navigationI"><a class="left" (click)="leftI()"><</a></div>
-                                <div class="images">
-                                  <img src="{{ image }}" />
-                                </div>
-                                <div class="navigationI"><a class="right" (click)="rightI()">></a></div>
-                              </div>
-                        
-    
+                            <div class="navigationI"><a class="left" (click)="leftI()">
+                                    <</a> </div> <div class="images">
+                                        <img src="{{ image }}" />
+                            </div>
+                            <div class="navigationI"><a class="right" (click)="rightI()">></a></div>
+                        </div>
+
+                        <p>{{detail.description}}</p>
                     </div>
-    
+
                 </div>
             </div>
         </div>
-            <div class="options">
-                <a class="previous" (click)="left()">
-                    <<Previous</a>
-                        <a class="next" (click)="right()">Next>></a>
-    
-            </div>
+        <div class="options">
+            <a class="previous" (click)="left()">
+                <<Previous</a> <a class="next" (click)="right()">Next>>
+            </a>
+
         </div>
-    
-    </body>
+    </div>
+
+</body>

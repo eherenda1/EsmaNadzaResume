@@ -41,16 +41,15 @@ export class ContactComponent implements OnInit {
         this.user = r;
       });
       
-        this._contactService.getContact(this.code).subscribe((data)=> this.contact = data);
+        this._contactService.getContact(this.code,this.lang).subscribe((data)=> this.contact = data);
     });
 
     this._userService.getUser(this.code,this.lang).subscribe((r)=> {
       this.user = r;
-      console.log("Ovdj sam", this.user)
     });
      
    
-   this._contactService.getContact(this.code).subscribe((data)=> this.contact = data);
+   this._contactService.getContact(this.code,this.lang).subscribe((data)=> this.contact = data);
    this.translate.use(this.lang).then((r)=>{
     this.data = r;
     this.maintitle = "CONTACTTITLE";

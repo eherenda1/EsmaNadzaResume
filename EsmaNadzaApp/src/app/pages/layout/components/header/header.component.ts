@@ -6,7 +6,7 @@ import { IUser } from "src/app/user";
 import { IResume } from "src/app/resume";
 import { TranslateService } from "src/app/translate.service";
 import { IEn } from "src/app/en";
-import { ExportService} from 'src/app/export.service';
+import { ExportService } from 'src/app/export.service';
 
 @Component({
   selector: "header-layout",
@@ -25,10 +25,11 @@ export class HeaderComponent {
   public path: string;
   public page: any;
   public choose = "SELECTPL";
+  public chooset = "SELECTPT";
   public exported: any;
   public element;
   public langopt: any[];
-  
+  public themes: any[];
   constructor(
     private _userService: OneuserService,
     private _resumeService: ResumeService,
@@ -36,31 +37,48 @@ export class HeaderComponent {
     private router: Router,
     private exports: ExportService,
     private translate: TranslateService,
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.langopt = [
       {
-          option:"Bosnian",
-          translate: "BS",
-          value:"bs"
+        option: "Bosnian",
+        translate: "BS",
+        value: "bs"
       },
       {
-        option:"English",
+        option: "English",
         translate: "EN",
         value: "en"
-    },
-    {
-      option:"German",
-      translate: "DE",
-      value:"de"
-  }
+      },
+      {
+        option: "German",
+        translate: "DE",
+        value: "de"
+      }
+    ]
+    this.themes = [
+      {
+        option: "Light theme",
+        translate: "LIGHT",
+        value: "light"
+      },
+      {
+        option: "Dark theme",
+        translate: "DARK",
+        value: "dark"
+      },
+      {
+        option: "Default theme",
+        translate: "DEFAULT",
+        value: "default"
+      }
     ]
     this.route.params.subscribe((params: any) => {
       this.code = params.code;
       this.lang = params.lang;
     });
-    this._userService.getUser(this.code,this.lang).subscribe(r => {
+    this._userService.getUser(this.code, this.lang).subscribe(r => {
       this.user = r;
       this.exports.exportuser(this.exported = r);
     });
@@ -95,7 +113,6 @@ export class HeaderComponent {
     this.selected = item;
   }
   setLang(lang: string) {
-    console.log("uslo");
     this.translate.use(lang);
     this.lang = lang;
     this.path = this.router.url;
@@ -103,51 +120,34 @@ export class HeaderComponent {
     this.router.navigateByUrl("/" + this.lang + "/layout/" + this.page);
   }
 
-  export(user){
+
+  export(user) {
     this.exported = user;
   }
 
-  getlighttheme(){
-    this.element= document.querySelector("#indexbody");
-
-    console.log("Ime klase: ", this.element.className)
-
-    this.element.removeAttribute('class'); 
-
+  getlighttheme() {
+    this.element = document.querySelector("#indexbody");
+    this.element.removeAttribute('class');
     this.element.setAttribute('class', 'light');
-    
-   // this.element.classList.replace('default', 'esma');
-    console.log("Ime klase: ", this.element.className)
-    
   }
 
-  getdarktheme(){
-    this.element= document.querySelector("#indexbody");
-
-    console.log("Ime klase: ", this.element.className)
-
-    this.element.removeAttribute('class'); 
-
+  getdarktheme() {
+    this.element = document.querySelector("#indexbody");
+    this.element.removeAttribute('class');
     this.element.setAttribute('class', 'dark');
-    
-   // this.element.classList.replace('default', 'esma');
-    console.log("Ime klase: ", this.element.className)
-    
   }
 
-  getdefaulttheme(){
-    this.element= document.querySelector("#indexbody");
-
-    console.log("Ime klase: ", this.element.className)
-
-    this.element.removeAttribute('class'); 
-
+  getdefaulttheme() {
+    this.element = document.querySelector("#indexbody");
+    this.element.removeAttribute('class');
     this.element.setAttribute('class', 'default');
-    
-   // this.element.classList.replace('default', 'esma');
-    console.log("Ime klase: ", this.element.className)
-    
   }
 
- 
+  gettheme(option: string){
+    this.element = document.querySelector("#indexbody");
+    this.element.removeAttribute('class');
+    this.element.setAttribute('class', option);
+  }
+
+
 }

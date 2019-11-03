@@ -10,7 +10,6 @@ export class OneuserService {
   constructor(private http: HttpClient) {}
 
   getUser(code: string,lang: string): Observable<IUser> {
-    console.log("/assets/jsonFiles/" + code + "json/"+lang+"user." + code + ".json");
     return this.http.get<IUser>(
       "/assets/jsonFiles/" + code + "json/"+lang+"user." + code + ".json",
     );

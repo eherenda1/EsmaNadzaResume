@@ -9,7 +9,7 @@ export class ReadmoreService {
   private items;
   private title;
   private titles;
-
+  private index;
   constructor() {}
 
   public get(): Observable<any> {
@@ -19,7 +19,12 @@ export class ReadmoreService {
   set(item: any) {
     this.item = item;
   }
-
+  setIndeks(index: number){
+     this.index = index;
+  }
+  getIndeks(){
+    return of(this.index);
+ }
   public getItems(): Observable<any> {
     return of(this.items);
   }

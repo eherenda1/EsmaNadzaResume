@@ -10,14 +10,14 @@
   "CALL": "Call",
   "CONTACTfooter": "Contact",
   "BUTTONfooter": "View other people",
-  "RESUMETITLE": "RESUME",
+  "RESUMETITLE": "Resume",
   "EDUCATION": "Education",
   "WORK": "Work experience",
   "SKILLS": "Skills",
   "LANGUAGES": "Languages",
   "HOBBIES": "Hobbies and interests",
   "BUTTONexport": "Export to pdf",
-  "PROJECTSTITLE": "PROJECTS",
+  "PROJECTSTITLE": "Projects",
   "READMORE": "Read more",
   "CONTACTTITLE": "Contact",
   "HOLDERNAME": "Name*",
@@ -33,5 +33,9 @@
   "BS": "Bosnian",
   "EN": "English",
   "DE": "German",
-  "SELECTPL":"Choose a language"
+  "SELECTPL":"Choose a language",
+  "LIGHT": "Light theme",
+  "DARK": "Dark theme",
+  "DEFAULT": "Main theme",
+  "SELECTPT": "Choose a theme"
 }

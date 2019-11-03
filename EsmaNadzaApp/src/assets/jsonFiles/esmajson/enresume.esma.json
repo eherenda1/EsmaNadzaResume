@@ -1,6 +1,6 @@
 [
   {
-    "title": "Education",
+    "title": "EDUCATION",
     "children": [
       {
         "name": "Faculty of Electrical Engineering, University of Sarajevo",
@@ -19,7 +19,7 @@
     ]
   },
   {
-    "title": "Work experience",
+    "title": "WORK EXPERIENCE",
     "children": [
       {
         "name": "ZIRA",
@@ -31,7 +31,7 @@
     ]
   },
   {
-    "title": "Skills",
+    "title": "SKILLS",
     "children": [
       {
         "name": "Hard skills",
@@ -73,7 +73,7 @@
     ]
   },
   {
-    "title": "Languages",
+    "title": "LANGUAGES",
     "children": [
       {
         "name": "Languages",
@@ -86,7 +86,7 @@
     ]
   },
   {
-    "title": "Hobbies and interests",
+    "title": "HOBBIES",
     "children": [
       {
         "name": "Writing",

@@ -1,25 +1,25 @@
 [
   {
-    "title": "Obrazovanje",
+    "title": "EDUCATION",
     "children": [
       {
-        "name": "Elektrotehnički fakultet, Sarajevo",
+        "name": "Elektrotehnicki fakultet, Sarajevo",
         "subject": "",
-        "shortDescription": "2016-2019, Računarstvo i informatika",
+        "shortDescription": "2016-2019, Racunarstvo i informatika",
         "description": "",
         "images": []
       },
       {
         "name": "Gimnazija Dobrinja",
         "subject": "",
-        "shortDescription": "2012-2016, Matematičko-informatički smjer",
+        "shortDescription": "2012-2016, Matematicko-informaticki smjer",
         "description": "",
         "images": []
       }
     ]
   },
   {
-    "title": "Radno iskustvo",
+    "title": "WORK EXPERIENCE",
     "children": [
       {
         "name": "ZIRA",
@@ -31,10 +31,10 @@
     ]
   },
   {
-    "title": "Vještine",
+    "title": "SKILLS",
     "children": [
       {
-        "name": "Tehničke vještine",
+        "name": "Tehnicke vještine",
         "subject": "",
         "shortDescription": "",
         "description": "",
@@ -54,7 +54,7 @@
         ]
       },
       {
-        "name": "Socijalne vještine",
+        "name": "Socijalne vjestine",
         "subject": "",
         "shortDescription": "",
         "description": "",
@@ -73,7 +73,7 @@
     ]
   },
   {
-    "title": "Jezici",
+    "title": "LANGUAGES",
     "children": [
       {
         "name": "Jezici",
@@ -86,7 +86,7 @@
     ]
   },
   {
-    "title": "Interesi",
+    "title": "HOBBIES",
     "children": [
       {
         "name": "Pisanje",
@@ -97,7 +97,7 @@
         "skills": []
       },
       {
-        "name": "Čitanje",
+        "name": "Citanje",
         "subject": "",
         "shortDescription": "",
         "description": "",

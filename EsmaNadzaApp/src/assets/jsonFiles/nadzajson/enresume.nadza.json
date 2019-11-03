@@ -1,6 +1,6 @@
 [
   {
-    "title": "Education",
+    "title": "EDUCATION",
     "children": [
       {
         "name": "Faculty of Electrical Engineering, University of Sarajevo",
@@ -19,7 +19,7 @@
     ]
   },
   {
-    "title": "Work experience",
+    "title": "WORK EXPERIENCE",
     "children": [
       {
         "name": "Zira",
@@ -38,7 +38,7 @@
     ]
   },
   {
-    "title": "Skills",
+    "title": "SKILLS",
     "children": [
       {
         "name": "Hard skills",
@@ -46,7 +46,7 @@
         "shortDescription": "kratak opis",
         "description": "puni opis",
         "images": [],
-        "skils": ["VHDL", "Matlab", "C", "C++"]
+        "skills": ["VHDL", "Matlab", "C", "C++"]
       },
       {
         "name": "Soft skills",
@@ -54,12 +54,12 @@
         "shortDescription": "",
         "description": "",
         "images": [],
-        "skils": ["Time management", "Organisation", "Presentation skills"]
+        "skills": ["Time management", "Organisation", "Presentation skills"]
       }
     ]
   },
   {
-    "title": "Languages",
+    "title": "LANGUAGES",
     "children": [
       {
         "name": "Languages",
@@ -67,12 +67,12 @@
         "shortDescription": "kratak opis",
         "description": "puni opis",
         "images": [],
-        "skils": ["Bosnian/Serbian/Croatian", "German (C1)", "English"]
+        "skills": ["Bosnian/Serbian/Croatian", "German (C1)", "English"]
       }
     ]
   },
   {
-    "title": "Hobbies and interests",
+    "title": "HOBBIES",
     "children": [
       {
         "name": "Painting",
@@ -80,7 +80,7 @@
         "shortDescription": "kratak opis hobby",
         "description": "puni opis hobby",
         "images": [],
-        "skils": []
+        "skills": []
       },
 
       {
@@ -89,7 +89,7 @@
         "shortDescription": "kratak opis hobby",
         "description": "puni opis hobby",
         "images": [],
-        "skils": []
+        "skills": []
       },
       {
         "name": "Reading",
@@ -97,7 +97,7 @@
         "shortDescription": "kratak opis hobby",
         "description": "puni opis hobby",
         "images": [],
-        "skils": []
+        "skills": []
       }
     ]
   }

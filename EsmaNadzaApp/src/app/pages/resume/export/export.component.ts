@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ExportService} from 'src/app/export.service';
+import { ExportService } from 'src/app/export.service';
 import { ActivatedRoute } from "@angular/router";
 
 
@@ -14,7 +14,7 @@ export class ExportComponent implements OnInit {
   constructor(private exports: ExportService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    
+
 
 
   }

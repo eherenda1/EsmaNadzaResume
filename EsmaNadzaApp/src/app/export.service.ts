@@ -27,7 +27,6 @@ exportitem(selection: any){
 
 exportuser(user: any){
   this.user=user;
-  console.log("OVDEJE SAAAAM", this.user);
 }
 
 public getuser(): Observable<any>{

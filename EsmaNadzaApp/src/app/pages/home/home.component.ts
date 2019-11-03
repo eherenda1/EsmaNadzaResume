@@ -37,8 +37,6 @@ export class HomeComponent implements OnInit {
       this.lang = params.lang;
       this._userService.getUser(this.code,this.lang).subscribe(r => {
         this.user = r;
-        console.log(this.user);
-        console.log(this.user.myDescription);
       });
       this._resumeService
         .getResume(this.code, this.lang)

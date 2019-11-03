@@ -1,16 +1,16 @@
 [
   {
-    "title": "Education na njemačkom",
+    "title": "EDUCATION",
     "children": [
       {
-        "name": "Faculty of Electrical Engineering NJEMAČKI",
+        "name": "Faculty of Electrical Engineering Deutsch",
         "subject": "",
         "shortDescription": "2016-2019, Computer Science and Informatics",
         "description": "",
         "images": []
       },
       {
-        "name": "Gymnasium Dobrinja na njemačkom",
+        "name": "Gymnasium Dobrinja Deutsch",
         "subject": "",
         "shortDescription": "2012-2016, Matematics and Informatics",
         "description": "",
@@ -19,7 +19,7 @@
     ]
   },
   {
-    "title": "Work experience na njemačkom",
+    "title": "WORK EXPERIENCE",
     "children": [
       {
         "name": "ZIRA",
@@ -31,10 +31,10 @@
     ]
   },
   {
-    "title": "Skills na njemačkom",
+    "title": "SKILLS",
     "children": [
       {
-        "name": "Hard skills na njemačkom",
+        "name": "Hard skills Deutsch",
         "subject": "",
         "shortDescription": "",
         "description": "",
@@ -54,7 +54,7 @@
         ]
       },
       {
-        "name": "Soft skills na njemačkom",
+        "name": "Soft skills Deutsch",
         "subject": "",
         "shortDescription": "",
         "description": "",
@@ -73,7 +73,7 @@
     ]
   },
   {
-    "title": "Languages na njemačkom",
+    "title": "LANGUAGES",
     "children": [
       {
         "name": "Languages",
@@ -86,7 +86,7 @@
     ]
   },
   {
-    "title": "Hobbies and interests na njemačkom",
+    "title": "HOBBIES",
     "children": [
       {
         "name": "Writing",
@@ -109,7 +109,7 @@
         "subject": "",
         "shortDescription": "",
         "description": "",
-        "images": ["https://images-na.ssl-images-amazon.com/images/I/61A98CerL2L._SX425_.jpg,https://scx1.b-cdn.net/csz/news/800/2019/sunflowers.jpg"],
+        "images": ["assets/esmaslike/odbojka/998388_503537643045661_129933875_n.jpg",""],
         "skills": []
       },
       {
