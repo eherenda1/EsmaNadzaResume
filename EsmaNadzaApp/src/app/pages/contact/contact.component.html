@@ -31,7 +31,10 @@
             cols="70"
             rows="5"
           ></textarea>
-          <button type="submit" id="submit" (click)="function()" class="send">
+          <button type="submit" id="submit" (click)="function()" *ngIf="lang" [ngClass]="{
+            send1:  lang == 'en',
+            send2: lang == 'de' || lang == 'bs' 
+          }">
             {{ send | translate }}
           </button>
         </form>

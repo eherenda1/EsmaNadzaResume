@@ -11,7 +11,9 @@
         *ngFor="let item of meni"
         [routerLink]="[item.url]"
         (click)="select(item)"
-        [ngClass]="{ active: selected == item }"
+        [ngClass]="{ 
+          active: selected == item
+         }"
       >
         {{ item.title | translate }}
       </li>

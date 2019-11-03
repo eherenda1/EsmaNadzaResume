@@ -53,7 +53,7 @@
 .icons {
   padding: 5px 10px 5px 10px;
 }
-.send {
+.send1 {
     background: $textcolor4;
     color: white;
     font-size: 18px;
@@ -62,7 +62,21 @@
     border: none;
     margin-top: 4px;
     float: right;
-    width: 50px;
+    width: 60px;
+    text-align: center;
+}
+
+.send2 {
+  background: $textcolor4;
+  color: white;
+  font-size: 18px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: none;
+  margin-top: 4px;
+  float: right;
+  text-align: center;
+  width: 75px;
 }
 ::placeholder {
   color: white;

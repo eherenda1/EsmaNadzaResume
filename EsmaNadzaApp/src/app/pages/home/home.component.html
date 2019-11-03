@@ -1,15 +1,17 @@
-<div class="page home" *ngIf="user">
-  <div class="profilePic">
-    <img src="{{ user.imgUrl }}" />
-  </div>
-  <div class="homeText">
+<div class="page home" *ngIf="user" >
+
+  <div class="divhoder">
+  <div class="profilePic" >
+    <img class="slika" src="{{ user.imgUrl }}" />
+  </div> </div> 
+  <div class="homeText" >
     <h2>{{ aboutLabel | translate }}</h2>
     <p>
       {{user.myDescription}}
     </p>
     <h2>{{ followLabel | translate }}</h2>
 
-    <ul>
+    <ul class="ikonice">
       <li
         [ngClass]="{
           facebook: user.fbLink != '',
@@ -48,4 +50,5 @@
       </li>
     </ul>
   </div>
+
 </div>

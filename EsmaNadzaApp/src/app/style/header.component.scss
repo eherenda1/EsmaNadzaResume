@@ -26,9 +26,26 @@
   margin-top: 5%;
 }
 
+
+
+.menibox{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.secondpart{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
 .meni {
   flex: 1 1 70%;
   text-align: right;
+ 
+
 
   ul {
     margin: 67px 0 27px 0px;
@@ -61,7 +78,7 @@
       background-color: transparent;
       border: 1px solid $maintextcolor;
       font-size: 17px;
-      color:$footerbackground;
+      color:$textcolor5;
       outline:none;
      
      
@@ -71,6 +88,7 @@
     color: white;
     align-items: stretch;
     outline: none;
+    
   }
 
   
@@ -84,6 +102,7 @@
     }
     .langmeni{
       width:100%;
+      
     }
   }
   .mainInformation {
@@ -96,6 +115,9 @@
     h1 {
       margin-top: 0%;
     }
+  }
+  .textofmeni{
+    text-align: center;
   }
   .meni {
     display: none;

@@ -1,11 +1,15 @@
 <body class="page " *ngIf="resume">
-  <div class="main">
+  <div class="main" >
     <h1 class="maintitle">{{ maintitle | translate }}</h1>
     <button  (click)="export2PDF()" class="export">{{ buttonLabel | translate }}</button>
     <div class="cont" *ngFor="let item of resume">
       <div class="wrapper1">
         <div class="title">
-          <h1 class="section">{{ item.title | translate }}</h1>
+          <h1 *ngIf="lang" [ngClass]="{
+            changefontsection: lang == 'de' || lang=='en' ,
+            section: lang=='bs'
+
+          }">{{ item.title | translate }}</h1>
         </div>
       </div>
       <div class="wrapper2">
