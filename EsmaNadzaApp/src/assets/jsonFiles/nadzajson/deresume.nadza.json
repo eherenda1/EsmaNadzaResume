@@ -46,7 +46,7 @@
         "shortDescription": "kratak opis",
         "description": "puni opis",
         "images": [],
-        "skils": ["VHDL", "Matlab", "C", "C++"]
+        "skills": ["VHDL", "Matlab", "C", "C++"]
       },
       {
         "name": "Soft skills",
@@ -54,7 +54,7 @@
         "shortDescription": "",
         "description": "",
         "images": [],
-        "skils": ["Time management", "Organisation", "Presentation skills"]
+        "skills": ["Time management", "Organisation", "Presentation skills"]
       }
     ]
   },
@@ -67,7 +67,7 @@
         "shortDescription": "kratak opis",
         "description": "puni opis",
         "images": [],
-        "skils": ["Bosnian/Serbian/Croatian", "German (C1)", "English"]
+        "skills": ["Bosnian/Serbian/Croatian", "German (C1)", "English"]
       }
     ]
   },
@@ -80,7 +80,7 @@
         "shortDescription": "kratak opis hobby",
         "description": "puni opis hobby",
         "images": [],
-        "skils": []
+        "skills": []
       },
 
       {
@@ -89,7 +89,7 @@
         "shortDescription": "kratak opis hobby",
         "description": "puni opis hobby",
         "images": [],
-        "skils": []
+        "skills": []
       },
       {
         "name": "Reading",
@@ -97,7 +97,7 @@
         "shortDescription": "kratak opis hobby",
         "description": "puni opis hobby",
         "images": [],
-        "skils": []
+        "skills": []
       }
     ]
   }

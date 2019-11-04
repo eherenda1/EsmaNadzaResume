@@ -9,17 +9,16 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { ProjectsService } from 'src/app/projects.service';
 import { IResume } from 'src/app/resume';
 import { IUser } from 'src/app/user';
-
-
 import * as jspdf from 'jspdf'
-import { ExportService } from 'src/app/export.service';
+
 
 @Component({
   selector: "resume-page",
   templateUrl: "./resume.component.html",
 })
-export class ResumeComponent implements OnInit {
 
+export class ResumeComponent implements OnInit {
+  
   public code: string;
   public resume: IResume;
   public maintitle: string;
@@ -35,12 +34,16 @@ export class ResumeComponent implements OnInit {
   public exporteduser: IUser;
   public exportedprojects = [];
   public index: number = 0;
+  public skills: any;
+  public softskills: any;
+  public hardskills: any;
+  
   constructor(
     private _resumeService: ResumeService,
     private readmore: ReadmoreService,
     private route: ActivatedRoute,
     private translate: TranslateService,
-    private _exports: ExportService,
+   
     private _projectsService: ProjectsService,
     private _users: OneuserService
 
@@ -62,11 +65,19 @@ export class ResumeComponent implements OnInit {
       });
       this._projectsService.getProjects(this.code, this.lang).subscribe((r)=> {
         this.exportedprojects = r;
+       
       })
     });
 
     this._resumeService.getResume(this.code, this.lang).subscribe(data => {
       this.resume = data;
+      this.skills = this.resume[2].children;
+      this.hardskills = this.resume[2].children[0].skills;
+
+      this.softskills = this.resume[2].children[1].skills;
+
+      
+      
       Object.keys(this.resume).forEach(key => {
         for (let i = 0; i < this.resume[key].children.length; i++) {
           this.names[this.broj] = this.resume[key].title;
@@ -86,14 +97,13 @@ export class ResumeComponent implements OnInit {
       this.buttonLabel = "BUTTONexport";
       this.readmoreTitle = "READMORE";
     });
+    
       this._users.getUser(this.code, this.lang).subscribe((r)=> {
         this.exporteduser = r;
     
       });
 
-      this._projectsService.getProjects(this.code, this.lang).subscribe((r)=> {
-        this.exportedprojects = r;
-      });
+     
   }
 
   selected(item) {
@@ -104,17 +114,13 @@ export class ResumeComponent implements OnInit {
       this.readmore.set(item);
       this.readmore.setIndeks(this.index);
   }
-  selecttitle(title) {
-      this.readmore.settitle(title);
-  }
+  
 
   export2PDF() {
     var doc = new jspdf();
     var educationarray = this.resume[0].children;
     var workexperiencearray = this.resume[1].children;
     var skillsarray = this.resume[2].children;
-    var hardskillsarray = skillsarray[0].skills;
-    var softskillsarray = skillsarray[1].skills;
     var languagesarray = this.resume[3].children;
     var languages = languagesarray[0].skills;
     var hobbyarray = this.resume[4].children;
@@ -124,6 +130,9 @@ export class ResumeComponent implements OnInit {
     var heightnumber = 0;
     var img = new Image();
     var projectarray = this.exportedprojects;
+
+
+
     img.src = this.exporteduser.imgUrl;
     doc.setFillColor(20, 71, 97);
     doc.rect(0, 0, width, 43, "F");
@@ -148,13 +157,23 @@ export class ResumeComponent implements OnInit {
     doc.text(width/2, start+18, this.exporteduser.phoneNumber );
     heightnumber = heightnumber + 77.5;
     var holder = 0;
+
+    //Prva for petlja za RESUME 
     for (var i = 0; i <= 4; i++) {
+
         holder = 0;
         doc.setFontSize(20);
-        doc.setFillColor(171, 192, 194);
-        doc.rect(0, heightnumber, width, 10, "F");
         heightnumber = heightnumber + 8;
+
+      if (heightnumber>= 269){
+        doc.addPage();
+        heightnumber=7.5;  
+      } 
+
+      //Za obrazovanje
         if (this.resume[i].title == "EDUCATION") {
+          doc.setFillColor(171, 192, 194);
+          doc.rect(0, heightnumber-8, width, 10, "F");
           doc.text(8, heightnumber, this.data.EDUCATION);
           
             for (var j = 0; j <= educationarray.length - 1; j++) {
@@ -171,8 +190,13 @@ export class ResumeComponent implements OnInit {
             }
             heightnumber = heightnumber + 8;
         }
-        if (this.resume[i].title == "WORK EXPERIENCE") {
-          doc.text(8, heightnumber, this.data.WORK);
+
+      //Za iskustvo
+       if (this.resume[i].title == "WORK EXPERIENCE") {
+        doc.setFillColor(171, 192, 194);
+        doc.rect(0, heightnumber-8, width, 10, "F");
+        doc.text(8, heightnumber, this.data.WORK);
+          
             for (var j = 0; j <= workexperiencearray.length - 1; j++) {
               if (heightnumber>= 290){
                 doc.addPage();
@@ -185,18 +209,31 @@ export class ResumeComponent implements OnInit {
                     doc.setFontSize(12)
                     heightnumber = heightnumber + 6;
                     doc.text(16, heightnumber, workexperiencearray[j].subject + '- ' + workexperiencearray[j].shortDescription);
-                    heightnumber = heightnumber + 8;
+                   
                 }
                 holder++;
             }
+
+            heightnumber = heightnumber + 8;
         }
+
+        if (heightnumber>= 290){
+          doc.addPage();
+          heightnumber=7.5;                
+        }
+
+        //Za skillove
         if (this.resume[i].title == "SKILLS") {
+
+          doc.setFillColor(171, 192, 194);
+          doc.rect(0, heightnumber-8, width, 10, "F");
           doc.text(8, heightnumber, this.data.SKILLS);
             var shifter = 0;
             var pamti = heightnumber;
             var hardheight = 0;
             var softheight = 0;
             for (var j = 0; j <= skillsarray.length - 1; j++) {
+              
               if (heightnumber>= 290){
                 doc.addPage();
                 heightnumber=7.5;                
@@ -205,39 +242,53 @@ export class ResumeComponent implements OnInit {
                 heightnumber = pamti;
                 heightnumber = heightnumber + 12;
                 doc.text(14 + shifter, heightnumber, skillsarray[j].name);
+                
                 if (skillsarray[j].name == this.resume[i].children[0].name) {
-                    for (var k = 0; k <= hardskillsarray.length - 1; k++) {
+                    for (var k = 0; k <= this.hardskills.length - 1; k++) {
                       if (heightnumber>= 290){
                         doc.addPage();
                         heightnumber=7.5;   
                       }
+
+                      
                         doc.setFontSize(12);
                         heightnumber = heightnumber + 6;
-                        doc.text(16 + shifter, heightnumber, '- ' + hardskillsarray[k]);
+                        doc.text(16 + shifter, heightnumber, '- ' + this.hardskills[k]);
+                        
                         softheight = heightnumber;
                     }
-                }
+
                 shifter = width / 2 - 12;
+
+              }
                 if (skillsarray[j].name == this.resume[i].children[1].name) {
-                    for (var k = 0; k <= softskillsarray.length - 1; k++) {
+                 
+                    for (var k = 0; k <= this.softskills.length - 1; k++) {
                       if (heightnumber>= 290){
                         doc.addPage();
                         heightnumber=7.5;   
                       }
+                   
                         doc.setFontSize(12);
                         heightnumber = heightnumber + 6;
-                        doc.text(16 + shifter, heightnumber, '- ' + softskillsarray[k]);
+                        doc.text(16 + shifter, heightnumber, '- ' + this.softskills[k]);
                         hardheight = heightnumber;
                     }
-                }
-            }
+                } 
+            } 
             if (hardheight > softheight) {
                 heightnumber = hardheight + 8;
             } else heightnumber = softheight + 8;
         }
+
+        //Za jezike
         if (this.resume[i].title == "LANGUAGES") {
+
+          doc.setFillColor(171, 192, 194);
+          doc.rect(0, heightnumber-8, width, 10, "F");
           doc.text(8, heightnumber, this.data.LANGUAGES);
             for (var j = 0; j <= languagesarray.length - 1; j++) {
+              
               if (heightnumber>= 290){
                 doc.addPage();
                 heightnumber=7.5;  
@@ -261,40 +312,61 @@ export class ResumeComponent implements OnInit {
               heightnumber = heightnumber + 8;
             }
         }
+
         if (heightnumber>= 290){
           doc.addPage();
-          heightnumber=7.5;
-          
-        }
+           heightnumber=7.5;
+          }
+
+        //Za hobbije
         if (this.resume[i].title == "HOBBIES") {
+          doc.setFillColor(171, 192, 194);
+          doc.rect(0, heightnumber-8, width, 10, "F");
           doc.text(8, heightnumber, this.data.HOBBIES);
           heightnumber = heightnumber + 6;
+
+          if (heightnumber>= 290){
+                doc.addPage();
+                heightnumber=7.5;                
+              }
+          
           for (var j = 0; j <= hobbyarray.length - 1; j++) {
                   doc.setFontSize(12);
                   heightnumber = heightnumber + 6;
                   doc.text(16, heightnumber, '- ' + hobbyarray[j].name);
               }
               heightnumber = heightnumber + 8;
-          }
+          } 
+    }
+
+    if (heightnumber>= 275){
+      doc.addPage();
+      heightnumber=7.5;  
     }
     
+    //Za projekte
     doc.setFontSize(20);
     doc.setFillColor(171, 192, 194);
     doc.rect(0, heightnumber, width, 10, "F");
     heightnumber = heightnumber + 8;
     doc.text(8, heightnumber, this.data.PROJECTSTITLE);
-    console.log(this.data.PROJECTSTITLE);
-    console.log(projectarray.length);
+    heightnumber = heightnumber + 6;
+   
+    if (heightnumber>= 280){
+      doc.addPage();
+      heightnumber=7.5;  
+    }
     for(var i=0; i<= projectarray.length-1; i++){
       doc.setFontSize(16);
-      console.log(projectarray[i].name);
+      
       heightnumber = heightnumber + 8;
       doc.text(16, heightnumber,'- '+ projectarray[i].name);
       doc.setFontSize(12);
       heightnumber = heightnumber + 8;
       doc.text(20, heightnumber, projectarray[i].shortDescription);
-    }
-    doc.save("cv");
+    } 
+
+    doc.save("cv_"+currentuser);
 }
 
 }
