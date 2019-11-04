@@ -31,10 +31,12 @@
   .images {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 10px;
+
   }
   img {
-    width: 552px;
-    height: 357px;
+    width: 491px;
+    height: 337px;
     margin-top: 25px;
   }
   .navigationI {
@@ -69,6 +71,9 @@
   align-items: flex-end;
   justify-content: space-between;
 }
+.l{
+  padding-left: 20px;
+}
 
 .next,
 .previous {
@@ -82,9 +87,83 @@
   display: none;
 }
 
-@media only screen and (max-width: 860px) {
-  .holder {
+@media only screen and (max-width: 840px) {
+  .holderextend {
     flex-direction: column;
     align-items: center;
   }
+  .positive {
+    display: flex;
+    justify-content: center;
+    .images {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    img {
+      width: 400px;
+      height: 258px;
+      margin-top: 25px;
+    }
+    .navigationI {
+      margin-top: 145px;
+      justify-content: space-between;
+  
+      a {
+        color: rgb(121, 43, 82, 0.7);
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+  .resumeextend{
+    width:100%;
+    .caption{ 
+      padding-left: 15px;
+    }
+    .details{ 
+      padding-left: 15px;
+      padding-right: 20px;
+  }
+}
+}
+@media only screen and (max-width: 675px) {
+  .holderextend {
+    flex-direction: column;
+    align-items: center;
+  }
+  .positive {
+    display: flex;
+    justify-content: center;
+    .images {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    img {
+      width: 332px;
+      height: 235px;
+      margin-top: 15px;
+    }
+    .navigationI {
+      margin-top: 130px;
+      justify-content: space-between;
+  
+      a {
+        color: rgb(121, 43, 82, 0.7);
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+  .resumeextend{
+    width:100%;
+    .caption{ 
+      padding-left: 15px;
+    }
+    .details{ 
+      padding-left: 15px;
+      padding-right: 20px;
+  }
+}
 }

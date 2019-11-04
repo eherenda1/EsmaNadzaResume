@@ -1,20 +1,17 @@
 [
   {
     "name": "C# Aplikacija",
-    "shortDescription": "Prilikom razvoja projekta korišten je C#.",
-    "description": "Ovaj projekat predstavlja aplikaciju koja služi za olakšanu evidenciju pacijenata, reguliše duge redove čekanja, kao i uvid u zdravstvenu historiju pacijenta. Sve ovo čini sistem zdravstva mnogo organizovanijim, a pacijentima se pružaju bolje usluge liječenja.",
-    "mainImage": "assets/esmaslike/c/5bed3e709de61.png",
+    "shortDescription": "",
+    "description": "Ovaj projekat predstavlja aplikaciju koja služi za olakšanu evidenciju pacijenata, reguliše duge redove čekanja, kao i uvid u zdravstvenu historiju pacijenta. Sve ovo čini sistem zdravstva mnogo organizovanijim, a pacijentima se pružaju bolje usluge liječenja. Prilikom razvoja projekta korišten je C#.",
+    "mainImage": "https://static.techspot.com/images2/news/bigimage/2019/09/2019-09-16-image-24.jpg",
     "images": [
-      "https://www.qualtrics.com/m/assets/blog/wp-content/uploads/2018/08/shutterstock_1068141515.jpg",
-      "https://www.incimages.com/uploaded_files/image/970x450/getty_501816888_2000133320009280121_341185.jpg",
-      "https://www.ft.com/__origami/service/image/v2/images/raw/http://prod-upp-image-read.ft.com/429941bc-56df-11e9-8b71-f5b0066105fe?source=next&fit=scale-down&quality=highest&width=1067"
     ]
   },
 
   {
     "name": "Web Aplikacija",
-    "shortDescription": "Prilikom razvoja projekta korišten je Html, CSS, javaScrpt, node.js",
-    "description": "Svi znamo koliko zna biti naporno voditi evidenciju o studentima, projektima, prisustvu, zadaćama i svemu što spada u informacioni sistem jednog fakulteta. Ovaj projekat olakšava upravljanje evidencijom, omogućuje bolji pregled studenata i njihovog rada tokom akademske godine.",
+    "shortDescription": "",
+    "description": "Svi znamo koliko zna biti naporno voditi evidenciju o studentima, projektima, prisustvu, zadaćama i svemu što spada u informacioni sistem jednog fakulteta. Ovaj projekat olakšava upravljanje evidencijom, omogućuje bolji pregled studenata i njihovog rada tokom akademske godine.Prilikom razvoja projekta korišten je Html, CSS, javaScrpt, node.js",
     "mainImage": "https://rexzetsolutions.com/wp-content/uploads/2019/03/webapplication.png",
     "images": [""]
   },

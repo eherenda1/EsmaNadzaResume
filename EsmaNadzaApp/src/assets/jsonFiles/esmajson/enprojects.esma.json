@@ -1,35 +1,32 @@
 [
   {
     "name": "C# Application",
-    "shortDescription": "I'm a Paragraph.",
-    "description": "It was a cold grey day in late November. The weather had changed overnight, when a backing wind brought a granite sky and a mizzling rain with it, and although it was now only a little after two o'clock in the afternoon the pallor of a winter evening seemed to have closed upon the hills, cloaking them in mist.lorem",
-    "mainImage": "https://www.qualtrics.com/m/assets/blog/wp-content/uploads/2018/08/shutterstock_1068141515.jpg",
+    "shortDescription": ".",
+    "description": "",
+    "mainImage": "https://static.techspot.com/images2/news/bigimage/2019/09/2019-09-16-image-24.jpg",
     "images": [
-      "https://www.qualtrics.com/m/assets/blog/wp-content/uploads/2018/08/shutterstock_1068141515.jpg",
-      "https://www.incimages.com/uploaded_files/image/970x450/getty_501816888_2000133320009280121_341185.jpg",
-      "https://www.ft.com/__origami/service/image/v2/images/raw/http://prod-upp-image-read.ft.com/429941bc-56df-11e9-8b71-f5b0066105fe?source=next&fit=scale-down&quality=highest&width=1067"
     ]
   },
 
   {
     "name": "Web Applicaton",
-    "shortDescription": "The idiosyncrasy of this town is sm.",
-    "description": "puni opis",
-    "mainImage": "https://www.incimages.com/uploaded_files/image/970x450/getty_501816888_2000133320009280121_341185.jpg",
+    "shortDescription": "",
+    "description": "",
+    "mainImage": "https://rexzetsolutions.com/wp-content/uploads/2019/03/webapplication.png",
     "images": [""]
   },
   {
     "name": "ASP.NET",
-    "shortDescription": "It was a cold grey day in late November.",
-    "description": "puni opis",
-    "mainImage": "https://www.infragistics.com/community/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-08-87/6320.dev_2D00_tools_2D00_aspnet_2D00_release_2D00_notes.jpg",
+    "shortDescription": "",
+    "description": "",
+    "mainImage": "https://cdn4.iconfinder.com/data/icons/logos-3/504/ASP.Net-512.png",
     "images": ["assets/esmaslike/asp.net/IMG-bb980fe8edef78957124f2dd6b96bd73-V.jpg","assets/esmaslike/asp.net/IMG-84147aad862315363342a289254142b6-V.jpg","assets/esmaslike/asp.net/IMG-54b1a68d3be32f35097be26705f434ba-V.jpg","assets/esmaslike/asp.net/IMG-852b6df8ea712579d7e92f9455ba2e05-V.jpg","assets/esmaslike/asp.net/IMG-5d482b5bb07c7b59daee19794ceb6437-V.jpg"]
   },
   {
     "name": "Blender",
-    "shortDescription": "Blank face in the windowpanet.",
-    "description": "puni opis",
-    "mainImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFt56h7d4L4dH1v6eCk48Jnvu2OCRRBWiyRtX6OkincyLywjEt&s",
+    "shortDescription": "",
+    "description": "",
+    "mainImage": "assets/esmaslike/blender/kisspng-blender-3d-computer-graphics-rendering-autodesk-ma-blender-5ac04380a2f8f1.0796909215225496326675.png",
     "images": [""]
   }
 ]

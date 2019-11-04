@@ -44,17 +44,20 @@ export class HeaderComponent {
       {
         option: "Bosnian",
         translate: "BS",
-        value: "bs"
+        value: "bs",
+        show: true
       },
       {
         option: "English",
         translate: "EN",
-        value: "en"
+        value: "en",
+        show: true
       },
       {
         option: "German",
         translate: "DE",
-        value: "de"
+        value: "de",
+        show: true
       }
     ]
     this.themes = [
@@ -62,12 +65,14 @@ export class HeaderComponent {
         option: "Light theme",
         translate: "LIGHT",
         value: "light",
+        show: true
         
       },
       {
         option: "Dark theme",
         translate: "DARK",
         value: "dark",
+        show: true
   
 
       },
@@ -75,6 +80,7 @@ export class HeaderComponent {
         option: "Default theme",
         translate: "DEFAULT",
         value: "default",
+        show: true
        
       }
     ]
@@ -117,6 +123,7 @@ export class HeaderComponent {
     this.selected = item;
   }
   setLang(lang: string) {
+    console.log("nejasnooo");
     this.translate.use(lang);
     this.lang = lang;
     this.path = this.router.url;

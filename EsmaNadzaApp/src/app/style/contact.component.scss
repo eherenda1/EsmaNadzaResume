@@ -65,7 +65,9 @@
     width: 60px;
     text-align: center;
 }
-
+.conttext{
+  font-size: 17px;
+}
 .send2 {
   background: $textcolor4;
   color: white;
@@ -85,6 +87,7 @@ input,
 select,
 textarea {
   color: #c6c8cc;
+  font-size: 15px;
 }
 @media only screen and (max-width: 1300px) {
   .maincontact {

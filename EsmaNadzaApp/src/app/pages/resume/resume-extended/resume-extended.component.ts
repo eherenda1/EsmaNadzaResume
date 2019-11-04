@@ -3,6 +3,7 @@ import { ReadmoreService } from "src/app/readmore.service";
 import { ResumeService } from "src/app/resume.service";
 import { IResume } from "src/app/resume";
 import { ActivatedRoute } from "@angular/router";
+import { TranslateService } from "src/app/translate.service";
 
 @Component({
   selector: "app-resume-extended",
@@ -24,10 +25,13 @@ export class ResumeExtendedComponent implements OnInit {
   public image;
   public images;
   public incrementI: number = 0;
+  public next: string;
+  public before: string;
   constructor(
     private readmore: ReadmoreService,
     private _resumeService: ResumeService,
     private route: ActivatedRoute,
+    private translate: TranslateService,
   ) {}
 
   ngOnInit() {
@@ -80,6 +84,12 @@ export class ResumeExtendedComponent implements OnInit {
         });
       });
     });
+    this.translate.use(this.lang).then(r => {
+  
+      this.next = "NEXT";
+      this.before = "BEFORE";
+    });
+  
   }
   shift(increment) {
     if (

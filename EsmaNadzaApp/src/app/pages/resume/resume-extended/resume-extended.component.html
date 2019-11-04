@@ -24,7 +24,7 @@
                             </div>
                             <div class="navigationI"><a class="right" (click)="rightI()">></a></div>
                         </div>
-                        <ul>
+                        <ul class="l">
                             <li class="details list" *ngFor="let skill of detail.skills">{{skill}}</li>
                         </ul>
                         
@@ -36,7 +36,7 @@
         </div>
         <div class="options">
             <a class="previous" (click)="left()">
-                <<Previous</a> <a class="next" (click)="right()">Next>>
+                    {{ before | translate }}</a> <a class="next" (click)="right()">{{ next | translate }}
             </a>
 
         </div>
