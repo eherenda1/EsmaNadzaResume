@@ -1,8 +1,8 @@
 [
   {
     "name": "C# Aplikacija",
-    "shortDescription": "Bosanski ",
-    "description": "It was a cold grey day iinter evening seemed to have closed upon the hills, cloaking them in mist.lorem",
+    "shortDescription": "Prilikom razvoja projekta korišten je C#.",
+    "description": "Ovaj projekat predstavlja aplikaciju koja služi za olakšanu evidenciju pacijenata, reguliše duge redove čekanja, kao i uvid u zdravstvenu historiju pacijenta. Sve ovo čini sistem zdravstva mnogo organizovanijim, a pacijentima se pružaju bolje usluge liječenja.",
     "mainImage": "https://www.qualtrics.com/m/assets/blog/wp-content/uploads/2018/08/shutterstock_1068141515.jpg",
     "images": [
       "https://www.qualtrics.com/m/assets/blog/wp-content/uploads/2018/08/shutterstock_1068141515.jpg",
@@ -13,22 +13,22 @@
 
   {
     "name": "Web Aplikacija",
-    "shortDescription": "Bosanski Web ApplicationBosanski",
-    "description": "puni opis",
+    "shortDescription": "Prilikom razvoja projekta korišten je Html, CSS, javaScrpt, node.js",
+    "description": "Svi znamo koliko zna biti naporno voditi evidenciju o studentima, projektima, prisustvu, zadaćama i svemu što spada u informacioni sistem jednog fakulteta. Ovaj projekat olakšava upravljanje evidencijom, omogućuje bolji pregled studenata i njihovog rada tokom akademske godine.",
     "mainImage": "https://www.incimages.com/uploaded_files/image/970x450/getty_501816888_2000133320009280121_341185.jpg",
     "images": [""]
   },
   {
     "name": "ASP.NET",
-    "shortDescription": "Bosanski ASP.NETBosanski A",
-    "description": "puni opis",
+    "shortDescription": "Prilikom razvoja projekta korišten je C#, Html, CSS i ASP.NET.",
+    "description": "U ovom projektu razvijali smo rješenje za online distribuciju autodijelova. Sistem ima namjenu da olakša poslovanje trgovine autodijelovima prilikom maloprodaje, veleprodaje, nabavke proizvoda kao i evidenciju o artiklima u skladištu i pružanja usluga servisa.",
     "mainImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFt56h7d4L4dH1v6eCk48Jnvu2OCRRBWiyRtX6OkincyLywjEt&s",
     "images": [""]
   },
   {
     "name": "Blender",
-    "shortDescription": "Bosanski Blender Bosanski Blender Bosanski Bl",
-    "description": "puni opis",
+    "shortDescription": "",
+    "description": "Za potrebe igrice koju smo razvijali u Unity-u, svaki član tima morao je dzajnirati prostoriju  koja je naknadno korištena kao jedna od prostorija u igrici. Radi realistične predstave prostorije, dizajn smo kreirali koristeći blender",
     "mainImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFt56h7d4L4dH1v6eCk48Jnvu2OCRRBWiyRtX6OkincyLywjEt&s",
     "images": [""]
   }

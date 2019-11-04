@@ -283,9 +283,11 @@ export class ResumeComponent implements OnInit {
     doc.rect(0, heightnumber, width, 10, "F");
     heightnumber = heightnumber + 8;
     doc.text(8, heightnumber, this.data.PROJECTSTITLE);
-
+    console.log(this.data.PROJECTSTITLE);
+    console.log(projectarray.length);
     for(var i=0; i<= projectarray.length-1; i++){
       doc.setFontSize(16);
+      console.log(projectarray[i].name);
       heightnumber = heightnumber + 8;
       doc.text(16, heightnumber,'- '+ projectarray[i].name);
       doc.setFontSize(12);

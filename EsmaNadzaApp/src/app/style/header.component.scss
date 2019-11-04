@@ -1,3 +1,8 @@
+.nekidiv{
+ 
+  display: flex;
+  justify-content: space-between;
+}
 .head {
   position: $mainposition;
   margin-left: $left;
@@ -5,16 +10,23 @@
   height: 100%;
   width: 60%;
   display: flex;
-  .fas {
+  .fa-bars {
     z-index: 100;
     height: 42px;
-    margin-top: 20px;
+    margin-top: 11px;
     margin-right: 20px;
     color: $mainbackground;
     background: #4d4d4d;
     padding: 6px;
     display: none;
   }
+}
+.fa-pallete{
+  color: $mainbackground;
+}
+
+.pomocni{
+  width:20%;
 }
 
 .mainInformation {
@@ -24,6 +36,11 @@
 }
 .mainInformation > h1 {
   margin-top: 5%;
+}
+
+.nekidiv{
+  display:flex;
+  flex-direction: row;
 }
 
 
@@ -44,9 +61,6 @@
 .meni {
   flex: 1 1 70%;
   text-align: right;
- 
-
-
   ul {
     margin: 67px 0 27px 0px;
     padding: 0;
@@ -63,6 +77,7 @@
     li {
       cursor: pointer;
       padding: 0 20px;
+      font-weight: bold;
       display: inline-flex;
       color: $maintextcolor;
       text-align: center;
@@ -73,6 +88,9 @@
         outline: none;
       }
     }
+    .menilang{
+      display:none;
+    }
   }
   .langmeni{
       background-color: transparent;
@@ -80,30 +98,41 @@
       font-size: 17px;
       color:$textcolor5;
       outline:none;
-     
-     
   }
   .check{
     background-color: $footerbackground;
     color: white;
     align-items: stretch;
-    outline: none;
-    
+    outline: none;   
   }
-
+  .holderdropdowns{
+    width: 20%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    .dropdowns{
+      display: flex;
+      flex-direction: column;
+      height: 21%; 
+    }
+  }
+ 
   
 
 @media only screen and (max-width: 1237px) {
   .head {
     width: 100%;
     display: flex;
-    .fas {
+    .fa-bars {
       display: block;
     }
     .langmeni{
       width:100%;
       
     }
+  }
+   .holderdropdowns{
+    display:none;
   }
   .mainInformation {
     margin-left: 15px;
@@ -121,7 +150,6 @@
   }
   .meni {
     display: none;
-
     background-color: rgba($mainbackground, 0.9);
     position: fixed;
     top: 0;
@@ -145,5 +173,19 @@
 
       display: inline-flex;
     }
+    .menilang{
+      display: flex;
+      width:100%;
+      background-color: transparent;
+      border: 1px solid $maintextcolor;
+      font-size: 17px;
+      color:$textcolor5;
+      outline:none;
+      padding-left: 198px;
+    }
+
+  }
+  .pomocni{
+    width: 0%;
   }
 }

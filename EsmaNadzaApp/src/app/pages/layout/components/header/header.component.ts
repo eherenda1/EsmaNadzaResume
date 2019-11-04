@@ -61,17 +61,21 @@ export class HeaderComponent {
       {
         option: "Light theme",
         translate: "LIGHT",
-        value: "light"
+        value: "light",
+        
       },
       {
         option: "Dark theme",
         translate: "DARK",
-        value: "dark"
+        value: "dark",
+  
+
       },
       {
         option: "Default theme",
         translate: "DEFAULT",
-        value: "default"
+        value: "default",
+       
       }
     ]
     this.route.params.subscribe((params: any) => {
