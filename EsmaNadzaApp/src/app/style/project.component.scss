@@ -44,7 +44,7 @@
     text-align: center;
     word-wrap: break-word;
     font-weight: bold;
-    color: $maintextcolor;
+    color: white;
 }
 .up {
   border-bottom: 1px solid $maintextcolor;
@@ -110,6 +110,7 @@
     width: 100%;
     text-align: center;
     word-wrap: break-word;
+    color: $maintextcolor;
   }
   .text {
     float: right;
