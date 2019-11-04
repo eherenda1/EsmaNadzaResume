@@ -1,118 +1,98 @@
 .home {
-  display: block;
-  padding-top: 6%;
+  display: flex;
+  align-items: stretch;
 }
-.profilePic {
+.homeholder{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex: 1;
+  padding-bottom: 40px;
+}
+.divholder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homeparagraph{
+  text-align: justify;
+}
+.slika {
   float: left;
   width: 385px;
   height: 380px;
   border-radius: 50%;
-  background-color: pink;
   overflow: hidden;
   img {
-    width: 100%;
-    object-fit: cover;
-  }
+      width: 100%;
+      object-fit: cover;
+ }
+}
+.hometitle{
+  padding-bottom: 15px;
 }
 .homeText {
   font-size: 19px;
-  padding-top: 20px;
+  padding-left: 30px;
   width: 60%;
-  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
   p {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
+      padding-bottom: 20px;
+ }
   ul {
-    li {
-      display: inline-flex;
-      padding: 10px 10px;
-      list-style-type: none;
-      .fa-instagram {
-        background: radial-gradient(
-          circle at 30% 107%,
-          #fdf497 0%,
-          #fdf497 5%,
-          #fd5949 45%,
-          #d6249f 60%,
-          #285aeb 90%
-        );
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-      .fa-youtube-square {
-        color: red;
-      }
-      .fa-facebook {
-        color: rgb(66, 103, 178);
-      }
-      .fa-linkedin {
-        color: rgb(40, 103, 178);
-      }
-    }
-  }
-
+      li {
+          display: inline-flex;
+          padding-left: 10px;
+          list-style-type: none;
+          .fa-instagram {
+              background: radial-gradient( circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90% );
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+         }
+          .fa-youtube-square {
+              color: red;
+         }
+          .fa-facebook {
+              color: rgb(66, 103, 178);
+         }
+          .fa-linkedin {
+              color: rgb(40, 103, 178);
+         }
+     }
+ }
   .negative {
-    display: none;
-  }
+      display: none;
+ }
 }
-@media only screen and (max-width: 1700px) {
-  .home .profilePic {
-    width: 350px;
-    height: 350px;
-  }
-  .home .homeText {
-    width: 55%;
-  }
-}
-@media only screen and (max-width: 1500px) {
-  .home .profilePic {
-    width: 295px;
-    height: 295px;
-  }
-}
-@media only screen and (max-width: 1237px) {
-  .home {
-    width: 85%;
-    padding-top: 9%;
-  }
-  .home .homeText {
-    width: 67%;
-  }
-}
-
-@media only screen and (max-width: 1089px) {
-  .home {
-    width: 85%;
-    padding-top: 5%;
-  }
-  .home .homeText {
-    width: 58%;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .home {
-    padding-top: 5%;
-    width: 85%;
-  }
-  .home .homeText {
-    width: 55%;
-  }
-}
-@media only screen and (max-width: 830px) {
-  .home .profilePic {
-    margin-left: 25%;
-  }
-  .home .homeText {
-    width: 100%;
-    margin-top: 3%;
-  }
-}
-@media only screen and (max-width: 660px) {
-  .home .profilePic {
-    margin-left: 19%;
-  }
-  
+@media only screen and (max-width: 1237px){
+  .homeholder{
+      flex-direction: column;
+      align-items: center;
+ }
+  .homeText{
+      width: 70%;
+      padding-left: 0;
+ }
+  .hometitle{
+      text-align: center;
+ }
+  .ikonice{
+      display: flex;
+      justify-content: center;
+ }
+  .home{
+      width:100%;
+      margin-left: 0;
+ }
+  .slika{
+      width: 285px;
+      height: 280px;
+ }
+  .divholder{
+      padding-top: 20px;
+ }
 }

@@ -16,7 +16,7 @@
     margin-top: 11px;
     margin-right: 20px;
     color: $mainbackground;
-    background: #4d4d4d;
+    background: $maintextcolor;
     padding: 6px;
     display: none;
   }
@@ -42,7 +42,6 @@
   display:flex;
   flex-direction: row;
 }
-
 
 
 .menibox{
