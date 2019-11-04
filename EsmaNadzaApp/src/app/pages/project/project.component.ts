@@ -3,7 +3,7 @@ import { ProjectsService } from "src/app/projects.service";
 import { ActivatedRoute } from "@angular/router";
 import { ReadmoreService } from "src/app/readmore.service";
 import { TranslateService } from "src/app/translate.service";
-import { ExportService} from 'src/app/export.service';
+
 
 @Component({
   selector: "project-page",
@@ -22,8 +22,7 @@ export class ProjectComponent {
     private _projectsService: ProjectsService,
     private route: ActivatedRoute,
     private readmore: ReadmoreService,
-    private translate: TranslateService,
-    private _exports: ExportService
+    private translate: TranslateService
   ) {}
 
   ngOnInit() {
@@ -39,7 +38,7 @@ export class ProjectComponent {
 
     this._projectsService.getProjects(this.code,this.lang).subscribe((data) => {
       this.readmore.setItems(this.projects = data);
-      this._exports.exportitem(this.projects=data);
+      
     });
 
     this.translate.use(this.lang).then(r => {

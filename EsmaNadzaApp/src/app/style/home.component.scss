@@ -1,18 +1,21 @@
 .home {
-  display: flex;
-  align-items: stretch;
+
+  width:100%;
+  padding-top: 40px;
+  
 }
 .homeholder{
+  width:100%;
   display: flex;
   align-items: stretch;
-  justify-content: space-between;
-  flex: 1;
+  justify-items: baseline;
   padding-bottom: 40px;
+  
 }
 .divholder{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 20px;
+  
+  
 }
 .homeparagraph{
   text-align: justify;
@@ -33,7 +36,7 @@
 }
 .homeText {
   font-size: 19px;
-  padding-left: 30px;
+  padding-left: 40px;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -45,7 +48,7 @@
   ul {
       li {
           display: inline-flex;
-          padding-left: 10px;
+          padding-right: 10px;
           list-style-type: none;
           .fa-instagram {
               background: radial-gradient( circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90% );
@@ -68,13 +71,21 @@
       display: none;
  }
 }
+
+@media only screen and (max-width: 1435px){
+  .slika{
+    width: 305px;
+      height: 300px;
+  }
+
+}
 @media only screen and (max-width: 1237px){
   .homeholder{
       flex-direction: column;
       align-items: center;
  }
   .homeText{
-      width: 70%;
+      width: 100%;
       padding-left: 0;
  }
   .hometitle{
@@ -91,8 +102,20 @@
   .slika{
       width: 285px;
       height: 280px;
+      
  }
   .divholder{
       padding-top: 20px;
+      padding-bottom: 10px;
  }
+ .home{
+   padding-top: 20px;
+ }
+
+ .hhome{
+   width:82%;
+   
+ }
+
+ 
 }

@@ -105,8 +105,15 @@ textarea {
 }
 @media only screen and (max-width: 730px) {
   .content,
-  .inputholder,
-  .contentholder {
-    width: 350px;
+  .inputholder {
+    width: 300px;
+  }
+
+  .contentholder{
+    width: 90%;
+  }
+
+  .ccontact{
+    width:82%;
   }
 }

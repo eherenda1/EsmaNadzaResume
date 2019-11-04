@@ -6,7 +6,7 @@ import { IUser } from "src/app/user";
 import { IResume } from "src/app/resume";
 import { TranslateService } from "src/app/translate.service";
 import { IEn } from "src/app/en";
-import { ExportService } from 'src/app/export.service';
+
 
 @Component({
   selector: "header-layout",
@@ -35,8 +35,7 @@ export class HeaderComponent {
     private _resumeService: ResumeService,
     private route: ActivatedRoute,
     private router: Router,
-    private exports: ExportService,
-    private translate: TranslateService,
+    private translate: TranslateService
   ) { }
 
   ngOnInit() {
@@ -84,7 +83,7 @@ export class HeaderComponent {
     });
     this._userService.getUser(this.code, this.lang).subscribe(r => {
       this.user = r;
-      this.exports.exportuser(this.exported = r);
+      
     });
     this.translate.use(this.lang).then(r => {
       this.data = r;

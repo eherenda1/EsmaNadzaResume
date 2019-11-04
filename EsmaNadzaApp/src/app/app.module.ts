@@ -27,11 +27,10 @@ import {ProjectExtendedComponent} from './pages/project/project-extended/project
 
 
 import {ReadmoreService} from './readmore.service';
-import {ExportService} from './export.service';
 import {TranslateService} from './translate.service';
 import { TranslatePipe } from './translate.pipe'
 
-import { ExportComponent } from './pages/resume/export/export.component';
+
 import { PDFExportModule } from '@progress/kendo-angular-pdf-export';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -57,8 +56,7 @@ export function setupTranslateFactory(
     FooterComponent,
     ResumeExtendedComponent,
     ProjectExtendedComponent,
-    TranslatePipe,
-    ExportComponent
+    TranslatePipe
   ],
   imports: [
     BrowserModule,
@@ -74,7 +72,6 @@ export function setupTranslateFactory(
              ProjectsService,
              ContactService,
              ReadmoreService,
-             ExportService,
              TranslateService,{
               provide: APP_INITIALIZER,
               useFactory: setupTranslateFactory,
