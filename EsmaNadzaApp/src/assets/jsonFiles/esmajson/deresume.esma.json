@@ -101,7 +101,7 @@
         "subject": "",
         "shortDescription": "",
         "description": "",
-        "images": [],
+        "images": ["assets/esmaslike/books/TheAlchemistCover-5456318ceb53461b9bb6081ed8b99252.jpg","assets/esmaslike/books/WIM_QUOTES_the_alchemist_paulo_coelho.png","assets/esmaslike/books/91sDeQgpL3L.jpg","assets/esmaslike/books/131a1ac2e57afd76f435114665610662.jpg"],
         "skills": []
       },
       {
@@ -109,7 +109,7 @@
         "subject": "",
         "shortDescription": "",
         "description": "",
-        "images": ["assets/esmaslike/odbojka/998388_503537643045661_129933875_n.jpg",""],
+        "images": ["assets/esmaslike/odbojka/998388_503537643045661_129933875_n.jpg","assets/esmaslike/odbojka/10907091_897521386933461_1562563485_o.jpg","assets/esmaslike/odbojka/10509638_688196667913090_8881117907419714146_n.jpg"],
         "skills": []
       },
       {
@@ -118,6 +118,14 @@
         "shortDescription": "",
         "description": "",
         "images": [],
+        "skills": []
+      },
+      {
+        "name": "Putovanja",
+        "subject": "",
+        "shortDescription": "",
+        "description":"Putovnja su vid umjetnosti koju želim maksimalno iskusiti. Obzirom na moj avanturistički duh,  posjete raznim gradovima su oduvijek bile na mojoj listi želja. Posjetila sam razne zemlje Evrope, kao što su Hrvatska, Francuska, Italija, Slovenija, Turska itd.",
+        "images": ["assets/esmaslike/travelling/Screenshot_2.jpg","assets/esmaslike/travelling/71771500_973321926349616_2192173744787554304_n.jpg","assets/esmaslike/travelling/20190808_154040.jpg","assets/esmaslike/travelling/Screenshot_1.jpg"],
         "skills": []
       }
     ]

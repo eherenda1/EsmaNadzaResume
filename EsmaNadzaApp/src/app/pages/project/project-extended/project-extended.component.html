@@ -5,7 +5,10 @@
   <div (shift)="shift($event)" class="prex" >
     <div *ngIf="detail" class="details" >
       <h1>{{ detail.name }}</h1>
-      <div class="listPic" >
+      <div class="listPic" [ngClass]="{
+        positive: detail.images != '',
+        negative: detail.images == ''
+      }">
         <div class="navigationI"><a class="left" (click)="leftI()"><</a></div>
         <div class="images">
           <img src="{{ image }}" />
